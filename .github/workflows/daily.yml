@@ -1,0 +1,26 @@
+name: Daily refresh
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 06:00 IST every day
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python collector/collect.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          JOOBLE_KEY: ${{ secrets.JOOBLE_KEY }}
+      - name: Commit results
+        run: |
+          git config user.name "jobearth-bot"; git config user.email "bot@users.noreply.github.com"
+          git add docs/jobs.json collector/tag_cache.json
+          git diff --cached --quiet || (git commit -m "Daily refresh $(date -u +%F)" && git push)
