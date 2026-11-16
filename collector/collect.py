@@ -22,6 +22,13 @@ ROLE_MAP = [("DevOps", r"devops|\bsre\b|site reliab|platform eng"), ("Cloud", r"
     ("Support", r"support|service desk|help ?desk|customer (care|service)"),
     ("Design", r"design|\bux\b|graphic"), ("Sales & Marketing", r"sales|marketing|business development|\bseo\b|content"),
     ("Operations & HR", r"\bhr\b|recruit|operations|admin|account|finance|executive")]
+SCAM = re.compile(r"backdoor|charges? (apply|applicable)|paid service|pay anything|registration fee|"
+                  r"security deposit|processing fee|nothing comes for free", re.I)
+STATES = {"andhra pradesh", "assam", "bihar", "chhattisgarh", "gujarat", "haryana", "himachal pradesh", "jharkhand",
+          "karnataka", "kerala", "madhya pradesh", "maharashtra", "odisha", "punjab", "rajasthan", "tamil nadu",
+          "telangana", "uttar pradesh", "uttarakhand", "west bengal", "india", "delhi"}
+CAT_MAP = [(r"HR|Accounting|Admin", "Operations & HR"), (r"Sales|PR, Advert|Marketing", "Sales & Marketing"),
+           (r"Customer", "Support"), (r"Creative", "Design")]
 INDIA = re.compile(r"india|bengal|bangal|mumbai|pune|hyderabad|delhi|gurgaon|gurugram|noida|"
                    r"chennai|kolkata|ahmedabad|nashik|jaipur|kochi|indore|remote", re.I)
 FRESHER = re.compile(r"fresher|graduate|intern\b|internship|entry[- ]level|trainee|junior|"
@@ -122,15 +129,20 @@ def dedupe(jobs):
 
 def keyword_tag(j):
     pick = lambda text: next((r for r, w in ROLE_MAP if re.search(w, text)), None)
-    role = pick(j["title"].lower()) or pick(j["description"][:300].lower()) or "Other"
+    cat = j.get("category", "")
+    role = pick(j["title"].lower()) or next((r for w, r in CAT_MAP if re.search(w, cat)), None)
+    if not role and "IT" in cat: role = pick(j["description"][:300].lower())
+    role = role or "Other"
     loc = j["location_raw"].lower()
     city = "Remote" if "remote" in loc else next((c for c, w in [("Bengaluru", "bengal|bangal"),
         ("Delhi NCR", "delhi|gurgaon|gurugram|noida|ghaziabad|faridabad"), ("Mumbai", "mumbai|thane"),
         ("Pune", "pune|pimpri"), ("Hyderabad", "hyderabad|secunderabad"), ("Chennai", "chennai"),
         ("Kolkata", "kolkata"), ("Ahmedabad", "ahmedabad"), ("Nashik", "nashik")] if re.search(w, loc)), None)
     if not city:
-        first = j["location_raw"].split(",")[0].strip().title()
-        city = first if first and first.lower() != "india" and len(first) <= 25 else "Other"
+        parts = [x.strip() for x in j["location_raw"].split(",") if x.strip()]
+        # "Locality, City" puts the city last; "City, State" puts the state last
+        pick_part = parts[-1] if len(parts) > 1 and parts[-1].lower() not in STATES else (parts[0] if parts else "")
+        city = pick_part.title() if pick_part and pick_part.lower() not in STATES and len(pick_part) <= 25 else "Other"
     return {"role": role, "city": city}
 
 def llm_tag(jobs, cache):
@@ -172,10 +184,11 @@ def main():
             and FRESHER.search(j["title"] + " " + j["description"]) and not SENIOR.search(j["title"])]
     for j in keep:
         j["id"] = hashlib.sha1((j["company"] + j["title"] + j["location_raw"]).lower().encode()).hexdigest()[:12]
-    keep = dedupe(keep)
+    keep = dedupe([j for j in keep if not SCAM.search(j["title"] + " " + j["description"])])
     cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
     cache = llm_tag(keep, cache); json.dump(cache, open(CACHE, "w"))
     old = {j["id"]: j for j in json.load(open(OUT)).get("jobs", []) if j.get("last_seen")} if os.path.exists(OUT) else {}
+    old = {k: v for k, v in old.items() if not SCAM.search(v["title"] + " " + v["description"])}
     today = NOW.strftime("%Y-%m-%d")
     for j in keep:
         j.update(cache[j["id"]]); j["first_seen"] = old.get(j["id"], {}).get("first_seen", today); j["last_seen"] = today
