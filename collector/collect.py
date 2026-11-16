@@ -1,18 +1,27 @@
 """JoBearth collector: gathers fresher/intern posts in India from sources that allow
 programmatic access, dedupes, tags with Claude, writes docs/jobs.json."""
-import json, os, re, hashlib, difflib, urllib.robotparser as rp
+import json, os, re, html, hashlib, difflib, urllib.robotparser as rp
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urlparse
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT, CACHE = f"{ROOT}/docs/jobs.json", f"{ROOT}/collector/tag_cache.json"
-UA = "JoBearthBot/1.0 (+https://github.com/Papaplayer01/jobearth)"
+UA = "JoBearthBot/1.0 (+https://github.com/YOUR_USER/jobearth)"
 NOW = datetime.now(timezone.utc)
 CITIES = ["Bengaluru", "Mumbai", "Pune", "Hyderabad", "Delhi NCR", "Chennai", "Kolkata",
           "Ahmedabad", "Nashik", "Remote", "Other"]
-ROLES = ["Cloud", "DevOps", "Backend", "Frontend", "Full-stack", "QA & Automation",
-         "Data", "ML & AI", "Mobile", "Support", "Other"]
+ROLES = ["Cloud", "DevOps", "Backend", "Frontend", "Full-stack", "QA & Automation", "Data", "ML & AI",
+         "Mobile", "Security", "Support", "Design", "Sales & Marketing", "Operations & HR", "Other"]
+ROLE_MAP = [("DevOps", r"devops|\bsre\b|site reliab|platform eng"), ("Cloud", r"cloud|\baws\b|azure|\bgcp\b"),
+    ("Security", r"security|cyber|soc analyst"), ("QA & Automation", r"\bqa\b|\btest(ing|er)?\b|sdet|automation"),
+    ("ML & AI", r"machine learning|\bml\b|\bai\b|\bnlp\b|data scien"), ("Data", r"\bdata\b|analyst|\bsql\b|\bbi\b"),
+    ("Mobile", r"android|\bios\b|mobile|flutter"), ("Full-stack", r"full.?stack"),
+    ("Frontend", r"front.?end|react|angular|javascript|\bui\b"),
+    ("Backend", r"back.?end|java\b|python|django|node|\.net|software|developer|programmer|engineer"),
+    ("Support", r"support|service desk|help ?desk|customer (care|service)"),
+    ("Design", r"design|\bux\b|graphic"), ("Sales & Marketing", r"sales|marketing|business development|\bseo\b|content"),
+    ("Operations & HR", r"\bhr\b|recruit|operations|admin|account|finance|executive")]
 INDIA = re.compile(r"india|bengal|bangal|mumbai|pune|hyderabad|delhi|gurgaon|gurugram|noida|"
                    r"chennai|kolkata|ahmedabad|nashik|jaipur|kochi|indore|remote", re.I)
 FRESHER = re.compile(r"fresher|graduate|intern\b|internship|entry[- ]level|trainee|junior|"
@@ -27,10 +36,22 @@ def get(url, **kw):
     return r
 
 
-def job(title, company, loc, url, desc, posted, source):
-    return {"title": title.strip(), "company": company.strip(), "location_raw": (loc or "").strip(),
-            "url": url, "description": re.sub(r"<[^>]+>|\s+", " ", desc or "").strip()[:1500],
-            "posted": (posted or "")[:10], "source": source}
+def clean(t):
+    t = html.unescape(re.sub(r"<[^>]+>", " ", html.unescape(t or "")))
+    return re.sub(r"\s+", " ", t).strip()
+
+def job(title, company, loc, url, desc, posted, source, **extra):
+    d = {"title": title.strip(), "company": company.strip(), "location_raw": (loc or "").strip(),
+         "url": url, "description": clean(desc)[:3000], "posted": (posted or "")[:10], "source": source}
+    d.update({k: v for k, v in extra.items() if v})
+    return d
+
+def salary(j):
+    lo, hi = j.get("salary_min"), j.get("salary_max")
+    if not lo and not hi: return ""
+    f = lambda v: f"Rs {v:,.0f}"
+    txt = f(lo or hi) if (not lo or not hi or lo == hi) else f"{f(lo)} to {f(hi)}"
+    return txt + " a year" + (" (estimated)" if str(j.get("salary_is_predicted")) == "1" else "")
 
 
 # ---- sources -------------------------------------------------------------
@@ -41,7 +62,8 @@ def greenhouse(slug):
 def lever(slug):
     for j in get(f"https://api.lever.co/v0/postings/{slug}?mode=json").json():
         ts = datetime.fromtimestamp(j["createdAt"] / 1000, timezone.utc).isoformat() if j.get("createdAt") else ""
-        yield job(j["text"], slug, j["categories"].get("location"), j["hostedUrl"], j.get("descriptionPlain"), ts, "Lever")
+        yield job(j["text"], slug, j["categories"].get("location"), j["hostedUrl"], j.get("descriptionPlain"), ts, "Lever",
+                  type=j["categories"].get("commitment"), category=j["categories"].get("team"))
 
 def ashby(slug):
     for j in get(f"https://api.ashbyhq.com/posting-api/job-board/{slug}").json()["jobs"]:
@@ -56,7 +78,8 @@ def adzuna():
                 "app_id": i, "app_key": k, "results_per_page": 50, "what": q, "max_days_old": 30})
             for j in r.json().get("results", []):
                 yield job(j["title"], j["company"]["display_name"], j["location"]["display_name"],
-                          j["redirect_url"], j["description"], j.get("created"), "Adzuna")
+                          j["redirect_url"], j["description"], j.get("created"), "Adzuna", salary=salary(j),
+                          type=(j.get("contract_time") or "").replace("_", " "), category=(j.get("category") or {}).get("label"))
 
 def jooble():
     key = os.getenv("JOOBLE_KEY")
@@ -65,7 +88,7 @@ def jooble():
         r = requests.post(f"https://jooble.org/api/{key}", json={"keywords": q, "location": "India"}, timeout=25)
         for j in r.json().get("jobs", []):
             yield job(j["title"], j.get("company") or "Unknown", j.get("location"), j["link"],
-                      j.get("snippet"), j.get("updated"), "Jooble")
+                      j.get("snippet"), j.get("updated"), "Jooble", salary=j.get("salary"), type=j.get("type"))
 
 def jsonld(url):
     """Career pages that publish schema.org JobPosting data; robots.txt is honoured."""
@@ -98,16 +121,16 @@ def dedupe(jobs):
     return out
 
 def keyword_tag(j):
-    t, loc = j["title"].lower(), j["location_raw"].lower()
-    role = next((r for r, w in [("DevOps", "devops|sre|site reliab"), ("Cloud", "cloud|aws|azure|gcp"),
-        ("QA & Automation", "qa|test|sdet"), ("ML & AI", "machine|ml |ai |nlp"), ("Data", "data|analyst"),
-        ("Mobile", "android|ios|mobile"), ("Full-stack", "full.?stack"), ("Frontend", "front|react|ui"),
-        ("Backend", "backend|java|python|django|node|software|developer|engineer"),
-        ("Support", "support|service desk")] if re.search(w, t)), "Other")
+    pick = lambda text: next((r for r, w in ROLE_MAP if re.search(w, text)), None)
+    role = pick(j["title"].lower()) or pick(j["description"][:300].lower()) or "Other"
+    loc = j["location_raw"].lower()
     city = "Remote" if "remote" in loc else next((c for c, w in [("Bengaluru", "bengal|bangal"),
-        ("Delhi NCR", "delhi|gurgaon|gurugram|noida"), ("Mumbai", "mumbai|navi"), ("Pune", "pune"),
-        ("Hyderabad", "hyderabad"), ("Chennai", "chennai"), ("Kolkata", "kolkata"),
-        ("Ahmedabad", "ahmedabad"), ("Nashik", "nashik")] if re.search(w, loc)), "Other")
+        ("Delhi NCR", "delhi|gurgaon|gurugram|noida|ghaziabad|faridabad"), ("Mumbai", "mumbai|thane"),
+        ("Pune", "pune|pimpri"), ("Hyderabad", "hyderabad|secunderabad"), ("Chennai", "chennai"),
+        ("Kolkata", "kolkata"), ("Ahmedabad", "ahmedabad"), ("Nashik", "nashik")] if re.search(w, loc)), None)
+    if not city:
+        first = j["location_raw"].split(",")[0].strip().title()
+        city = first if first and first.lower() != "india" and len(first) <= 25 else "Other"
     return {"role": role, "city": city}
 
 def llm_tag(jobs, cache):
@@ -118,8 +141,8 @@ def llm_tag(jobs, cache):
         client = anthropic.Anthropic(api_key=key)
         for i in range(0, len(todo), 20):
             batch = todo[i:i + 20]
-            prompt = (f"Tag each job. role must be one of {ROLES}. city must be one of {CITIES} "
-                      "(use Remote if remote, Other if unlisted). Reply with ONLY a JSON object mapping "
+            prompt = (f"Tag each job. role must be one of {ROLES}. city is the main Indian city in English, for example Pune "
+                      "(Remote if remote, Other if no city is named). Reply with ONLY a JSON object mapping "
                       'id to {"role":..., "city":...}.\n' + json.dumps(
                           [{"id": j["id"], "title": j["title"], "location": j["location_raw"],
                             "text": j["description"][:300]} for j in batch]))
