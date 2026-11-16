@@ -49,7 +49,7 @@ def ashby(slug):
 
 def adzuna():
     i, k = os.getenv("ADZUNA_APP_ID"), os.getenv("ADZUNA_APP_KEY")
-    if not (i and k): return
+    if not (i and k): print("Adzuna keys missing"); return
     for q in ["fresher", "intern", "graduate engineer", "junior devops", "junior cloud", "qa automation fresher"]:
         for p in (1, 2, 3):
             r = get(f"https://api.adzuna.com/v1/api/jobs/in/search/{p}", params={
@@ -60,7 +60,7 @@ def adzuna():
 
 def jooble():
     key = os.getenv("JOOBLE_KEY")
-    if not key: return
+    if not key: print("Jooble key missing"); return
     for q in ["fresher", "intern", "graduate trainee", "junior developer"]:
         r = requests.post(f"https://jooble.org/api/{key}", json={"keywords": q, "location": "India"}, timeout=25)
         for j in r.json().get("jobs", []):
@@ -152,7 +152,7 @@ def main():
     keep = dedupe(keep)
     cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
     cache = llm_tag(keep, cache); json.dump(cache, open(CACHE, "w"))
-    old = {j["id"]: j for j in json.load(open(OUT)).get("jobs", [])} if os.path.exists(OUT) else {}
+    old = {j["id"]: j for j in json.load(open(OUT)).get("jobs", []) if j.get("last_seen")} if os.path.exists(OUT) else {}
     today = NOW.strftime("%Y-%m-%d")
     for j in keep:
         j.update(cache[j["id"]]); j["first_seen"] = old.get(j["id"], {}).get("first_seen", today); j["last_seen"] = today
