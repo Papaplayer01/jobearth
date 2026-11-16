@@ -50,9 +50,10 @@ main{max-width:1200px;margin:auto;padding:1.5rem 1.5rem 5rem}
 .empty{grid-column:1/-1;padding:4rem 1rem;text-align:center;color:var(--mist)}
 #drawer{position:fixed;inset:0;z-index:20;pointer-events:none}
 #drawer .veil{position:absolute;inset:0;background:#02131880;backdrop-filter:blur(0);opacity:0;transition:opacity .5s var(--ease),backdrop-filter .5s}
-#drawer .sheet{position:absolute;right:0;top:0;height:100%;width:min(520px,100%);background:var(--sea);border-left:1px solid var(--line);padding:2rem;overflow:auto;transform:translateX(104%);transition:transform .65s var(--ease)}
-#drawer.open{pointer-events:auto}.open .veil{opacity:1;backdrop-filter:blur(6px)}.open .sheet{transform:none}
-.sheet h2{font-size:2rem;line-height:1.05;letter-spacing:-.02em;margin:1rem 0 .4rem}
+#drawer .sheet{position:absolute;left:50%;top:50%;width:min(460px,92vw);max-height:84vh;background:var(--sea);border:1px solid var(--line);border-radius:26px;padding:1.5rem;overflow:auto;opacity:0;transform:translate(-50%,-46%) scale(.94);transition:transform .55s var(--ease),opacity .35s;box-shadow:0 30px 80px #0009}
+.kvs{display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1rem;margin:1rem 0}.kv span{display:block;font-size:.72rem;color:var(--mist);text-transform:uppercase;letter-spacing:.07em}.kv b{font-weight:600;overflow-wrap:anywhere}
+#drawer.open{pointer-events:auto}.open .veil{opacity:1;backdrop-filter:blur(6px)}.open .sheet{opacity:1;transform:translate(-50%,-50%)}
+.sheet h2{font-size:1.5rem;line-height:1.05;letter-spacing:-.02em;margin:1rem 0 .4rem}
 .sheet p{color:var(--mist);margin:1rem 0;max-width:60ch}
 .btn{display:inline-block;background:var(--moss);color:var(--deep);font-weight:700;border:0;border-radius:999px;padding:.8rem 1.5rem;text-decoration:none;cursor:pointer;font:inherit;font-weight:700;transition:transform .35s var(--ease),box-shadow .35s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px #8fd98b40}
@@ -138,12 +139,14 @@ $("#list").addEventListener("pointermove",e=>{const c=e.target.closest(".card");
 
 // detail drawer
 let lastFocus;
+const kv=(k,v)=>v?`<div class="kv"><span>${k}</span><b>${esc(v)}</b></div>`:"";
 function openJob(e){const ap=e.target.closest(".apply");if(ap){applied.has(ap.closest(".card").dataset.id)||flip(applied,"jb_applied",ap.closest(".card").dataset.id);ap.textContent="Applied ✓";return}
   const sv=e.target.closest("[data-a=save]");if(sv){const id=sv.closest(".card").dataset.id;flip(saved,"jb_saved",id);sv.textContent=saved.has(id)?"★ Saved":"☆ Save";return}
   const c=e.target.closest(".card");if(!c)return;const j=JOBS.find(x=>x.id==c.dataset.id);if(!j)return;lastFocus=c;try{
-  $("#sheet").innerHTML=`<button class="btn ghost" id="x">Close</button><h2>${esc(j.title)}</h2><div class="co" style="color:var(--mist)">${esc(j.company)} in ${esc(j.location_raw||j.city)}</div>
-  <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">Posted ${esc(j.posted||j.first_seen)}</span>${j.type?`<span class="tag">${esc(j.type)}</span>`:""}${j.category?`<span class="tag">${esc(j.category)}</span>`:""}</div>
-  ${j.salary?`<p><b>Salary:</b> ${esc(j.salary)}</p>`:""}<p>${j.description?esc(j.description.slice(0,1500))+(j.description.length>1500?"...":""):"The source gave no description. Open the original post for the full details."}</p><div class="row"><button class="btn ghost" id="sv">${saved.has(j.id)?"★ Saved":"☆ Save"}</button><button class="btn ghost" id="ap">${applied.has(j.id)?"Applied ✓":"Mark applied"}</button><button class="btn ghost" id="cp">Copy link</button></div><a class="btn" id="go" href="${esc(j.url)}" target="_blank" rel="noopener">Apply on ${esc(j.source)}</a>`;
+  $("#sheet").innerHTML=`<button class="btn ghost" id="x">Close</button><h2>${esc(j.title)}</h2>
+  <div class="kvs">${kv("Company",j.company)}${kv("Location",j.location_raw||j.city)}${kv("Role",j.role)}${kv("City",j.city)}${kv("Type",j.type)}${kv("Salary",j.salary)}${kv("Posted",j.posted||j.first_seen)}${kv("Source",j.source)}</div>
+  <p>${j.description?esc(j.description.slice(0,300))+(j.description.length>300?"...":""):"No description from the source. Use Apply to read the full post."}</p>
+  <div class="row"><button class="btn ghost" id="sv">${saved.has(j.id)?"★ Saved":"☆ Save"}</button><button class="btn ghost" id="ap">${applied.has(j.id)?"Applied ✓":"Mark applied"}</button><button class="btn ghost" id="cp">Copy link</button></div><a class="btn" id="go" href="${esc(j.url)}" target="_blank" rel="noopener">Apply on ${esc(j.source)}</a>`;
   $("#sv").onclick=()=>{flip(saved,"jb_saved",j.id);$("#sv").textContent=saved.has(j.id)?"★ Saved":"☆ Save";draw()};
   $("#ap").onclick=()=>{flip(applied,"jb_applied",j.id);$("#ap").textContent=applied.has(j.id)?"Applied ✓":"Mark applied";draw()};
   $("#go").onclick=()=>{applied.has(j.id)||flip(applied,"jb_applied",j.id);draw()};
