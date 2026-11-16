@@ -44,6 +44,9 @@ main{max-width:1200px;margin:auto;padding:1.5rem 1.5rem 5rem}
 .tag{font-size:.82rem;padding:.2rem .65rem;border-radius:999px;background:#ffffff14}
 .tag.role{background:var(--sun);color:#3a2a00;font-weight:600}
 .apply{margin-left:auto;font-weight:700;color:var(--deep);background:var(--moss);border-radius:999px;padding:.2rem .8rem;text-decoration:none;font-size:.85rem;transition:transform .3s var(--ease)}.apply:hover{transform:translateY(-2px)}
+.acts{display:flex;gap:.5rem;align-items:center;position:relative;padding-top:.7rem}.acts .apply{margin-left:auto}
+.act{font:inherit;font-size:.85rem;color:var(--sand);background:#ffffff14;border:1px solid var(--line);border-radius:999px;padding:.2rem .8rem;cursor:pointer;transition:background .3s,transform .3s var(--ease)}.act:hover{background:#ffffff26;transform:translateY(-2px)}
+.tag.new{background:var(--moss);color:var(--deep);font-weight:600}.row{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}
 .empty{grid-column:1/-1;padding:4rem 1rem;text-align:center;color:var(--mist)}
 #drawer{position:fixed;inset:0;z-index:20;pointer-events:none}
 #drawer .veil{position:absolute;inset:0;background:#02131880;backdrop-filter:blur(0);opacity:0;transition:opacity .5s var(--ease),backdrop-filter .5s}
@@ -75,6 +78,7 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
   <div class="search"><input id="q" type="search" placeholder="Search title, company or skill" aria-label="Search jobs" autocomplete="off"></div>
   <select id="city" aria-label="City"></select>
   <select id="sort" aria-label="Sort"><option value="new">Newest first</option><option value="co">Company A to Z</option></select>
+  <button class="chip" id="savedBtn" aria-pressed="false">★ Saved <span id="sc">0</span></button>
   <div class="chips" id="chips" role="group" aria-label="Role"></div>
 </div></div>
 
@@ -83,13 +87,17 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
 <div id="drawer" aria-hidden="true"><div class="veil"></div>
   <aside class="sheet" role="dialog" aria-modal="true" aria-label="Job details"><div id="sheet"></div></aside></div>
 
-<footer>Jobs by <a href="https://www.adzuna.in" target="_blank" rel="noopener">Adzuna</a>. JoBearth reads only public job boards and APIs that allow it. Always check the original post before applying.</footer>
+<footer>Jobs by <a href="https://www.adzuna.in" target="_blank" rel="noopener">Adzuna</a>. JoBearth reads only public job boards and APIs that allow it. Always check the original post before applying.<br>Contact: <a href="mailto:jobearthh@gmail.com">jobearthh@gmail.com</a></footer>
 
 <script>
 const $=s=>document.querySelector(s), reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const PINS={Bengaluru:[12.97,77.59],Mumbai:[19.07,72.88],Pune:[18.52,73.86],Hyderabad:[17.38,78.48],"Delhi NCR":[28.61,77.2],Chennai:[13.08,80.27],Kolkata:[22.57,88.36],Ahmedabad:[23.02,72.57],Nashik:[19.99,73.79]};
-let JOBS=[],state={q:"",city:"All",role:"All",sort:"new"};
+let JOBS=[],state={q:"",city:"All",role:"All",sort:"new",only:false};
+const ls={get(k){try{return new Set(JSON.parse(localStorage.getItem(k)||"[]"))}catch(e){return new Set()}},put(k,v){try{localStorage.setItem(k,JSON.stringify([...v]))}catch(e){}}};
+let saved=ls.get("jb_saved"),applied=ls.get("jb_applied");
+const flip=(set,key,id)=>{set.has(id)?set.delete(id):set.add(id);ls.put(key,set);$("#sc").textContent=saved.size};
+const isNew=j=>j.first_seen&&(Date.now()-new Date(j.first_seen))/864e5<2;
 
 // headline: one staggered entrance
 "JoBearth".split("").forEach((ch,i)=>{const s=document.createElement("span");s.textContent=ch;s.style.setProperty("--i",i);$("#title").append(s)});
@@ -107,13 +115,13 @@ fetch("jobs.json").then(r=>r.json()).then(d=>{
 }).catch(()=>{$("#list").innerHTML='<div class="empty">Could not load jobs.json. Serve this folder over http, for example with python -m http.server.</div>'});
 
 function filtered(){const q=state.q.toLowerCase();
-  let r=JOBS.filter(j=>(state.city=="All"||j.city==state.city)&&(state.role=="All"||j.role==state.role)&&(!q||(j.title+j.company+j.description).toLowerCase().includes(q)));
+  let r=JOBS.filter(j=>(state.city=="All"||j.city==state.city)&&(state.role=="All"||j.role==state.role)&&(!state.only||saved.has(j.id))&&(!q||(j.title+j.company+j.description).toLowerCase().includes(q)));
   return r.sort(state.sort=="co"?(a,b)=>a.company.localeCompare(b.company):(a,b)=>(b.first_seen||"").localeCompare(a.first_seen||""))}
 
 function draw(){const r=filtered();
   $("#list").innerHTML=r.length?r.map((j,i)=>`<div class="card" role="button" tabindex="0" data-id="${esc(j.id)}" ${i<24?`style="view-transition-name:c${i}"`:""}>
     <h3>${esc(j.title)}</h3><span class="co">${esc(j.company)} in ${esc(j.location_raw||j.city)}</span>
-    <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">${esc(j.source)}</span><a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">Apply</a></div></div>`).join(""):
+    <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">${esc(j.source)}</span>${isNew(j)?'<span class="tag new">New</span>':""}</div><div class="acts"><button class="act" data-a="save" aria-pressed="${saved.has(j.id)}">${saved.has(j.id)?"★ Saved":"☆ Save"}</button><button class="act" data-a="det">Details</button><a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">${applied.has(j.id)?"Applied ✓":"Apply"}</a></div></div>`).join(""):
     `<div class="empty">No posts match. Clear the search or pick another role.</div>`;
   if(!$("#meta").textContent.startsWith("Showing sample"))$("#meta").textContent=`${r.length} of ${JOBS.length} posts`}
 
@@ -121,6 +129,8 @@ function render(animate=true){(animate&&document.startViewTransition&&!reduce&&f
 
 $("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
 $("#city").addEventListener("change",e=>{state.city=e.target.value;render()});
+$("#savedBtn").addEventListener("click",e=>{state.only=!state.only;e.currentTarget.setAttribute("aria-pressed",state.only);render()});
+$("#sc").textContent=saved.size;
 $("#sort").addEventListener("change",e=>{state.sort=e.target.value;render()});
 $("#chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;state.role=b.dataset.r;
   document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));render()});
@@ -128,10 +138,16 @@ $("#list").addEventListener("pointermove",e=>{const c=e.target.closest(".card");
 
 // detail drawer
 let lastFocus;
-function openJob(e){if(e.target.closest(".apply"))return;const c=e.target.closest(".card");if(!c)return;const j=JOBS.find(x=>x.id==c.dataset.id);if(!j)return;lastFocus=c;try{
+function openJob(e){const ap=e.target.closest(".apply");if(ap){applied.has(ap.closest(".card").dataset.id)||flip(applied,"jb_applied",ap.closest(".card").dataset.id);ap.textContent="Applied ✓";return}
+  const sv=e.target.closest("[data-a=save]");if(sv){const id=sv.closest(".card").dataset.id;flip(saved,"jb_saved",id);sv.textContent=saved.has(id)?"★ Saved":"☆ Save";return}
+  const c=e.target.closest(".card");if(!c)return;const j=JOBS.find(x=>x.id==c.dataset.id);if(!j)return;lastFocus=c;try{
   $("#sheet").innerHTML=`<button class="btn ghost" id="x">Close</button><h2>${esc(j.title)}</h2><div class="co" style="color:var(--mist)">${esc(j.company)} in ${esc(j.location_raw||j.city)}</div>
   <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">Posted ${esc(j.posted||j.first_seen)}</span></div>
-  <p>${esc(j.description.slice(0,700))}${j.description.length>700?"...":""}</p><a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Apply on ${esc(j.source)}</a>`;
+  <p>${esc(j.description.slice(0,700))}${j.description.length>700?"...":""}</p><div class="row"><button class="btn ghost" id="sv">${saved.has(j.id)?"★ Saved":"☆ Save"}</button><button class="btn ghost" id="ap">${applied.has(j.id)?"Applied ✓":"Mark applied"}</button><button class="btn ghost" id="cp">Copy link</button></div><a class="btn" id="go" href="${esc(j.url)}" target="_blank" rel="noopener">Apply on ${esc(j.source)}</a>`;
+  $("#sv").onclick=()=>{flip(saved,"jb_saved",j.id);$("#sv").textContent=saved.has(j.id)?"★ Saved":"☆ Save";draw()};
+  $("#ap").onclick=()=>{flip(applied,"jb_applied",j.id);$("#ap").textContent=applied.has(j.id)?"Applied ✓":"Mark applied";draw()};
+  $("#go").onclick=()=>{applied.has(j.id)||flip(applied,"jb_applied",j.id);draw()};
+  $("#cp").onclick=async()=>{try{await navigator.clipboard.writeText(j.url);$("#cp").textContent="Copied"}catch(err){$("#cp").textContent="Copy failed"}};
   $("#drawer").classList.add("open");$("#drawer").setAttribute("aria-hidden","false");$("#x").focus()}catch(err){console.error(err);window.open(j.url,"_blank","noopener")}}
 $("#list").addEventListener("click",openJob);
 $("#list").addEventListener("keydown",e=>{if((e.key=="Enter"||e.key==" ")&&e.target.matches(".card")){e.preventDefault();openJob(e)}});
