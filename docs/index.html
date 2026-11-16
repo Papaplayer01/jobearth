@@ -36,13 +36,14 @@ main{max-width:1200px;margin:auto;padding:1.5rem 1.5rem 5rem}
 #meta{color:var(--mist);margin-bottom:1rem;min-height:1.5em}
 #list{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1rem}
 .card{position:relative;text-align:left;font:inherit;color:inherit;background:linear-gradient(160deg,#0f4650,#0a2f37);border:1px solid var(--line);border-radius:22px;padding:1.3rem;cursor:pointer;display:flex;flex-direction:column;gap:.5rem;overflow:hidden;transition:transform .5s var(--ease),border-color .4s;--mx:50%;--my:0%}
-.card::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),#8fd98b24,transparent 70%);opacity:0;transition:opacity .4s}
+.card::before{pointer-events:none;content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),#8fd98b24,transparent 70%);opacity:0;transition:opacity .4s}
 .card:hover{transform:translateY(-5px);border-color:#8fd98b66}.card:hover::before{opacity:1}
 .card h3{font-size:1.2rem;line-height:1.2;font-weight:650;position:relative}
 .card .co{color:var(--mist);position:relative}
 .tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:auto;padding-top:.6rem;position:relative}
 .tag{font-size:.82rem;padding:.2rem .65rem;border-radius:999px;background:#ffffff14}
 .tag.role{background:var(--sun);color:#3a2a00;font-weight:600}
+.apply{margin-left:auto;font-weight:700;color:var(--deep);background:var(--moss);border-radius:999px;padding:.2rem .8rem;text-decoration:none;font-size:.85rem;transition:transform .3s var(--ease)}.apply:hover{transform:translateY(-2px)}
 .empty{grid-column:1/-1;padding:4rem 1rem;text-align:center;color:var(--mist)}
 #drawer{position:fixed;inset:0;z-index:20;pointer-events:none}
 #drawer .veil{position:absolute;inset:0;background:#02131880;backdrop-filter:blur(0);opacity:0;transition:opacity .5s var(--ease),backdrop-filter .5s}
@@ -110,13 +111,13 @@ function filtered(){const q=state.q.toLowerCase();
   return r.sort(state.sort=="co"?(a,b)=>a.company.localeCompare(b.company):(a,b)=>(b.first_seen||"").localeCompare(a.first_seen||""))}
 
 function draw(){const r=filtered();
-  $("#list").innerHTML=r.length?r.map((j,i)=>`<button class="card" data-id="${esc(j.id)}" style="view-transition-name:c${i<60?i:"x"+i}">
+  $("#list").innerHTML=r.length?r.map((j,i)=>`<div class="card" role="button" tabindex="0" data-id="${esc(j.id)}" ${i<24?`style="view-transition-name:c${i}"`:""}>
     <h3>${esc(j.title)}</h3><span class="co">${esc(j.company)} in ${esc(j.location_raw||j.city)}</span>
-    <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">${esc(j.source)}</span></div></button>`).join(""):
+    <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">${esc(j.source)}</span><a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">Apply</a></div></div>`).join(""):
     `<div class="empty">No posts match. Clear the search or pick another role.</div>`;
   if(!$("#meta").textContent.startsWith("Showing sample"))$("#meta").textContent=`${r.length} of ${JOBS.length} posts`}
 
-function render(animate=true){(animate&&document.startViewTransition&&!reduce)?document.startViewTransition(draw):draw()}
+function render(animate=true){(animate&&document.startViewTransition&&!reduce&&filtered().length<=60)?document.startViewTransition(draw):draw()}
 
 $("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
 $("#city").addEventListener("change",e=>{state.city=e.target.value;render()});
@@ -127,11 +128,13 @@ $("#list").addEventListener("pointermove",e=>{const c=e.target.closest(".card");
 
 // detail drawer
 let lastFocus;
-$("#list").addEventListener("click",e=>{const c=e.target.closest(".card");if(!c)return;const j=JOBS.find(x=>x.id==c.dataset.id);lastFocus=c;
+function openJob(e){if(e.target.closest(".apply"))return;const c=e.target.closest(".card");if(!c)return;const j=JOBS.find(x=>x.id==c.dataset.id);if(!j)return;lastFocus=c;try{
   $("#sheet").innerHTML=`<button class="btn ghost" id="x">Close</button><h2>${esc(j.title)}</h2><div class="co" style="color:var(--mist)">${esc(j.company)} in ${esc(j.location_raw||j.city)}</div>
   <div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span><span class="tag">Posted ${esc(j.posted||j.first_seen)}</span></div>
   <p>${esc(j.description.slice(0,700))}${j.description.length>700?"...":""}</p><a class="btn" href="${esc(j.url)}" target="_blank" rel="noopener">Apply on ${esc(j.source)}</a>`;
-  $("#drawer").classList.add("open");$("#drawer").setAttribute("aria-hidden","false");$("#x").focus()});
+  $("#drawer").classList.add("open");$("#drawer").setAttribute("aria-hidden","false");$("#x").focus()}catch(err){console.error(err);window.open(j.url,"_blank","noopener")}}
+$("#list").addEventListener("click",openJob);
+$("#list").addEventListener("keydown",e=>{if((e.key=="Enter"||e.key==" ")&&e.target.matches(".card")){e.preventDefault();openJob(e)}});
 const close=()=>{$("#drawer").classList.remove("open");$("#drawer").setAttribute("aria-hidden","true");lastFocus&&lastFocus.focus()};
 $("#drawer").addEventListener("click",e=>{if(e.target.matches(".veil,#x"))close()});
 addEventListener("keydown",e=>{if(e.key=="Escape")close()});
