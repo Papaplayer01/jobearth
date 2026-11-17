@@ -116,7 +116,7 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
 <main><div id="meta" aria-live="polite"></div>
   <div id="list"><div class="card sk"></div><div class="card sk"></div><div class="card sk"></div><div class="card sk"></div><div class="card sk"></div><div class="card sk"></div></div></main>
 <div id="toast" role="status"></div>
-<footer>Jobs by <a href="https://www.adzuna.in" target="_blank" rel="noopener">Adzuna</a>. JoBearth reads only public job boards and APIs that allow it. Always check the original post before applying.<br>Contact: <a href="mailto:jobearthh@gmail.com">jobearthh@gmail.com</a> · <a href="feed.xml">RSS feed</a></footer>
+<footer>Jobs by <a href="https://www.adzuna.in" target="_blank" rel="noopener">Adzuna</a>, <a href="https://remotive.com" target="_blank" rel="noopener">Remotive</a>, <a href="https://remoteok.com" target="_blank" rel="noopener">RemoteOK</a> and company career boards. JoBearth reads only public job boards and APIs that allow it. Always check the original post before applying.<br>Contact: <a href="mailto:jobearthh@gmail.com">jobearthh@gmail.com</a> · <a href="feed.xml">RSS feed</a> · <a href="jobs/">Browse by role and city</a></footer>
 
 <script>
 const $=s=>document.querySelector(s),reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
@@ -157,6 +157,9 @@ fetch("jobs.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.json()).then(d=>{
   countUp($("#n"),JOBS.length);countUp($("#c"),cities.filter(c=>c!="Other").length);
   $("#d").textContent=new Date(d.updated).toLocaleDateString("en-IN",{day:"numeric",month:"short"});
   pins=cities.filter(c=>PINS[c]).map(c=>({c,p:PINS[c],n:JOBS.filter(j=>j.city==c).length}));
+  const hp=new URLSearchParams(location.hash.slice(1)),hr=hp.get("role"),hc=hp.get("city");
+  if(hr&&roles.includes(hr)){state.role=hr;document.querySelectorAll("#chips .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.r==hr))}
+  if(hc&&cities.includes(hc)){state.city=hc;$("#city").value=hc}
   initSkills();draw(false);if(d.sample)$("#meta").textContent="Showing sample posts. The daily run will replace them with real ones.";
 }).catch(()=>{$("#list").innerHTML='<div class="empty">Could not load jobs.json. Serve this folder over http, for example with python -m http.server.</div>'});
 
@@ -243,6 +246,9 @@ function frame(now){if(!live||document.hidden){running=false;return}running=true
 new IntersectionObserver(([e])=>{live=e.isIntersecting;if(live&&!running)requestAnimationFrame(frame)}).observe(cv);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden&&live&&!running)requestAnimationFrame(frame)});
 requestAnimationFrame(frame);
+// visitor counter (no cookies): sign up free at goatcounter.com, then put your site code here, for example "jobearth"
+const GOATCOUNTER="";
+if(GOATCOUNTER){const g=document.createElement("script");g.async=true;g.dataset.goatcounter=`https://${GOATCOUNTER}.goatcounter.com/count`;g.src="https://gc.zgo.at/count.js";document.head.append(g)}
 </script>
 </body>
 </html>

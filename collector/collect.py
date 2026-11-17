@@ -97,6 +97,26 @@ def jooble():
             yield job(j["title"], j.get("company") or "Unknown", j.get("location"), j["link"],
                       j.get("snippet"), j.get("updated"), "Jooble", salary=j.get("salary"), type=j.get("type"))
 
+REMOTE_OK = re.compile(r"india|worldwide|anywhere|apac|asia|global|^$", re.I)
+
+def remotive():
+    """Remotive's public API; their terms ask for a visible credit and a link back, which the site footer gives."""
+    for j in get("https://remotive.com/api/remote-jobs").json().get("jobs", []):
+        loc = j.get("candidate_required_location") or ""
+        if REMOTE_OK.search(loc):
+            yield job(j["title"], j["company_name"], "Remote, " + (loc or "Worldwide"), j["url"], j.get("description"),
+                      j.get("publication_date"), "Remotive", type=(j.get("job_type") or "").replace("_", " "),
+                      category=j.get("category"), salary=j.get("salary"))
+
+def remoteok():
+    """RemoteOK's public API; credit and link back are required, which the site footer gives."""
+    for j in get("https://remoteok.com/api").json()[1:]:
+        loc = j.get("location") or ""
+        if REMOTE_OK.search(loc):
+            lo, hi = j.get("salary_min"), j.get("salary_max")
+            yield job(j["position"], j["company"], "Remote, " + (loc or "Worldwide"), j["url"], j.get("description"),
+                      j.get("date"), "RemoteOK", salary=f"${lo:,} to ${hi:,} a year (USD)" if lo and hi else "")
+
 def jsonld(url):
     """Career pages that publish schema.org JobPosting data; robots.txt is honoured."""
     p = urlparse(url); r = rp.RobotFileParser(f"{p.scheme}://{p.netloc}/robots.txt"); r.read()
@@ -174,7 +194,7 @@ def main():
     raw = []
     runners = [(greenhouse, s) for s in cfg["greenhouse"]] + [(lever, s) for s in cfg["lever"]] + \
               [(ashby, s) for s in cfg["ashby"]] + [(jsonld, u) for u in cfg["career_pages"]] + \
-              [(adzuna, None), (jooble, None)]
+              [(adzuna, None), (jooble, None), (remotive, None), (remoteok, None)]
     for fn, arg in runners:
         try:
             got = list(fn(arg) if arg else fn()); raw += got; print(f"{fn.__name__} {arg or ''}: {len(got)}")

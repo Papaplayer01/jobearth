@@ -1,0 +1,22 @@
+name: Find working job boards
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python collector/check_sources.py
+      - name: Commit sources
+        run: |
+          git config user.name "jobearth-bot"; git config user.email "bot@users.noreply.github.com"
+          git add collector/sources.json
+          git diff --cached --quiet || (git commit -m "Update working job boards" && git pull --rebase -X theirs && git push)
