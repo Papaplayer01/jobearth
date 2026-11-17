@@ -71,6 +71,13 @@ main{max-width:1200px;margin:auto;padding:1.5rem 1.5rem 5rem}
 @keyframes pop{40%{transform:scale(1.18)}}
 .apply{margin-left:auto;font-weight:700;font-size:.85rem;color:var(--on-moss);background:var(--moss);border-radius:999px;padding:.25rem .9rem;text-decoration:none;transition:transform .3s var(--ease),box-shadow .3s}
 .apply:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--glow)}
+.skills{width:100%;display:flex;flex-wrap:wrap;gap:.45rem;align-items:center}
+.skills input{flex:1 1 260px}
+.sk-chip{background:var(--moss);color:var(--on-moss);border-color:var(--moss);font-weight:600;animation:pop .45s var(--ease)}
+.sk-chip:hover{border-color:var(--moss)}
+.sugs{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;width:100%;font-size:.85rem;color:var(--mist)}
+.sug{font-size:.82rem;padding:.2rem .7rem}.sug small{opacity:.7;margin-left:.2rem}
+.tag.hit{background:var(--moss);color:var(--on-moss);font-weight:600}
 .sk{min-height:190px;opacity:1;translate:0 0;scale:1;background:linear-gradient(100deg,var(--card) 30%,var(--tag) 50%,var(--card) 70%);background-size:220% 100%;animation:sh 1.4s linear infinite}
 @keyframes sh{to{background-position:-220% 0}}
 .empty{grid-column:1/-1;padding:4rem 1rem;text-align:center;color:var(--mist)}
@@ -97,9 +104,12 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
 <div class="bar"><div>
   <div class="search"><input id="q" type="search" placeholder="Search title, company or skill" aria-label="Search jobs" autocomplete="off"></div>
   <select id="city" aria-label="City"></select>
-  <select id="sort" aria-label="Sort"><option value="new">Newest first</option><option value="co">Company A to Z</option></select>
+  <select id="sort" aria-label="Sort"><option value="new">Newest first</option><option value="co">Company A to Z</option><option value="match">Best match (my skills)</option></select>
   <button class="chip" id="savedBtn" aria-pressed="false">★ Saved <span id="sc">0</span></button>
   <button class="chip" id="theme" aria-label="Switch theme">☀</button>
+  <div class="skills"><input id="sk" type="text" maxlength="30" placeholder="My skills: type Terraform, AWS, Java, then press Enter" aria-label="My skills" autocomplete="off">
+    <span id="skchips" style="display:contents"></span><button class="chip" id="matchBtn" aria-pressed="false" hidden>Matches only</button></div>
+  <div class="sugs" id="sugs"></div>
   <div class="chips" id="chips" role="group" aria-label="Role"></div>
 </div></div>
 
@@ -112,7 +122,7 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
 const $=s=>document.querySelector(s),reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const PINS={Bengaluru:[12.97,77.59],Mumbai:[19.07,72.88],Pune:[18.52,73.86],Hyderabad:[17.38,78.48],"Delhi NCR":[28.61,77.2],Chennai:[13.08,80.27],Kolkata:[22.57,88.36],Ahmedabad:[23.02,72.57],Nashik:[19.99,73.79]};
-let JOBS=[],pins=[],state={q:"",city:"All",role:"All",sort:"new",only:false};
+let JOBS=[],pins=[],state={q:"",city:"All",role:"All",sort:"new",only:false,match:false};
 const ls={get(k){try{return new Set(JSON.parse(localStorage.getItem(k)||"[]"))}catch(e){return new Set()}},put(k,v){try{localStorage.setItem(k,JSON.stringify([...v]))}catch(e){}}};
 let saved=ls.get("jb_saved"),applied=ls.get("jb_applied");
 const flip=(set,key,id)=>{set.has(id)?set.delete(id):set.add(id);ls.put(key,set);$("#sc").textContent=saved.size};
@@ -127,12 +137,13 @@ const card=(j,i)=>`<article class="card" data-id="${esc(j.id)}" style="--d:${i%8
 <h3><a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h3>
 <span class="co">${esc(j.company)} · ${esc(j.location_raw||j.city)}</span>
 ${j.description?`<p class="desc">${esc(j.description.slice(0,180))}</p>`:""}
-<div class="tags"><span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span>${j.type?`<span class="tag">${esc(j.type)}</span>`:""}${j.salary?`<span class="tag">${esc(j.salary)}</span>`:""}${isNew(j)?'<span class="tag new">New</span>':""}</div>
+<div class="tags">${hitTags(j)}<span class="tag role">${esc(j.role)}</span><span class="tag">${esc(j.city)}</span>${j.type?`<span class="tag">${esc(j.type)}</span>`:""}${j.salary?`<span class="tag">${esc(j.salary)}</span>`:""}${isNew(j)?'<span class="tag new">New</span>':""}</div>
 <div class="acts"><button class="act" data-a="save" aria-pressed="${saved.has(j.id)}">${saved.has(j.id)?"★ Saved":"☆ Save"}</button><a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">${applied.has(j.id)?"Applied ✓":"Apply"}</a></div></article>`;
 
 function filtered(){const q=state.q.toLowerCase();
-  const r=JOBS.filter(j=>(state.city=="All"||j.city==state.city)&&(state.role=="All"||j.role==state.role)&&(!state.only||saved.has(j.id))&&(!q||(j.title+j.company+j.description).toLowerCase().includes(q)));
-  return r.sort(state.sort=="co"?(a,b)=>a.company.localeCompare(b.company):(a,b)=>(b.first_seen||"").localeCompare(a.first_seen||""))}
+  const r=JOBS.filter(j=>(state.city=="All"||j.city==state.city)&&(state.role=="All"||j.role==state.role)&&(!state.only||saved.has(j.id))&&(!state.match||(j._hits&&j._hits.length))&&(!q||(j.title+j.company+j.description).toLowerCase().includes(q)));
+  const newest=(a,b)=>(b.first_seen||"").localeCompare(a.first_seen||"");
+  return r.sort(state.sort=="co"?(a,b)=>a.company.localeCompare(b.company):state.sort=="match"?(a,b)=>((b._score||0)-(a._score||0))||newest(a,b):newest)}
 function draw(instant){const r=filtered();
   $("#list").innerHTML=r.length?r.map(card).join(""):`<div class="empty">No posts match. Clear the search or pick another role.</div>`;
   document.querySelectorAll(".card").forEach(c=>(instant||reduce)?c.classList.add("in"):io.observe(c));
@@ -146,8 +157,41 @@ fetch("jobs.json?v="+Math.floor(Date.now()/36e5)).then(r=>r.json()).then(d=>{
   countUp($("#n"),JOBS.length);countUp($("#c"),cities.filter(c=>c!="Other").length);
   $("#d").textContent=new Date(d.updated).toLocaleDateString("en-IN",{day:"numeric",month:"short"});
   pins=cities.filter(c=>PINS[c]).map(c=>({c,p:PINS[c],n:JOBS.filter(j=>j.city==c).length}));
-  draw(false);if(d.sample)$("#meta").textContent="Showing sample posts. The daily run will replace them with real ones.";
+  initSkills();draw(false);if(d.sample)$("#meta").textContent="Showing sample posts. The daily run will replace them with real ones.";
 }).catch(()=>{$("#list").innerHTML='<div class="empty">Could not load jobs.json. Serve this folder over http, for example with python -m http.server.</div>'});
+
+// ---- My skills: rank and highlight posts that mention what you know
+const VOCAB=["python","java","javascript","typescript","sql","aws","azure","gcp","terraform","docker","kubernetes","linux","git","react","node.js","angular","django","spring","selenium","playwright","excel","power bi","tableau","c++",".net","php","android","flutter","jenkins","ansible","machine learning","html","css"];
+const ALIAS={aws:["aws","amazon web services"],gcp:["gcp","google cloud"],js:["javascript"],javascript:["javascript"],k8s:["kubernetes","k8s"],kubernetes:["kubernetes","k8s"],ml:["machine learning"],node:["node.js","nodejs","node js"],"node.js":["node.js","nodejs","node js"],nodejs:["node.js","nodejs","node js"],postgres:["postgres","postgresql"],"ci/cd":["ci/cd","cicd"]};
+let skills=ls.get("jb_skills");const rxc={};
+const rx=v=>rxc[v]||(rxc[v]=new RegExp("(^|[^a-z0-9+#])"+v.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"($|[^a-z0-9+#])"));
+const variants=k=>ALIAS[k]||[k];
+function score(j){const t=j.title.toLowerCase(),d=(j.description||"").toLowerCase();let sc=0;const hits=[];
+  for(const k of skills){const vs=variants(k);if(vs.some(v=>rx(v).test(t))){sc+=3;hits.push(k)}else if(vs.some(v=>rx(v).test(d))){sc+=1;hits.push(k)}}
+  j._score=sc;j._hits=hits}
+const hitTags=j=>{const h=j._hits||[];return h.slice(0,4).map(k=>`<span class="tag hit">✓ ${esc(k)}</span>`).join("")+(h.length>4?`<span class="tag hit">+${h.length-4}</span>`:"")};
+let vocabCount=[];
+function renderSkills(){
+  $("#skchips").innerHTML=[...skills].map(k=>`<button class="chip sk-chip" data-k="${esc(k)}" aria-label="Remove ${esc(k)}">${esc(k)} ×</button>`).join("");
+  $("#matchBtn").hidden=!skills.size;
+  const sug=vocabCount.filter(([k])=>!skills.has(k)).slice(0,8);
+  $("#sugs").innerHTML=sug.length?`<span>Popular in these posts:</span>`+sug.map(([k,n])=>`<button class="chip sug" data-s="${esc(k)}">+ ${esc(k)} <small>${n}</small></button>`).join(""):""}
+function initSkills(){
+  vocabCount=VOCAB.map(k=>[k,JOBS.filter(j=>variants(k).some(v=>rx(v).test((j.title+" "+(j.description||"")).toLowerCase()))).length]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]);
+  JOBS.forEach(score);if(skills.size&&state.sort=="new"){state.sort="match";$("#sort").value="match"}renderSkills()}
+function skillsChanged(msg){
+  ls.put("jb_skills",skills);JOBS.forEach(score);
+  if(skills.size&&state.sort=="new"){state.sort="match";$("#sort").value="match"}
+  if(!skills.size){if(state.sort=="match"){state.sort="new";$("#sort").value="new"}state.match=false;$("#matchBtn").setAttribute("aria-pressed","false")}
+  renderSkills();render();if(msg)toast(msg)}
+function addSkills(text){let n=0;for(const raw of text.split(",")){const k=raw.trim().toLowerCase();if(k&&k.length<=30&&skills.size<12&&!skills.has(k)){skills.add(k);n++}}
+  if(n)skillsChanged(n+" skill"+(n>1?"s":"")+" added")}
+$("#sk").addEventListener("keydown",e=>{if(e.key=="Enter"||e.key==","){e.preventDefault();addSkills(e.target.value);e.target.value=""}
+  else if(e.key=="Backspace"&&!e.target.value&&skills.size){skills.delete([...skills].pop());skillsChanged()}});
+$("#sk").addEventListener("blur",e=>{if(e.target.value.trim()){addSkills(e.target.value);e.target.value=""}});
+$("#skchips").addEventListener("click",e=>{const b=e.target.closest("[data-k]");if(b){skills.delete(b.dataset.k);skillsChanged()}});
+$("#sugs").addEventListener("click",e=>{const b=e.target.closest("[data-s]");if(b)addSkills(b.dataset.s)});
+$("#matchBtn").addEventListener("click",e=>{state.match=!state.match;e.currentTarget.setAttribute("aria-pressed",state.match);render()});
 
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{state.q=e.target.value;render()},120)});
 $("#city").addEventListener("change",e=>{state.city=e.target.value;render()});
