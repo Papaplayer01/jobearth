@@ -197,7 +197,24 @@ def main():
     jobs = sorted((j for j in old.values() if j["last_seen"] >= cutoff), key=lambda j: j["first_seen"], reverse=True)
     json.dump({"updated": NOW.isoformat(timespec="minutes"), "count": len(jobs), "jobs": jobs},
               open(OUT, "w"), ensure_ascii=False, indent=1)
+    write_feed(jobs)
     print("total jobs:", len(jobs))
+
+SITE = "https://papaplayer01.github.io/jobearth/"
+
+def write_feed(jobs):
+    from email.utils import format_datetime
+    from xml.sax.saxutils import escape
+    items = []
+    for j in jobs[:50]:
+        try: when = format_datetime(datetime.strptime(j["first_seen"], "%Y-%m-%d").replace(tzinfo=timezone.utc))
+        except Exception: when = format_datetime(NOW)
+        items.append(f"<item><title>{escape(j['title'])} at {escape(j['company'])} ({escape(j['city'])})</title>"
+                     f"<link>{escape(j['url'])}</link><guid isPermaLink=\"false\">{j['id']}</guid><pubDate>{when}</pubDate>"
+                     f"<category>{escape(j['role'])}</category><description>{escape(j['description'][:300])}</description></item>")
+    xml = ('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>JoBearth new jobs</title>'
+           f'<link>{SITE}</link><description>Fresher and internship posts across India</description>' + "".join(items) + "</channel></rss>")
+    open(f"{ROOT}/docs/feed.xml", "w", encoding="utf-8").write(xml)
 
 if __name__ == "__main__":
     main()

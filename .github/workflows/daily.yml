@@ -22,8 +22,12 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           JOOBLE_KEY: ${{ secrets.JOOBLE_KEY }}
+      - run: python collector/notify.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Commit results
         run: |
           git config user.name "jobearth-bot"; git config user.email "bot@users.noreply.github.com"
-          git add docs/jobs.json collector/tag_cache.json
+          git add -A docs collector
           git diff --cached --quiet || (git commit -m "Daily refresh $(date -u +%F)" && git pull --rebase -X theirs && git push)
