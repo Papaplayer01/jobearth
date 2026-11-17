@@ -1,6 +1,42 @@
 {
-  "greenhouse": ["postman", "phonepe", "razorpaysoftwareprivatelimited", "groww", "browserstack"],
-  "lever": ["cred", "meesho", "kuvera", "dream11"],
-  "ashby": ["zepto", "sarvam"],
-  "career_pages": []
+ "greenhouse": [
+  "razorpaysoftwareprivatelimited",
+  "groww",
+  "druva",
+  "stripe",
+  "databricks",
+  "mongodb",
+  "elastic",
+  "twilio",
+  "okta",
+  "zscaler",
+  "rubrik",
+  "samsara",
+  "datadog",
+  "gitlab",
+  "airbnb",
+  "coursera",
+  "hackerrank",
+  "agoda",
+  "sumologic",
+  "highradius",
+  "inmobi",
+  "turing"
+ ],
+ "lever": [
+  "cred",
+  "meesho",
+  "paytm",
+  "zeta",
+  "mindtickle"
+ ],
+ "ashby": [
+  "sarvam",
+  "openai",
+  "notion",
+  "cursor",
+  "harvey",
+  "elevenlabs"
+ ],
+ "career_pages": []
 }
