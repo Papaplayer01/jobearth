@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17T08:14+00:00",
- "count": 233,
+ "updated": "2026-11-17T17:01+00:00",
+ "count": 236,
  "jobs": [
   {
    "title": "BDE (FRESHER)",
@@ -61,6 +61,54 @@
    "category": "Graduate Jobs",
    "id": "d525f8eac5d7",
    "role": "Backend",
+   "city": "Bengaluru",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17"
+  },
+  {
+   "title": "Intern",
+   "company": "Carrier Corporation",
+   "location_raw": "Kyasaram, Hyderabad",
+   "url": "https://www.adzuna.in/details/5969243619?utm_medium=api&utm_source=80afbcb1",
+   "description": "Role: Intern Location: Hyderabad About Carrier Carrier Global Corporation, global leader in intelligent climate and energy solutions, is committed to creating innovations that bring comfort, safety and sustainability to life. Through cutting-edge advancements in climate solutions such as temperature control, air quality and transportation, we improve lives, empower critical industries and ensure safe transport of food, life-saving medicines and more. Since inventing modern air conditioning in 1…",
+   "posted": "2026-11-17",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Engineering Jobs",
+   "id": "a6b96e75b511",
+   "role": "Other",
+   "city": "Hyderabad",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17"
+  },
+  {
+   "title": "Intern",
+   "company": "Pratt & Whitney",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5954458406?utm_medium=api&utm_source=80afbcb1",
+   "description": "Date Posted: 2026-11-16&xa;&xa; Country: India&xa;&xa; Location: IN-KA-BENGALURU-NORTHGATE ~ Sy No 2/2 Venkatala Village ~ SY NO 2/2 VENKATALA VILLAGE, Yelahanka Hobli&xa;&xa; Position Role Type: Hybrid At RTX, the world's largest aerospace and defense company, 185,000 great minds are united by purpose and inspired to make a difference solving the world’s most complex problems. With our three market leading businesses, world-class operations and investments in research and development, we offer…",
+   "posted": "2026-11-05",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Engineering Jobs",
+   "id": "b4dc3c27fe28",
+   "role": "Other",
+   "city": "Other",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17"
+  },
+  {
+   "title": "HR Intern",
+   "company": "VECROS Technologies",
+   "location_raw": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5969227498?utm_medium=api&utm_source=80afbcb1",
+   "description": "HR Intern Location: HSR Layout, Bengaluru Experience: 0–1 year Type: Internship (Full-time, Onsite) Who We Are VECROS Technologies is a drone company building AI-driven autonomous drones for warehouses, construction, and defence. We are a fast-moving deep-tech startup working on the frontiers of robotics, autonomy, and real-time automation. As we scale our teams and accelerate operations, we’re looking for an HR Intern who is energetic, sharp, and eager to learn the full stack of HR in a high-g…",
+   "posted": "2026-11-17",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "HR & Recruitment Jobs",
+   "id": "021fa215cd63",
+   "role": "Operations & HR",
    "city": "Bengaluru",
    "first_seen": "2026-11-17",
    "last_seen": "2026-11-17"
@@ -2467,11 +2515,12 @@
    "description": "About Us: At Teachmint, we believe that education moves the world forward and deserves the best technology in this pursuit. We are a global classroom technology company empowering educators and institutions in over 50 countries. At the forefront of classroom innovation, Teachmint is transforming how education is delivered through its proprietary solutions—Teachmint X, an AI-powered digital board; EduAI, an intelligent AI companion that empowers educators and learners to become self-reliant; and…",
    "posted": "2026-11-12",
    "source": "Adzuna",
+   "category": "IT Jobs",
    "id": "0a0ec47b2bc4",
    "role": "Other",
    "city": "Bengaluru",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16"
+   "last_seen": "2026-11-17"
   },
   {
    "title": "TA- Intern",
