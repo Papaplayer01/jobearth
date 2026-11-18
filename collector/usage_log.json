@@ -1,0 +1,13 @@
+[
+ {
+  "date": "2026-11-18",
+  "provider": "github",
+  "model": "openai/gpt-4o-mini",
+  "calls": 14,
+  "in": 0,
+  "out": 0,
+  "posts": 0,
+  "cost_usd": 0.0,
+  "equivalent_haiku_cost_usd": 0.0
+ }
+]
