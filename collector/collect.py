@@ -198,6 +198,8 @@ def ask_llm(prompt):
                                 "messages": [{"role": "user", "content": prompt}]})
         if r.status_code == 429 and attempt == 1:
             import time; time.sleep(int(r.headers.get("retry-after", 30)) if str(r.headers.get("retry-after", "")).isdigit() else 30); continue
+        if r.status_code >= 400:
+            print(f"GitHub Models HTTP {r.status_code}: {r.text[:300]}")
         r.raise_for_status(); data = r.json()
         u = data.get("usage") or {}
         USAGE["in"] += u.get("prompt_tokens", 0); USAGE["out"] += u.get("completion_tokens", 0)
@@ -205,7 +207,8 @@ def ask_llm(prompt):
 
 
 def llm_tag(jobs, cache):
-    todo = [j for j in jobs if j["id"] not in cache]
+    todo = [j for j in jobs if j["id"] not in cache
+            or (provider() and cache[j["id"]].get("by") == "kw")]
     if todo and provider():
         for i in range(0, len(todo), 20):
             batch = todo[i:i + 20]
@@ -215,6 +218,7 @@ def llm_tag(jobs, cache):
                           [{"id": j["id"], "title": j["title"], "location": j["location_raw"],
                             "text": j["description"][:300]} for j in batch]))
             try:
+                import time; time.sleep(6)
                 USAGE["calls"] += 1
                 parsed = json.loads(re.search(r"\{.*\}", ask_llm(prompt), re.S).group())
                 for k, v in parsed.items():
