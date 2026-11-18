@@ -166,13 +166,47 @@ def keyword_tag(j):
     return {"role": role, "city": city}
 
 USAGE = {"calls": 0, "in": 0, "out": 0, "posts": 0}
+GH_URL = "https://models.github.ai/inference/chat/completions"
+
+
+def provider():
+    """anthropic if a key is set, else the free GitHub Models tier if a GitHub token is present, else keyword rules."""
+    want = os.getenv("TAG_PROVIDER", "").lower()
+    if want in ("anthropic", "github"): return want
+    if os.getenv("ANTHROPIC_API_KEY"): return "anthropic"
+    if os.getenv("GITHUB_TOKEN"): return "github"
+    return None
+
+
+def model_name():
+    return os.getenv("TAG_MODEL") or ("openai/gpt-4o-mini" if provider() == "github" else "claude-haiku-5-5")
+
+
+def ask_llm(prompt):
+    """Returns the model's text and records token use. Retries once on a rate limit (429)."""
+    if provider() == "anthropic":
+        import anthropic
+        msg = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY")).messages.create(
+            model=model_name(), max_tokens=2000, messages=[{"role": "user", "content": prompt}])
+        u = getattr(msg, "usage", None)
+        if u: USAGE["in"] += u.input_tokens; USAGE["out"] += u.output_tokens
+        return msg.content[0].text
+    for attempt in (1, 2):
+        r = requests.post(GH_URL, timeout=90, headers={"Authorization": f"Bearer {os.getenv('GITHUB_TOKEN')}",
+                          "Content-Type": "application/json"},
+                          json={"model": model_name(), "temperature": 0, "max_tokens": 2000,
+                                "messages": [{"role": "user", "content": prompt}]})
+        if r.status_code == 429 and attempt == 1:
+            import time; time.sleep(int(r.headers.get("retry-after", 30)) if str(r.headers.get("retry-after", "")).isdigit() else 30); continue
+        r.raise_for_status(); data = r.json()
+        u = data.get("usage") or {}
+        USAGE["in"] += u.get("prompt_tokens", 0); USAGE["out"] += u.get("completion_tokens", 0)
+        return data["choices"][0]["message"]["content"]
+
 
 def llm_tag(jobs, cache):
     todo = [j for j in jobs if j["id"] not in cache]
-    key = os.getenv("ANTHROPIC_API_KEY")
-    if todo and key:
-        import anthropic
-        client = anthropic.Anthropic(api_key=key)
+    if todo and provider():
         for i in range(0, len(todo), 20):
             batch = todo[i:i + 20]
             prompt = (f"Tag each job. role must be one of {ROLES}. city is the main Indian city in English, for example Pune "
@@ -181,12 +215,8 @@ def llm_tag(jobs, cache):
                           [{"id": j["id"], "title": j["title"], "location": j["location_raw"],
                             "text": j["description"][:300]} for j in batch]))
             try:
-                msg = client.messages.create(model=os.getenv("TAG_MODEL", "claude-haiku-5-5"),
-                                             max_tokens=2000, messages=[{"role": "user", "content": prompt}])
-                u = getattr(msg, "usage", None)
-                if u: USAGE["in"] += u.input_tokens; USAGE["out"] += u.output_tokens
                 USAGE["calls"] += 1
-                parsed = json.loads(re.search(r"\{.*\}", msg.content[0].text, re.S).group())
+                parsed = json.loads(re.search(r"\{.*\}", ask_llm(prompt), re.S).group())
                 for k, v in parsed.items():
                     if isinstance(v, dict): v["by"] = "llm"; USAGE["posts"] += 1
                 cache.update(parsed)
@@ -197,16 +227,20 @@ def llm_tag(jobs, cache):
             cache[j["id"]] = {**keyword_tag(j), "by": "kw"}
     return cache
 
+
 def log_usage():
     """Records real token use per run so cost per 1,000 posts can be measured, not guessed."""
     if not USAGE["calls"]: return
-    pin, pout = float(os.getenv("PRICE_IN", "0.10")), float(os.getenv("PRICE_OUT", "0.50"))  # USD per million tokens
-    cost = (USAGE["in"] * pin + USAGE["out"] * pout) / 1e6
-    rec = {"date": NOW.strftime("%Y-%m-%d"), "model": os.getenv("TAG_MODEL", "claude-haiku-5-5"), **USAGE, "cost_usd": round(cost, 6)}
+    pin, pout = float(os.getenv("PRICE_IN", "0.10")), float(os.getenv("PRICE_OUT", "0.50"))  # USD per million tokens, Haiku 5.5
+    paid = (USAGE["in"] * pin + USAGE["out"] * pout) / 1e6
+    free = provider() == "github"
+    rec = {"date": NOW.strftime("%Y-%m-%d"), "provider": provider(), "model": model_name(), **USAGE,
+           "cost_usd": 0.0 if free else round(paid, 6), "equivalent_haiku_cost_usd": round(paid, 6)}
     path = f"{ROOT}/collector/usage_log.json"
     log = json.load(open(path)) if os.path.exists(path) else []
     json.dump(log + [rec], open(path, "w"), indent=1)
     print("LLM usage:", rec)
+
 
 def main():
     cfg = json.load(open(f"{ROOT}/collector/sources.json"))
