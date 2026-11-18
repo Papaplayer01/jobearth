@@ -22,13 +22,6 @@ ROLE_MAP = [("DevOps", r"devops|\bsre\b|site reliab|platform eng"), ("Cloud", r"
     ("Support", r"support|service desk|help ?desk|customer (care|service)"),
     ("Design", r"design|\bux\b|graphic"), ("Sales & Marketing", r"sales|marketing|business development|\bseo\b|content"),
     ("Operations & HR", r"\bhr\b|recruit|operations|admin|account|finance|executive")]
-SCAM = re.compile(r"backdoor|charges? (apply|applicable)|paid service|pay anything|registration fee|"
-                  r"security deposit|processing fee|nothing comes for free", re.I)
-STATES = {"andhra pradesh", "assam", "bihar", "chhattisgarh", "gujarat", "haryana", "himachal pradesh", "jharkhand",
-          "karnataka", "kerala", "madhya pradesh", "maharashtra", "odisha", "punjab", "rajasthan", "tamil nadu",
-          "telangana", "uttar pradesh", "uttarakhand", "west bengal", "india", "delhi"}
-CAT_MAP = [(r"HR|Accounting|Admin", "Operations & HR"), (r"Sales|PR, Advert|Marketing", "Sales & Marketing"),
-           (r"Customer", "Support"), (r"Creative", "Design")]
 INDIA = re.compile(r"india|bengal|bangal|mumbai|pune|hyderabad|delhi|gurgaon|gurugram|noida|"
                    r"chennai|kolkata|ahmedabad|nashik|jaipur|kochi|indore|remote", re.I)
 FRESHER = re.compile(r"fresher|graduate|intern\b|internship|entry[- ]level|trainee|junior|"
@@ -97,26 +90,6 @@ def jooble():
             yield job(j["title"], j.get("company") or "Unknown", j.get("location"), j["link"],
                       j.get("snippet"), j.get("updated"), "Jooble", salary=j.get("salary"), type=j.get("type"))
 
-REMOTE_OK = re.compile(r"india|worldwide|anywhere|apac|asia|global|^$", re.I)
-
-def remotive():
-    """Remotive's public API; their terms ask for a visible credit and a link back, which the site footer gives."""
-    for j in get("https://remotive.com/api/remote-jobs").json().get("jobs", []):
-        loc = j.get("candidate_required_location") or ""
-        if REMOTE_OK.search(loc):
-            yield job(j["title"], j["company_name"], "Remote, " + (loc or "Worldwide"), j["url"], j.get("description"),
-                      j.get("publication_date"), "Remotive", type=(j.get("job_type") or "").replace("_", " "),
-                      category=j.get("category"), salary=j.get("salary"))
-
-def remoteok():
-    """RemoteOK's public API; credit and link back are required, which the site footer gives."""
-    for j in get("https://remoteok.com/api").json()[1:]:
-        loc = j.get("location") or ""
-        if REMOTE_OK.search(loc):
-            lo, hi = j.get("salary_min"), j.get("salary_max")
-            yield job(j["position"], j["company"], "Remote, " + (loc or "Worldwide"), j["url"], j.get("description"),
-                      j.get("date"), "RemoteOK", salary=f"${lo:,} to ${hi:,} a year (USD)" if lo and hi else "")
-
 def jsonld(url):
     """Career pages that publish schema.org JobPosting data; robots.txt is honoured."""
     p = urlparse(url); r = rp.RobotFileParser(f"{p.scheme}://{p.netloc}/robots.txt"); r.read()
@@ -149,64 +122,23 @@ def dedupe(jobs):
 
 def keyword_tag(j):
     pick = lambda text: next((r for r, w in ROLE_MAP if re.search(w, text)), None)
-    cat = j.get("category", "")
-    role = pick(j["title"].lower()) or next((r for w, r in CAT_MAP if re.search(w, cat)), None)
-    if not role and "IT" in cat: role = pick(j["description"][:300].lower())
-    role = role or "Other"
+    role = pick(j["title"].lower()) or pick(j["description"][:300].lower()) or "Other"
     loc = j["location_raw"].lower()
     city = "Remote" if "remote" in loc else next((c for c, w in [("Bengaluru", "bengal|bangal"),
         ("Delhi NCR", "delhi|gurgaon|gurugram|noida|ghaziabad|faridabad"), ("Mumbai", "mumbai|thane"),
         ("Pune", "pune|pimpri"), ("Hyderabad", "hyderabad|secunderabad"), ("Chennai", "chennai"),
         ("Kolkata", "kolkata"), ("Ahmedabad", "ahmedabad"), ("Nashik", "nashik")] if re.search(w, loc)), None)
     if not city:
-        parts = [x.strip() for x in j["location_raw"].split(",") if x.strip()]
-        # "Locality, City" puts the city last; "City, State" puts the state last
-        pick_part = parts[-1] if len(parts) > 1 and parts[-1].lower() not in STATES else (parts[0] if parts else "")
-        city = pick_part.title() if pick_part and pick_part.lower() not in STATES and len(pick_part) <= 25 else "Other"
+        first = j["location_raw"].split(",")[0].strip().title()
+        city = first if first and first.lower() != "india" and len(first) <= 25 else "Other"
     return {"role": role, "city": city}
-
-USAGE = {"calls": 0, "in": 0, "out": 0, "posts": 0}
-GH_URL = "https://models.github.ai/inference/chat/completions"
-
-
-def provider():
-    """anthropic if a key is set, else the free GitHub Models tier if a GitHub token is present, else keyword rules."""
-    want = os.getenv("TAG_PROVIDER", "").lower()
-    if want in ("anthropic", "github"): return want
-    if os.getenv("ANTHROPIC_API_KEY"): return "anthropic"
-    if os.getenv("GITHUB_TOKEN"): return "github"
-    return None
-
-
-def model_name():
-    return os.getenv("TAG_MODEL") or ("openai/gpt-4o-mini" if provider() == "github" else "claude-haiku-5-5")
-
-
-def ask_llm(prompt):
-    """Returns the model's text and records token use. Retries once on a rate limit (429)."""
-    if provider() == "anthropic":
-        import anthropic
-        msg = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY")).messages.create(
-            model=model_name(), max_tokens=2000, messages=[{"role": "user", "content": prompt}])
-        u = getattr(msg, "usage", None)
-        if u: USAGE["in"] += u.input_tokens; USAGE["out"] += u.output_tokens
-        return msg.content[0].text
-    for attempt in (1, 2):
-        r = requests.post(GH_URL, timeout=90, headers={"Authorization": f"Bearer {os.getenv('GITHUB_TOKEN')}",
-                          "Content-Type": "application/json"},
-                          json={"model": model_name(), "temperature": 0, "max_tokens": 2000,
-                                "messages": [{"role": "user", "content": prompt}]})
-        if r.status_code == 429 and attempt == 1:
-            import time; time.sleep(int(r.headers.get("retry-after", 30)) if str(r.headers.get("retry-after", "")).isdigit() else 30); continue
-        r.raise_for_status(); data = r.json()
-        u = data.get("usage") or {}
-        USAGE["in"] += u.get("prompt_tokens", 0); USAGE["out"] += u.get("completion_tokens", 0)
-        return data["choices"][0]["message"]["content"]
-
 
 def llm_tag(jobs, cache):
     todo = [j for j in jobs if j["id"] not in cache]
-    if todo and provider():
+    key = os.getenv("ANTHROPIC_API_KEY")
+    if todo and key:
+        import anthropic
+        client = anthropic.Anthropic(api_key=key)
         for i in range(0, len(todo), 20):
             batch = todo[i:i + 20]
             prompt = (f"Tag each job. role must be one of {ROLES}. city is the main Indian city in English, for example Pune "
@@ -215,39 +147,22 @@ def llm_tag(jobs, cache):
                           [{"id": j["id"], "title": j["title"], "location": j["location_raw"],
                             "text": j["description"][:300]} for j in batch]))
             try:
-                USAGE["calls"] += 1
-                parsed = json.loads(re.search(r"\{.*\}", ask_llm(prompt), re.S).group())
-                for k, v in parsed.items():
-                    if isinstance(v, dict): v["by"] = "llm"; USAGE["posts"] += 1
-                cache.update(parsed)
+                msg = client.messages.create(model=os.getenv("TAG_MODEL", "claude-haiku-5-5"),
+                                             max_tokens=2000, messages=[{"role": "user", "content": prompt}])
+                cache.update(json.loads(re.search(r"\{.*\}", msg.content[0].text, re.S).group()))
             except Exception as e:
                 print("LLM batch failed, using keywords:", e)
     for j in todo:
         if j["id"] not in cache or cache[j["id"]].get("role") not in ROLES:
-            cache[j["id"]] = {**keyword_tag(j), "by": "kw"}
+            cache[j["id"]] = keyword_tag(j)
     return cache
-
-
-def log_usage():
-    """Records real token use per run so cost per 1,000 posts can be measured, not guessed."""
-    if not USAGE["calls"]: return
-    pin, pout = float(os.getenv("PRICE_IN", "0.10")), float(os.getenv("PRICE_OUT", "0.50"))  # USD per million tokens, Haiku 5.5
-    paid = (USAGE["in"] * pin + USAGE["out"] * pout) / 1e6
-    free = provider() == "github"
-    rec = {"date": NOW.strftime("%Y-%m-%d"), "provider": provider(), "model": model_name(), **USAGE,
-           "cost_usd": 0.0 if free else round(paid, 6), "equivalent_haiku_cost_usd": round(paid, 6)}
-    path = f"{ROOT}/collector/usage_log.json"
-    log = json.load(open(path)) if os.path.exists(path) else []
-    json.dump(log + [rec], open(path, "w"), indent=1)
-    print("LLM usage:", rec)
-
 
 def main():
     cfg = json.load(open(f"{ROOT}/collector/sources.json"))
     raw = []
     runners = [(greenhouse, s) for s in cfg["greenhouse"]] + [(lever, s) for s in cfg["lever"]] + \
               [(ashby, s) for s in cfg["ashby"]] + [(jsonld, u) for u in cfg["career_pages"]] + \
-              [(adzuna, None), (jooble, None), (remotive, None), (remoteok, None)]
+              [(adzuna, None), (jooble, None)]
     for fn, arg in runners:
         try:
             got = list(fn(arg) if arg else fn()); raw += got; print(f"{fn.__name__} {arg or ''}: {len(got)}")
@@ -257,12 +172,10 @@ def main():
             and FRESHER.search(j["title"] + " " + j["description"]) and not SENIOR.search(j["title"])]
     for j in keep:
         j["id"] = hashlib.sha1((j["company"] + j["title"] + j["location_raw"]).lower().encode()).hexdigest()[:12]
-    keep = dedupe([j for j in keep if not SCAM.search(j["title"] + " " + j["description"])])
+    keep = dedupe(keep)
     cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
     cache = llm_tag(keep, cache); json.dump(cache, open(CACHE, "w"))
-    log_usage()
     old = {j["id"]: j for j in json.load(open(OUT)).get("jobs", []) if j.get("last_seen")} if os.path.exists(OUT) else {}
-    old = {k: v for k, v in old.items() if not SCAM.search(v["title"] + " " + v["description"])}
     today = NOW.strftime("%Y-%m-%d")
     for j in keep:
         j.update(cache[j["id"]]); j["first_seen"] = old.get(j["id"], {}).get("first_seen", today); j["last_seen"] = today
@@ -271,24 +184,7 @@ def main():
     jobs = sorted((j for j in old.values() if j["last_seen"] >= cutoff), key=lambda j: j["first_seen"], reverse=True)
     json.dump({"updated": NOW.isoformat(timespec="minutes"), "count": len(jobs), "jobs": jobs},
               open(OUT, "w"), ensure_ascii=False, indent=1)
-    write_feed(jobs)
     print("total jobs:", len(jobs))
-
-SITE = "https://papaplayer01.github.io/jobearth/"
-
-def write_feed(jobs):
-    from email.utils import format_datetime
-    from xml.sax.saxutils import escape
-    items = []
-    for j in jobs[:50]:
-        try: when = format_datetime(datetime.strptime(j["first_seen"], "%Y-%m-%d").replace(tzinfo=timezone.utc))
-        except Exception: when = format_datetime(NOW)
-        items.append(f"<item><title>{escape(j['title'])} at {escape(j['company'])} ({escape(j['city'])})</title>"
-                     f"<link>{escape(j['url'])}</link><guid isPermaLink=\"false\">{j['id']}</guid><pubDate>{when}</pubDate>"
-                     f"<category>{escape(j['role'])}</category><description>{escape(j['description'][:300])}</description></item>")
-    xml = ('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>JoBearth new jobs</title>'
-           f'<link>{SITE}</link><description>Fresher and internship posts across India</description>' + "".join(items) + "</channel></rss>")
-    open(f"{ROOT}/docs/feed.xml", "w", encoding="utf-8").write(xml)
 
 if __name__ == "__main__":
     main()
