@@ -165,6 +165,8 @@ def keyword_tag(j):
         city = pick_part.title() if pick_part and pick_part.lower() not in STATES and len(pick_part) <= 25 else "Other"
     return {"role": role, "city": city}
 
+USAGE = {"calls": 0, "in": 0, "out": 0, "posts": 0}
+
 def llm_tag(jobs, cache):
     todo = [j for j in jobs if j["id"] not in cache]
     key = os.getenv("ANTHROPIC_API_KEY")
@@ -181,13 +183,30 @@ def llm_tag(jobs, cache):
             try:
                 msg = client.messages.create(model=os.getenv("TAG_MODEL", "claude-haiku-5-5"),
                                              max_tokens=2000, messages=[{"role": "user", "content": prompt}])
-                cache.update(json.loads(re.search(r"\{.*\}", msg.content[0].text, re.S).group()))
+                u = getattr(msg, "usage", None)
+                if u: USAGE["in"] += u.input_tokens; USAGE["out"] += u.output_tokens
+                USAGE["calls"] += 1
+                parsed = json.loads(re.search(r"\{.*\}", msg.content[0].text, re.S).group())
+                for k, v in parsed.items():
+                    if isinstance(v, dict): v["by"] = "llm"; USAGE["posts"] += 1
+                cache.update(parsed)
             except Exception as e:
                 print("LLM batch failed, using keywords:", e)
     for j in todo:
         if j["id"] not in cache or cache[j["id"]].get("role") not in ROLES:
-            cache[j["id"]] = keyword_tag(j)
+            cache[j["id"]] = {**keyword_tag(j), "by": "kw"}
     return cache
+
+def log_usage():
+    """Records real token use per run so cost per 1,000 posts can be measured, not guessed."""
+    if not USAGE["calls"]: return
+    pin, pout = float(os.getenv("PRICE_IN", "0.10")), float(os.getenv("PRICE_OUT", "0.50"))  # USD per million tokens
+    cost = (USAGE["in"] * pin + USAGE["out"] * pout) / 1e6
+    rec = {"date": NOW.strftime("%Y-%m-%d"), "model": os.getenv("TAG_MODEL", "claude-haiku-5-5"), **USAGE, "cost_usd": round(cost, 6)}
+    path = f"{ROOT}/collector/usage_log.json"
+    log = json.load(open(path)) if os.path.exists(path) else []
+    json.dump(log + [rec], open(path, "w"), indent=1)
+    print("LLM usage:", rec)
 
 def main():
     cfg = json.load(open(f"{ROOT}/collector/sources.json"))
@@ -207,6 +226,7 @@ def main():
     keep = dedupe([j for j in keep if not SCAM.search(j["title"] + " " + j["description"])])
     cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
     cache = llm_tag(keep, cache); json.dump(cache, open(CACHE, "w"))
+    log_usage()
     old = {j["id"]: j for j in json.load(open(OUT)).get("jobs", []) if j.get("last_seen")} if os.path.exists(OUT) else {}
     old = {k: v for k, v in old.items() if not SCAM.search(v["title"] + " " + v["description"])}
     today = NOW.strftime("%Y-%m-%d")
