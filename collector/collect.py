@@ -167,19 +167,20 @@ def keyword_tag(j):
 
 USAGE = {"calls": 0, "in": 0, "out": 0, "posts": 0}
 GH_URL = "https://models.github.ai/inference/chat/completions"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 
 
 def provider():
     """anthropic if a key is set, else the free GitHub Models tier if a GitHub token is present, else keyword rules."""
     want = os.getenv("TAG_PROVIDER", "").lower()
-    if want in ("anthropic", "github"): return want
+    if want in ("anthropic", "github", "gemini"): return want
     if os.getenv("ANTHROPIC_API_KEY"): return "anthropic"
-    if os.getenv("GITHUB_TOKEN"): return "github"
+    if os.getenv("GEMINI_API_KEY"): return "gemini"
     return None
 
 
 def model_name():
-    return os.getenv("TAG_MODEL") or ("openai/gpt-4o-mini" if provider() == "github" else "claude-haiku-5-5")
+    return os.getenv("TAG_MODEL") or {"gemini": "gemini-2.5-flash-lite", "github": "openai/gpt-4o-mini"}.get(provider(), "claude-haiku-5-5")
 
 
 def ask_llm(prompt):
@@ -192,14 +193,14 @@ def ask_llm(prompt):
         if u: USAGE["in"] += u.input_tokens; USAGE["out"] += u.output_tokens
         return msg.content[0].text
     for attempt in (1, 2):
-        r = requests.post(GH_URL, timeout=90, headers={"Authorization": f"Bearer {os.getenv('GITHUB_TOKEN')}",
+        r = requests.post(GEMINI_URL if provider() == "gemini" else GH_URL, timeout=90, headers={"Authorization": f"Bearer {os.getenv('GEMINI_API_KEY') if provider() == 'gemini' else os.getenv('GITHUB_TOKEN')}",
                           "Content-Type": "application/json"},
                           json={"model": model_name(), "temperature": 0, "max_tokens": 2000,
                                 "messages": [{"role": "user", "content": prompt}]})
         if r.status_code == 429 and attempt == 1:
             import time; time.sleep(int(r.headers.get("retry-after", 30)) if str(r.headers.get("retry-after", "")).isdigit() else 30); continue
-        if r.status_code >= 400:
-            print(f"GitHub Models HTTP {r.status_code}: {r.text[:300]}")
+        if r.status_code >= 400 or not r.text.strip().startswith("{"):
+            print(f"LLM HTTP {r.status_code}: {r.text[:300]!r}")
         r.raise_for_status(); data = r.json()
         u = data.get("usage") or {}
         USAGE["in"] += u.get("prompt_tokens", 0); USAGE["out"] += u.get("completion_tokens", 0)
@@ -237,7 +238,7 @@ def log_usage():
     if not USAGE["calls"]: return
     pin, pout = float(os.getenv("PRICE_IN", "0.10")), float(os.getenv("PRICE_OUT", "0.50"))  # USD per million tokens, Haiku 5.5
     paid = (USAGE["in"] * pin + USAGE["out"] * pout) / 1e6
-    free = provider() == "github"
+    free = provider() in ("github", "gemini")
     rec = {"date": NOW.strftime("%Y-%m-%d"), "provider": provider(), "model": model_name(), **USAGE,
            "cost_usd": 0.0 if free else round(paid, 6), "equivalent_haiku_cost_usd": round(paid, 6)}
     path = f"{ROOT}/collector/usage_log.json"
