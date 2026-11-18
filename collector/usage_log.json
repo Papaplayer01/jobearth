@@ -42,5 +42,16 @@
   "posts": 0,
   "cost_usd": 0.0,
   "equivalent_haiku_cost_usd": 0.0
+ },
+ {
+  "date": "2026-11-18",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "calls": 13,
+  "in": 26125,
+  "out": 7878,
+  "posts": 241,
+  "cost_usd": 0.0,
+  "equivalent_haiku_cost_usd": 0.006552
  }
 ]
