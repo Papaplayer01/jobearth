@@ -88,6 +88,14 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
 ::view-transition-old(*){animation-duration:.25s}
 @media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:3rem;min-height:0}#globe{max-width:320px;order:-1}.aurora i{filter:blur(60px)}}
 @media(prefers-reduced-motion:reduce){*,::before{animation:none!important;transition-duration:.01ms!important}.hero h1 span,.hero p,.stats,.card{opacity:1;transform:none;translate:0 0;scale:1}html{scroll-behavior:auto}}
+
+.tgl{display:none}
+@media(max-width:820px){
+.bar{position:static}
+.bar>div{padding:.7rem 1rem}
+.tgl{display:inline-flex}
+.bar:not(.open) #sort,.bar:not(.open) .skills,.bar:not(.open) .sugs,.bar:not(.open) .chips{display:none}
+}
 </style>
 </head>
 <body>
@@ -106,6 +114,7 @@ footer{text-align:center;color:var(--mist);padding:2rem;border-top:1px solid var
   <select id="city" aria-label="City"></select>
   <select id="sort" aria-label="Sort"><option value="new">Newest first</option><option value="co">Company A to Z</option><option value="match">Best match (my skills)</option></select>
   <button class="chip" id="savedBtn" aria-pressed="false">★ Saved <span id="sc">0</span></button>
+  <button class="chip tgl" id="ftgl" aria-expanded="false">Filters</button>
   <button class="chip" id="theme" aria-label="Switch theme">☀</button>
   <div class="skills"><input id="sk" type="text" maxlength="30" placeholder="My skills: type Terraform, AWS, Java, then press Enter" aria-label="My skills" autocomplete="off">
     <span id="skchips" style="display:contents"></span><button class="chip" id="matchBtn" aria-pressed="false" hidden>Matches only</button></div>
@@ -249,6 +258,14 @@ requestAnimationFrame(frame);
 // visitor counter (no cookies): sign up free at goatcounter.com, then put your site code here, for example "jobearth"
 const GOATCOUNTER="";
 if(GOATCOUNTER){const g=document.createElement("script");g.async=true;g.dataset.goatcounter=`https://${GOATCOUNTER}.goatcounter.com/count`;g.src="https://gc.zgo.at/count.js";document.head.append(g)}
+</script>
+<script>
+(function(){var b=document.querySelector(".bar"),t=document.getElementById("ftgl");if(!b||!t)return;
+function upd(){var n=document.querySelectorAll("#chips .chip[aria-pressed=true]:not(:first-child)").length+document.querySelectorAll("#skchips > *").length;
+t.textContent=n?"Filters ("+n+")":"Filters"}
+t.addEventListener("click",function(){var o=b.classList.toggle("open");t.setAttribute("aria-expanded",o)});
+b.addEventListener("click",function(){setTimeout(upd,80)});b.addEventListener("keyup",function(){setTimeout(upd,80)});
+setTimeout(upd,800);setTimeout(upd,2500)})();
 </script>
 </body>
 </html>
