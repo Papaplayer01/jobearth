@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JoBearth documentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#000;--mut:#5c5c5c;--line:#d4d4d4;--soft:#f2f2f2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--fg:#fff;--mut:#a3a3a3;--line:#2e2e2e;--soft:#111;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--fg:#fff;--mut:#a3a3a3;--line:#2e2e2e;--soft:#111;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;transition:background .5s,color .5s;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.mono,code,pre{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+a{color:inherit}
+#bar{position:fixed;left:0;right:0;top:0;height:3px;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(18px,5vw,56px);background:var(--bg);border-bottom:1px solid var(--line);transition:background .5s,border-color .5s}
+header b{letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+nav{display:flex;gap:22px;align-items:center;font-size:13px}
+nav a{text-decoration:none;position:relative;color:var(--mut);transition:color .3s}
+nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:100%;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+nav a:hover{color:var(--fg)}nav a:hover::after{transform:scaleX(1)}
+#tg{font:inherit;font-size:12px;border:1px solid var(--fg);background:transparent;color:var(--fg);padding:5px 12px;border-radius:99px;cursor:pointer;transition:background .3s,color .3s}
+#tg:hover{background:var(--fg);color:var(--bg)}
+@media(max-width:720px){nav a{display:none}}
+main{padding:0 clamp(18px,5vw,56px)}
+section{max-width:1080px;margin:0 auto;padding:clamp(56px,9vw,110px) 0;border-bottom:1px solid var(--line)}
+.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(54px,14vw,176px);line-height:.95;letter-spacing:-.045em;margin:0 0 22px;font-weight:700}
+h1 span{display:inline-block;opacity:0;transform:translateY(60%) rotate(4deg);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.lead{max-width:640px;color:var(--mut);font-size:clamp(17px,2.2vw,21px)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border:1px solid var(--fg);border-radius:99px;text-decoration:none;font-size:14px;position:relative;overflow:hidden;z-index:0;transition:color .4s}
+.btn::before{content:"";position:absolute;inset:0;background:var(--fg);transform:translateY(101%);transition:transform .45s cubic-bezier(.2,.8,.2,1);z-index:-1}
+.btn:hover{color:var(--bg)}.btn:hover::before{transform:none}
+.btn.f{background:var(--fg);color:var(--bg)}.btn.f::before{background:var(--bg)}.btn.f:hover{color:var(--fg)}
+.mq{border-block:1px solid var(--fg);overflow:hidden;white-space:nowrap;padding:14px 0;margin:0 calc(-1*clamp(18px,5vw,56px))}
+.mq div{display:inline-block;animation:mq 26s linear infinite;font-size:14px;letter-spacing:.3em;text-transform:uppercase}
+@keyframes mq{to{transform:translateX(-50%)}}
+.k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin:0 0 14px}
+h2{font-size:clamp(30px,5vw,56px);line-height:1.05;letter-spacing:-.03em;margin:0 0 34px;max-width:820px}
+.rv{transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.js .rv{opacity:0;transform:translateY(34px)}.js .rv.in{opacity:1;transform:none}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border:1px solid var(--fg)}
+.st{padding:26px 22px;border-right:1px solid var(--fg);position:relative;transition:background .4s,color .4s}
+.st:last-child{border-right:0}
+.st:hover{background:var(--fg);color:var(--bg)}.st:hover p{color:inherit;opacity:.8}
+.st i{font:500 12px "JetBrains Mono",monospace;font-style:normal;opacity:.6}
+.st h3{margin:30px 0 8px;font-size:20px;letter-spacing:-.02em}
+.st p{margin:0;font-size:14px;color:var(--mut);transition:color .4s}
+@media(max-width:720px){.st{border-right:0;border-bottom:1px solid var(--fg)}.st:last-child{border-bottom:0}}
+.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;padding:20px 16px;border-top:1px solid var(--line);transition:background .35s,color .35s,padding .35s}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row:hover{background:var(--fg);color:var(--bg);padding-left:28px}
+.row small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin-bottom:4px}
+.row p{margin:0;font-size:15px}
+@media(max-width:820px){.row{grid-template-columns:1fr;gap:10px}}
+.big{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-bottom:46px}
+.card{border:1px solid var(--fg);padding:26px;transition:transform .5s cubic-bezier(.2,.8,.2,1),background .4s,color .4s}
+.card:hover{transform:translateY(-8px);background:var(--fg);color:var(--bg)}
+.card b{display:block;font-size:clamp(46px,7vw,84px);line-height:1;letter-spacing:-.05em;font-weight:700}
+.card span{font-size:13px;opacity:.65}
+.bars{display:grid;gap:22px;max-width:760px}
+.bar p{margin:0 0 6px;font-size:13px;display:flex;justify-content:space-between;gap:12px}
+.tr{height:12px;background:var(--soft);border:1px solid var(--line);margin-bottom:6px;overflow:hidden}
+.tr i{display:block;height:100%;width:0;background:var(--fg);transition:width 1.5s cubic-bezier(.2,.8,.2,1) .2s}
+.tr.kw i{background:repeating-linear-gradient(45deg,var(--fg) 0 3px,transparent 3px 7px)}
+.in .tr i{width:calc(var(--w)*1%)}
+.fig{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:46px}
+.fig div{border-top:2px solid var(--fg);padding-top:12px}
+.fig b{font-size:26px;letter-spacing:-.02em;display:block}.fig span{font-size:13px;color:var(--mut)}
+pre{margin:0 0 14px;padding:18px 20px;border:1px solid var(--fg);overflow-x:auto;font-size:13px;line-height:1.7;background:var(--soft)}
+ol.n{counter-reset:s;list-style:none;padding:0;margin:0;max-width:780px}
+ol.n li{counter-increment:s;padding:0 0 26px 58px;position:relative}
+ol.n li::before{content:counter(s);position:absolute;left:0;top:-2px;width:38px;height:38px;border:1px solid var(--fg);border-radius:50%;display:grid;place-items:center;font:500 13px "JetBrains Mono",monospace;transition:background .3s,color .3s}
+ol.n li:hover::before{background:var(--fg);color:var(--bg)}
+.note{max-width:780px;color:var(--mut);font-size:15px}
+footer{padding:40px clamp(18px,5vw,56px) 60px;text-align:center;font-size:13px;color:var(--mut)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.tr i{width:calc(var(--w)*1%)}h1 span{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<header><b>JoBearth</b><nav><a href="#how">How it works</a><a href="#broke">What broke</a><a href="#numbers">Numbers</a><a href="#run">Run it</a><a href="#author">Author</a><button id="tg" type="button">Invert</button></nav></header>
+<main>
+<div class="hero">
+<p class="k rv">Documentation</p>
+<h1 id="t">JoBearth</h1>
+<p class="lead rv" style="--d:.5s">A live site that collects fresher and internship posts across India, removes duplicates, tags each post by role and city, and refreshes itself every day.</p>
+<div class="btns rv" style="--d:.7s"><a class="btn f" href="https://papaplayer01.github.io/jobearth/" target="_blank" rel="noopener">Open the live site</a><a class="btn" href="https://github.com/Papaplayer01/jobearth" target="_blank" rel="noopener">View the repo</a></div>
+<p class="mono rv" style="--d:.9s;margin-top:34px;font-size:13px;color:var(--mut)">By Parth Dhairyashil Pawar | github.com/Papaplayer01</p>
+</div>
+<div class="mq"><div>Collect — Filter — Dedupe — Tag — Build — Publish — Collect — Filter — Dedupe — Tag — Build — Publish — Collect — Filter — Dedupe — Tag — Build — Publish — Collect — Filter — Dedupe — Tag — Build — Publish — </div></div>
+
+<section id="how">
+<p class="k rv">01 Architecture</p>
+<h2 class="rv">One daily GitHub Action, five steps, no server.</h2>
+<div class="steps">
+<div class="st rv"><i>01</i><h3>Collect</h3><p>Adzuna, company career boards, Remotive and RemoteOK feeds.</p></div>
+<div class="st rv" style="--d:.1s"><i>02</i><h3>Filter</h3><p>India and fresher posts only. Scam-looking ads are dropped.</p></div>
+<div class="st rv" style="--d:.2s"><i>03</i><h3>Dedupe</h3><p>The same job from two sources becomes one card.</p></div>
+<div class="st rv" style="--d:.3s"><i>04</i><h3>Tag</h3><p>An LLM gives each post a role and a city, 20 posts per request. Cached per post. Keyword rules are the fallback.</p></div>
+<div class="st rv" style="--d:.4s"><i>05</i><h3>Publish</h3><p>Static pages, role and city pages, a sitemap and a feed, served by GitHub Pages.</p></div>
+</div>
+<p class="note rv" style="margin-top:26px">Fifteen roles: Cloud, DevOps, Backend, Frontend, Full-stack, QA &amp; Automation, Data, ML &amp; AI, Mobile, Security, Support, Design, Sales &amp; Marketing, Operations &amp; HR, Other. Every tag records which tagger made it, so accuracy can be measured separately.</p>
+</section>
+
+<section id="broke">
+<p class="k rv">02 What broke</p>
+<h2 class="rv">Nine things went wrong. Each one is fixed.</h2>
+<div>
+<div class="row rv"><div><small>Saw</small><p>Site showed 1 job; log said Adzuna 0</p></div><div><small>Cause</small><p>API secrets were never saved to GitHub</p></div><div><small>Fix</small><p>Added them with gh secret set; total went from 1 to 226</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Run crashed with KeyError: last_seen</p></div><div><small>Cause</small><p>Sample posts had no last_seen field</p></div><div><small>Fix</small><p>Merge step ignores entries without it</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Push rejected (fetch first)</p></div><div><small>Cause</small><p>Overlapping runs raced to push</p></div><div><small>Fix</small><p>Concurrency group and git pull --rebase before push</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Runs stuck in Queued</p></div><div><small>Cause</small><p>A backlog of runs I triggered</p></div><div><small>Fix</small><p>Cancelled the backlog; one run at a time</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Many 404s from company boards</p></div><div><small>Cause</small><p>I guessed the board names</p></div><div><small>Fix</small><p>Failures are skipped; check_sources.py keeps working boards</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Scam-looking posts in real data</p></div><div><small>Cause</small><p>Aggregator feeds include paid-placement ads</p></div><div><small>Fix</small><p>Scam-phrase filter, applied to saved posts too</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Wrong tags: an HR post tagged Mobile, a locality used as the city</p></div><div><small>Cause</small><p>Keyword rules read words in descriptions</p></div><div><small>Fix</small><p>Role from title first, better city parsing, LLM tagging</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>Details popup felt empty</p></div><div><small>Cause</small><p>Cards depended on a drawer</p></div><div><small>Fix</small><p>Whole card is a link, with Save and Apply</p></div></div>
+<div class="row rv"><div><small>Saw</small><p>LLM tagging silently fell back to keywords. The usage log showed 0 tokens.</p></div><div><small>Cause</small><p>GitHub Models was retired on 30 July 2026. Its endpoint now answers 200 OK as plain text.</p></div><div><small>Fix</small><p>Read the log, tested the endpoint from a workflow, moved to Google’s Gemini API. A 404 then showed the model name had changed; it is now a TAG_MODEL variable.</p></div></div>
+</div>
+</section>
+
+<section id="numbers">
+<p class="k rv">03 The numbers</p>
+<h2 class="rv">Fifty posts checked by hand.</h2>
+<div class="big">
+<div class="card rv"><b data-to="98">0</b><span>% role accuracy (49 of 50)</span></div>
+<div class="card rv" style="--d:.12s"><b data-to="98">0</b><span>% city accuracy (49 of 50)</span></div>
+<div class="card rv" style="--d:.24s"><b data-to="96">0</b><span>% role and city both right (48 of 50)</span></div>
+</div>
+<div class="bars rv">
+<div class="bar" style="--w:98"><p><span>Role</span><span>site 98% | keyword rules 60%</span></p><div class="tr"><i style="--w:98"></i></div><div class="tr kw"><i style="--w:60"></i></div></div>
+<div class="bar"><p><span>City</span><span>site 98% | keyword rules 84%</span></p><div class="tr"><i style="--w:98"></i></div><div class="tr kw"><i style="--w:84"></i></div></div>
+<div class="bar"><p><span>Both</span><span>site 96% | keyword rules 50%</span></p><div class="tr"><i style="--w:96"></i></div><div class="tr kw"><i style="--w:50"></i></div></div>
+</div>
+<div class="fig rv">
+<div><b>241 posts</b><span>tagged by the LLM in one full run, using 26,125 input and 7,878 output tokens</span></div>
+<div><b>$0.027 per 1,000 posts</b><span>about Rs 2.4, at 10 cents per million input tokens and 50 cents per million output tokens</span></div>
+<div><b>About 500 requests a day</b><span>for the tagging model in Google’s AI Studio, 20 posts each, so thousands of posts a day. Verify the figure at aistudio.google.com/rate-limit.</span></div>
+</div>
+<p class="note rv" style="margin-top:40px">The two misses: a creative intern post tagged Other instead of Design, and a post with only “India” as location, which I judged to be Mumbai. Among the 42 LLM-tagged posts, role was 100% and city 98%. This is a small sample checked by one person, who saw the site’s tags while reviewing, so read the figures as a range of roughly plus or minus 5 points. Data, AI tools and prompts are in <code>evaluation/JoBearth_evaluation.xlsx</code>.</p>
+</section>
+
+<section id="run">
+<p class="k rv">04 Run it yourself</p>
+<h2 class="rv">Fork, add a key, run.</h2>
+<ol class="n">
+<li class="rv">Fork the repo and enable GitHub Pages from <code>main</code> and <code>/docs</code>.</li>
+<li class="rv">Create a free key at aistudio.google.com, then save it and choose the model:
+<pre>gh secret set GEMINI_API_KEY
+gh variable set TAG_MODEL --body "gemini-3.5-flash-lite"</pre></li>
+<li class="rv">Add <code>ADZUNA_APP_ID</code> and <code>ADZUNA_APP_KEY</code> (free at developer.adzuna.com). Other keys are optional.</li>
+<li class="rv">Run the “Find working job boards” workflow once, then the daily one:
+<pre>gh workflow run "Daily refresh"</pre></li>
+<li class="rv">Check the log for the usage line. Tokens above zero mean the LLM is tagging:
+<pre>gh run view --log | grep "LLM usage"</pre></li>
+</ol>
+<p class="note rv">To repeat the accuracy check: <code>python3 evaluation/eval_sample.py make</code>, then <code>evaluation/review.py</code> to correct the tags, then <code>eval_sample.py score</code>.</p>
+</section>
+
+<section id="limits">
+<p class="k rv">05 Limits</p>
+<h2 class="rv">What to keep in mind.</h2>
+<p class="note rv">Posts are short snippets from the sources, and each card links to the original. Fresher detection is keyword based, so some senior posts slip through. Free-tier limits and model names change often, so check the “LLM HTTP” line in the log if tagging stops. Tools used: Gemini for tagging at run time, and Claude in chat for building and debugging.</p>
+</section>
+
+<section id="author" style="border-bottom:0">
+<p class="k rv">06 The author</p>
+<h2 class="rv">Parth Dhairyashil Pawar</h2>
+<p class="lead rv" style="margin-bottom:10px">MCA graduate focused on cloud and backend development.</p>
+<div class="fig rv">
+<div><b>Education</b><span>MCA, Parul University (2024 to 2026). BBA-CA, K.K. Wagh Arts, Commerce, Science &amp; Computer Science College (2021 to 2024).</span></div>
+<div><b>Skills built here</b><span>Python, GitHub Actions, REST APIs, LLM tagging and prompt design (Gemini API), data cleaning and deduplication, HTML, CSS and JavaScript, GitHub Pages, SEO pages and sitemaps, Git and the GitHub CLI, accuracy evaluation</span></div>
+<div><b>Contact</b><span><a href="mailto:parthpawar0108pp@gmail.com">parthpawar0108pp@gmail.com</a><br><a href="tel:9579695866">9579695866</a></span></div>
+<div><b>GitHub</b><span><a href="https://github.com/Papaplayer01" target="_blank" rel="noopener">github.com/Papaplayer01</a></span></div>
+</div>
+</section>
+</main>
+<footer>JoBearth documentation | Parth Dhairyashil Pawar</footer>
+<script>
+document.documentElement.classList.add("js");
+(function(){
+var h=document.getElementById("t"),s=h.textContent;h.textContent="";
+for(var i=0;i<s.length;i++){var e=document.createElement("span");e.textContent=s[i];e.style.animationDelay=(0.08*i)+"s";h.appendChild(e)}
+var bar=document.getElementById("bar");
+function pg(){var m=document.documentElement.scrollHeight-innerHeight;bar.style.transform="scaleX("+(m>0?scrollY/m:0)+")"}
+addEventListener("scroll",pg,{passive:true});pg();
+function count(el){var to=+el.dataset.to,t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1500,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");x.target.querySelectorAll("[data-to]").forEach(count);io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+var r=document.documentElement;
+try{var v=localStorage.getItem("jb-theme");if(v)r.setAttribute("data-theme",v)}catch(e){}
+document.getElementById("tg").addEventListener("click",function(){
+var dark=r.getAttribute("data-theme")?r.getAttribute("data-theme")==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+var n=dark?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("jb-theme",n)}catch(e){}});
+})();
+</script>
+</body>
+</html>
