@@ -1,7 +1,396 @@
 {
- "updated": "2026-11-19T07:43+00:00",
- "count": 347,
+ "updated": "2026-11-20T07:35+00:00",
+ "count": 370,
  "jobs": [
+  {
+   "title": "Software Engineer Internship 2027 (6 months) - India-based, Gurgaon office",
+   "company": "agoda",
+   "location_raw": "Gurgaon",
+   "url": "https://job-boards.greenhouse.io/agoda/jobs/6323041",
+   "description": "About Agoda At Agoda, we bridge the world through travel. Our story began in 2005, when two lifelong friends and entrepreneurs, driven by their passion for travel, launched Agoda to make it easier for everyone to explore the world. Today, we are part of Booking Holdings [NASDAQ: BKNG], with a diverse team of over 7,000 people from 90 countries, working together in offices around the globe. Every day, we connect people to destinations and experiences, with our great deals across our millions of hotels and holiday properties, flights, and experiences worldwide. No two days are the same at Agoda. Data and technology are at the heart of our culture, fueling our curiosity and innovation. If you’re ready to begin your best journey and help build travel for the world, join us. Internship period: 11 January - 30 June 2027 Interview process: Registration closes: 22 of November 2026 Announce shortlisted for Online coding test: 26 of November 2026 Online coding test: 28 - 29 of November 2026 Announce the shortlist: 2 of December 2026 On-site interview day: To be confirmed - 11 OR 17 of December 2026 Please note that you will need to be able to join the on-site Interview Day; remote or alternative interview options won’t be available for this round. Internship Opportunity : Dive into the World of Tech Magic! Are you the kind of tech enthusiast who loves to see how the pieces of the puzzle fit together? Whether you call yourself a \"full stack\" wizard, a \"back end\" guru, or a specialist in a particular domain, we want to hear from you! We're on the lookout for curious minds who are eager to explore the symphony of systems that power the tech world. No need to be a master of all trades—just bring your passion and a willingness to learn. What You'll Get to Do: Are you the kind of tech enthusiast who loves to see how the pieces of the puzzle fit together? We're on the lookout for curious minds who are eager to explore the symphony of systems that power the tech world. No need to be a master of all trades—just bring your passion and a willingness to learn. What You'll Get to Do: Code Like a Pro: Contribute to a high-quality codebase and work on scalable, fault-tolerant systems and APIs that handle millions of requests. Your code will be part of something big! Play with Cool Tech: Use cutting-edge languages like Scala, Kotlin, ReactJS, and C#, and dive into data technologies like MSSQL, PG, Kafka and Spark. All this while embracing agile development practices. Be a CI/CD Rockstar: Implement state-of-the-art CI/CD and testing techniques to ensure everything runs smoothly with zero downtime. You'll be the hero behind seamless operations! Gain hands-on experience with state-of-the-art AI tools and frameworks, prototype and productionize ML/LLM-driven features and help create an impact on how world travels. Think Big Picture: Consider the entire product lifecycle—from defining product requirements and choosing the right technology to coding standards, agile development",
+   "posted": "2026-11-20",
+   "source": "Greenhouse",
+   "id": "adb47f58cfbf",
+   "role": "Backend",
+   "city": "Gurgaon",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Product Management - APM - Telco",
+   "company": "paytm",
+   "location_raw": "Noida, Uttar Pradesh",
+   "url": "https://jobs.lever.co/paytm/7c3315bc-6f38-41da-a4f5-9fdeeea7cd12",
+   "description": "About Paytm Group: Paytm is India's leading mobile payments and financial services distribution company. Pioneer of the mobile QR payments revolution in India, Paytm builds technologies that help small businesses with payments and commerce. Paytm’s mission is to serve half a billion Indians and bring them to the mainstream economy with the help of technology. About the Team: Our Key Offerings are divided into 5 broad categories as follows: • Entertainment • Digital Platforms • CVM Solutions • Enterprise Services • Financial Platforms One97 has the widest and largest deployment of telecom applications on cloud platforms in India and has a myriad of VAS services that have helped operators augment their revenue even in complex markets like India, SAARC, Middle East, Africa and many more. What you'll do -Own one or more superapp features or modules end to end: problem, roadmap, launch and iteration. -Drive agentic AI features from concept to launch: define use cases, agent workflows, guardrails and success metrics. -Write PRDs with clear requirements, edge cases and success metrics. -Lead client calls and product demos; own the relationship, manage expectations and turn feedback into roadmap. -Build AI-based prototypes to validate ideas with users and clients before development. -Maintain the product and define user journeys and wireframes in Figma with the design team Prioritise the backlog and run sprint planning with engineering, design and QA. -Track product metrics with SQL and dashboards; make data-backed calls. -Drive UAT and go-live readiness across business, ops and compliance. -Lead and mentor a team of Product Analysts; set priorities and review their work. Use -AI tools like Claude and Kimi for PRDs, research, competitive analysis and data work. What we're looking for -2–5 years of experience; prior experience in a product role preferred. -Bachelor's degree from a reputed college. -Proven product ownership: features you shipped and outcomes you moved. -Strong client handling, demo and stakeholder management skills. -Exposure to agentic AI or LLM-powered product features. -Solid understanding of APIs and system integrations. -Working knowledge of SQL and Figma. -Hands-on experience with Agile / Scrum. -Clear, structured communication, written and verbal. -Regular, hands-on user of AI tools (Claude, Kimi), including for prototyping. Good to have -Experience with telecom products or consumer superapps at scale. -Experience leading a team: setting priorities, mentoring and reviewing the work of analysts or junior PMs. -MBA Why Join us? Bragging rights to be behind the largest fintech lending play in India.A fun, energetic and a once-in-a-lifetime environment that enables you to achieve your best possible outcome in your career.Compensation: If you are the right fit, we believe in creating wealth for you",
+   "posted": "2026-10-16",
+   "source": "Lever",
+   "type": "Full-time Employment",
+   "category": "Telco",
+   "id": "0a17d9859bbb",
+   "role": "Other",
+   "city": "Noida",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Product User Research, Intern",
+   "company": "sarvam",
+   "location_raw": "Bengaluru",
+   "url": "https://jobs.ashbyhq.com/sarvam/0a5bf81d-3370-47e6-88f4-14aa5102ba72",
+   "description": "ABOUT SARVAM AI Sarvam AI is building India's sovereign AI stack, spanning foundational models, infrastructure and applications. Our mission is to make powerful AI accessible and useful for India, building technology that works across languages, industries and real-world use cases. As we continue to build and scale our products, understanding how people interact with them becomes increasingly important. We're looking for a curious and research-oriented intern to help us understand our users better and shape the experiences we build. THE ROLE As a Product User Research Intern, you'll work closely with our product, design and engineering teams to understand user behaviour, identify friction points and uncover opportunities to improve our products. You'll interact directly with developers, product managers and founders, study how they use Sarvam's products, and translate your findings into actionable insights that influence product and design decisions. This is an opportunity to work on a new user research function at Sarvam, helping establish research practices and processes from the ground up. You'll also get ownership of a primary product area and the opportunity to see your research translate into real product improvements. WHAT YOU'LL WORK ON - Understand our users: Conduct user interviews, surveys and usability studies with developers, PMs and founders to understand their needs, behaviours and challenges. - Improve product experiences: Research user journeys across Sarvam's developer console, playground, API documentation and applications. Identify friction points across onboarding, API key creation, first API calls, billing and other key workflows. - Study developer journeys: Analyse the developer funnel, from sign-up to making the first API call and eventually becoming a paying user. Understand where users drop off and, more importantly, why. - Test and evaluate designs: Conduct usability testing on existing interfaces and new prototypes, run preference and A/B tests, and benchmark experiences against other developer products. - Turn research into insights: Analyse qualitative and quantitative data, identify patterns and present clear recommendations to product, design, growth and support teams. - Build the research practice: Help establish research playbooks, interview templates, participant recruitment processes and a research repository that can scale with the team. WHAT WE'RE LOOKING FOR - Strong curiosity about user behaviour and a genuine interest in understanding why people use products the way they do. - Comfortable speaking with users, conducting interviews and asking thoughtful, unbiased questions. - Technical fluency — you should be comfortable reading API documentation, making basic API calls using tools like Postman, curl or Python, and understanding what might have gone wrong when an API fails. - Comfortable working with data, analysing spreadsheets and interpreting product funnels or dashboards. - Strong written and verbal com",
+   "posted": "2026-11-20",
+   "source": "Ashby",
+   "id": "10d2e813cdb5",
+   "role": "Data",
+   "city": "Bengaluru",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Fresher General Ophthalmologist",
+   "company": "Medico Hub",
+   "location_raw": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5972375215?utm_medium=api&utm_source=80afbcb1",
+   "description": "Contact 639865 2832 URGENT HIRING – CONSULTANT GENERAL OPHTHALMOLOGIST Hospital Type: Eye Hospital Location: Doddaballapur, Bengaluru, Karnataka Position: Consultant General Ophthalmologist Department: Ophthalmology / OPD ⏰ Duty Timing: 10:30 AM – 7:00 PM ️ Lunch Break: 1 Hour Qualification - MS / DNB in Ophthalmology or DO from a recognized institution. - Valid medical registration. - Freshers and experienced candidates may apply. Key Responsibilities - Conduct daily OPD consultations and…",
+   "posted": "2026-11-20",
+   "source": "Adzuna",
+   "salary": "Rs 1,200,000 to Rs 1,320,000 a year",
+   "type": "full time",
+   "category": "Healthcare & Nursing Jobs",
+   "id": "31ee29a2bc65",
+   "role": "Other",
+   "city": "Bangalore",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Fresher Radiation Oncologist",
+   "company": "Medico Hub",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5969752547?utm_medium=api&utm_source=80afbcb1",
+   "description": "Contact 639865 2832 URGENT HIRING – CONSULTANT RADIATION ONCOLOGIST Location: Amethi, Uttar Pradesh Position: Consultant Radiation Oncologist Department: Radiation Oncology Experience: 0–3 Years Qualification - MD / DNB in Radiation Oncology. - Valid medical registration. - Fresh postgraduates and candidates with up to 3 years of experience can apply. Key Responsibilities - Evaluate and manage patients diagnosed with various types of cancer. - Assess patients and develop appropriate radiat…",
+   "posted": "2026-11-18",
+   "source": "Adzuna",
+   "salary": "Rs 3,000,000 to Rs 3,600,000 a year",
+   "type": "full time",
+   "category": "Healthcare & Nursing Jobs",
+   "id": "c0800fb0ede7",
+   "role": "Other",
+   "city": "Amethi",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "SAP - ABAP Fresher",
+   "company": "Metayb Metayb",
+   "location_raw": "Chennai, Tamil Nadu",
+   "url": "https://www.adzuna.in/details/5971862763?utm_medium=api&utm_source=80afbcb1",
+   "description": "About Metayb Metayb is a high-growth digital transformation partner that enables enterprises to lead in the digital-first economy. Within four years of inception, we have scaled to a team of 550 domain and technology experts dedicated to engineering seamless customer experiences, driving operational efficiency, and delivering actionable, data-driven insights. Our core competencies span Digital Transformation, Data Science – AI/ML, Application Development, Product Engineering, SAP Implementation…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "salary": "Rs 500,000 a year",
+   "type": "full time",
+   "category": "IT Jobs",
+   "id": "c00b8873229a",
+   "role": "Backend",
+   "city": "Chennai",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Sales Engineer ( Fresher)_Rz",
+   "company": "Iassess Consultants",
+   "location_raw": "Mumbai, Maharashtra",
+   "url": "https://www.adzuna.in/details/5972375279?utm_medium=api&utm_source=80afbcb1",
+   "description": "We are Hiring for Sales Engineer for a leading construction equipment manufacturing company Job Location : Mumbai / Navi Mumbai Base location : Mahape - Navi Mumbai Skills: Fresher who are interested to build a career in sales can apply •Excellent communication and presentation skills. •Time management and ability to meet deadlines •Proficiency in CRM software and Microsoft Office Suite (Excel, Word, PowerPoint). •Ability to work independently and manage time effectively in a field-based role. …",
+   "posted": "2026-11-20",
+   "source": "Adzuna",
+   "salary": "Rs 300,000 to Rs 500,000 a year",
+   "type": "full time",
+   "category": "Sales Jobs",
+   "id": "3cec0d921c3d",
+   "role": "Sales & Marketing",
+   "city": "Mumbai",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Customer Support Freshers - Malayalam",
+   "company": "2COMS Consulting Pvt. Ltd.",
+   "location_raw": "Richmond Town, Bangalore",
+   "url": "https://www.adzuna.in/details/5971490314?utm_medium=api&utm_source=80afbcb1",
+   "description": "Summary: We are seeking dynamic and customer-focused professionals to join our Greenlight Hub team in Gurgaon as Customer Support Specialists. This role is central to empowering new driver partners by delivering exceptional in-person support, guiding them through onboarding, and equipping them with the tools and knowledge needed to succeed. As a key member of our operations team, you will play a vital role in shaping the driver experience, ensuring smooth onboarding, resolving issues efficientl…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "salary": "Rs 150,000 to Rs 2,000,000 a year",
+   "category": "IT Jobs",
+   "id": "33ce4ad0f02c",
+   "role": "Support",
+   "city": "Bangalore",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Customer Sales Executive – Travel Sales (Ahmedabad) | Freshers Welcome",
+   "company": "Swaraaj Consultancy",
+   "location_raw": "Ahmedabad, Gujarat",
+   "url": "https://www.adzuna.in/details/5971483033?utm_medium=api&utm_source=80afbcb1",
+   "description": "Customer Sales Executive – Travel Sales Location: Ahmedabad (onsite) Salary: ₹18,000 – ₹30,000 per month Openings: 15 to 20 Full-time Company: Growing Travel Company What you will do • Talk to customers on calls and chat • Follow up on leads • Turn travel enquiries into bookings • Help customers pick the right trip • Keep records of your calls and follow-ups Who can apply • Graduates and freshers with strong communication are welcome • Good Hindi and English (must) • Gujarati is a plus • G…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "salary": "Rs 200,000 to Rs 360,000 a year",
+   "type": "full time",
+   "category": "Sales Jobs",
+   "id": "091603b5f377",
+   "role": "Sales & Marketing",
+   "city": "Ahmedabad",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Hindi Customer Support",
+   "company": "ADVENXA",
+   "location_raw": "Kochi, Ernakulam",
+   "url": "https://www.adzuna.in/details/5941122893?utm_medium=api&utm_source=80afbcb1",
+   "description": "Customer Support - Hindi Location: Padivattom, Edappally Experience: Minimum 1 year of experience in Banking/BPO/Customer support . (Consider Fresher with Good Comm Skills in Hindi & English) Language Proficiency: Fluent in English and Hindi Qualifications: Bachelor's degree is mandatory. Salary: Salary: ₹20,000.00 - ₹30,000.00 per month. Working Days: 5 days a week Job Overview We are looking for a Customer Support Executive – Hindi to handle customer interactions and provide excellent support…",
+   "posted": "2026-10-25",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Customer Services Jobs",
+   "id": "4c84c06640ea",
+   "role": "Support",
+   "city": "Kochi",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Business Development Associate (BDA) – ISR (Inside sales Representive)",
+   "company": "Ampler Technologies Private Limited",
+   "location_raw": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5952342392?utm_medium=api&utm_source=80afbcb1",
+   "description": "About the Role We are looking for a motivated Business Development Associate to join our inside sales team in Marathahalli, Bengaluru. You will find new business opportunities, generate and follow up on leads, and help corporate clients find the right IT hardware and infrastructure solutions . This is a great opportunity for freshers and early-career professionals who want to build a career in B2B technology sales. Key Responsibilities Identify and develop new business opportunities with corpor…",
+   "posted": "2026-11-04",
+   "source": "Adzuna",
+   "category": "Sales Jobs",
+   "id": "36b21d027d52",
+   "role": "Sales & Marketing",
+   "city": "Bangalore",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Customer Service",
+   "company": "Aditya Jagdish Tanna",
+   "location_raw": "Mumbai, Maharashtra",
+   "url": "https://www.adzuna.in/details/5962480235?utm_medium=api&utm_source=80afbcb1",
+   "description": "Job Location: Malad, Mumbai Eligibility: Graduates (Freshers) / HSC candidates with minimum 6 months of documented experience. Salary: Freshers: ₹25,000 in-hand Experienced: ₹30,000 -35,000 in-hand Shift & Schedule: US Rotational Night Shifts | 5 Days Working | 2 Rotational Week-Offs Key Responsibilities: Handle customer queries via calls, emails, and chat. Provide prompt and effective customer support. Resolve customer complaints professionally. Maintain accurate customer records. Follow compa…",
+   "posted": "2026-11-12",
+   "source": "Adzuna",
+   "category": "Customer Services Jobs",
+   "id": "49f24264ff8d",
+   "role": "Support",
+   "city": "Mumbai",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Apprentice",
+   "company": "American Express",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5971851276?utm_medium=api&utm_source=80afbcb1",
+   "description": "Description The Finance trainee apprentice will be responsible for supporting key financial and accounting processes within the organization. The role will involve structured training, collaboration and opportunity to experience the dynamic world of Amex Finance every day. Responsibilities Responsible for managing Balance sheet Reconciliation – Research & Clearance and Analytics Sustain enterprise-wide Balance Sheet health while remaining focused on efficiency and sustaining financial integrity…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Accounting & Finance Jobs",
+   "id": "7af4a49e8bbe",
+   "role": "Other",
+   "city": "Other",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Intern",
+   "company": "Hewlett Packard Enterprise",
+   "location_raw": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5971865243?utm_medium=api&utm_source=80afbcb1",
+   "description": "Intern This role has been designed as 'Hybrid' with a requirement that you will work on average 2 days per week from an HPE office. Who We Are: Hewlett Packard Enterprise is the global edge-to-cloud company advancing the way people live and work. We help companies connect, protect, analyze, and act on their data and applications wherever they live, from edge to cloud, so they can turn insights into outcomes at the speed required to thrive in today’s complex world. Our culture thrives on finding…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "IT Jobs",
+   "id": "56ea58ae8a6a",
+   "role": "Other",
+   "city": "Bangalore",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Intern",
+   "company": "Universal Sompo General Insurance",
+   "location_raw": "Haryana, India",
+   "url": "https://www.adzuna.in/details/5971871679?utm_medium=api&utm_source=80afbcb1",
+   "description": "Description The Agency Intern will work closely with the IMD team to deliver essential back‑end services such as endorsement handling, cheque replacement, and the creation and maintenance of payment links. This role offers practical exposure to financial transaction workflows, data integrity checks, and cross‑functional collaboration within a fast‑paced legal entity environment. Responsibilities Assist with processing endorsement requests and documentation. Support the cheque replacement workfl…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "category": "IT Jobs",
+   "id": "531762fc6e10",
+   "role": "Operations & HR",
+   "city": "Haryana",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "In_Intern",
+   "company": "PricewaterhouseCoopers",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5971879779?utm_medium=api&utm_source=80afbcb1",
+   "description": "Line of Service Advisory Industry/Sector Not Applicable Specialism Deals Management Level Intern/Trainee Job Description & Summary At PwC, we focus on nurturing and developing individuals across our entry level careers programmes, providing them with opportunities to start their professional journey. We offer various entry-level positions and programmes for individuals to gain valuable experience and grow their skills. As an intern at PwC, you will get hands-on experience and exposure to variou…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Accounting & Finance Jobs",
+   "id": "bc457ff12133",
+   "role": "Other",
+   "city": "Other",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "EIC Intern",
+   "company": "Cushman & Wakefield",
+   "location_raw": "Mumbai, Maharashtra",
+   "url": "https://www.adzuna.in/details/5971844647?utm_medium=api&utm_source=80afbcb1",
+   "description": "Job Title EIC Intern Job Description Summary Job Description Job Title: Intern – Real Estate Advisory (Strategic Advisory) Location: [Mumbai / Ahmedabad] Business Line: Strategic Advisory Duration: 3–6 months About the Role As an Intern within the Strategic Advisory team, you will support the execution of complex real estate advisory mandates across asset classes. The role offers exposure to market assessments, development strategy, financial feasibility, and client-facing deliverables, working…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Consultancy Jobs",
+   "id": "b3fd58601b51",
+   "role": "Other",
+   "city": "Mumbai",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Intern, Analytics",
+   "company": "Synchrony",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5970567484?utm_medium=api&utm_source=80afbcb1",
+   "description": "Job Description: Role Title: Intern, Analytics (L07) Company Overview: With roots in consumer finance that trace back to 1932, Synchrony is a leader in consumer credit and promotional financing, providing a range of products for a diverse group of national and regional retailers in USA, including main street mainstays, local merchants, manufacturers, buying groups, industry associations, and healthcare providers. Synchrony International Services Pvt. Ltd. is recognized as 2 among India's Best C…",
+   "posted": "2026-11-18",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Consultancy Jobs",
+   "id": "423c9fa31999",
+   "role": "Data",
+   "city": "Other",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Graduate Engineer Trainee, Sales Support",
+   "company": "Armstrong Fluid Technology",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5971880053?utm_medium=api&utm_source=80afbcb1",
+   "description": "The Position provides Support and co-ordination for smooth process of sales enablement and order fulfilment by addressing the customer enquiries, best practices, sales process improvements, order triage, order placing, shipment support, AR support and continuous improvement. This position to be in Bangalore Office Full Time Key accountabilities of this position are: Internal Sales Support: Preparation of Base bid for customer enquiries. To deliver quotation in a timely manner. Preparation of qu…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Graduate Jobs",
+   "id": "8545294b6da1",
+   "role": "Support",
+   "city": "Other",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu",
+   "company": "Jobgether",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5971846432?utm_medium=api&utm_source=80afbcb1",
+   "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu based in India. We are looking for talented and ambitious graduate software engineers to join globally distributed engineering teams working across open-source technologies and Linux systems. This opportunity is designed for exceptional 2026 and 2027 graduates who are passionate about software engine…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "Graduate Jobs",
+   "id": "77b6639ddf18",
+   "role": "Backend",
+   "city": "Other",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "IT Intern",
+   "company": "Thermo Fisher Scientific",
+   "location_raw": "India",
+   "url": "https://www.adzuna.in/details/5971845905?utm_medium=api&utm_source=80afbcb1",
+   "description": "Work Schedule Standard (Mon-Fri) Environmental Conditions Office Job Description System Administrator – Graduate Engineer About Thermo Fisher Scientific At Thermo Fisher Scientific, everything we do begins with our Mission — to enable our customers to make the world healthier, cleaner, and safer. As a global leader in serving science, we deliver innovative solutions that impact healthcare, life sciences, and research worldwide. As a Administrator at Thermo Fisher Scientific, you won’t just be g…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "IT Jobs",
+   "id": "ccee19170782",
+   "role": "Support",
+   "city": "Other",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "IT Intern",
+   "company": "ThermoFisher Scientific",
+   "location_raw": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5972599331?utm_medium=api&utm_source=80afbcb1",
+   "description": "Work Schedule Standard (Mon-Fri) Environmental Conditions Office Job Description System Administrator - Graduate Engineer About Thermo Fisher Scientific At Thermo Fisher Scientific, everything we do begins with our Mission - to enable our customers to make the world healthier, cleaner, and safer. As a global leader in serving science, we deliver innovative solutions that impact healthcare, life sciences, and research worldwide. As a Administrator at Thermo Fisher Scientific, you won't just be g…",
+   "posted": "2026-11-20",
+   "source": "Adzuna",
+   "category": "IT Jobs",
+   "id": "a2d58912b530",
+   "role": "Support",
+   "city": "Bangalore",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
+  {
+   "title": "Sales Engineer",
+   "company": "Hunarstreet Technologies Pvt Ltd",
+   "location_raw": "Mumbai, Maharashtra",
+   "url": "https://www.adzuna.in/details/5971629934?utm_medium=api&utm_source=80afbcb1",
+   "description": "Job Description – Sales Engineer Location: Ghatkopar, Mumbai Department: Sales & Marketing Experience: 2 Years Industry: Food & Beverages (F&B) Qualification: Diploma or Graduate in any Engineering field Job Overview We are looking for a dynamic and self-motivated Sales Engineer with a minimum of 2 years of experience in the Food & Beverage industry. The candidate will be responsible for developing new business opportunities, maintaining customer relationships, understanding technical requireme…",
+   "posted": "2026-11-19",
+   "source": "Adzuna",
+   "salary": "Rs 300,000 to Rs 450,000 a year",
+   "type": "full time",
+   "category": "Sales Jobs",
+   "id": "65f7e1851545",
+   "role": "Sales & Marketing",
+   "city": "Mumbai",
+   "by": "llm",
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20"
+  },
   {
    "title": "HR Executive (Fresher)",
    "company": "headsquestcom",
@@ -17,7 +406,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AR Caller - International Voice (Fresher only)",
@@ -33,7 +422,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "International Voice Process",
@@ -49,7 +438,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Customer Support Executive",
@@ -65,7 +454,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Trainee-Support",
@@ -81,7 +470,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Customer Support Executive – Work From Home- Kolkata",
@@ -99,7 +488,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Customer Support Executive – Work From Home- Ranchi",
@@ -116,7 +505,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Jewellery Sales Executive",
@@ -149,7 +538,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Electrical Engineer",
@@ -165,7 +554,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Mechanical Engineer",
@@ -181,7 +570,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Civil Engineer",
@@ -197,7 +586,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Finance Executive",
@@ -213,7 +602,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "VMC Setter & Operator",
@@ -230,7 +619,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "VMC Operator",
@@ -247,7 +636,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Customer Service Executive",
@@ -265,7 +654,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Financial Advisor",
@@ -282,7 +671,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer",
@@ -298,7 +687,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -314,7 +703,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Internship",
@@ -330,7 +719,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Intern",
@@ -347,7 +736,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -365,7 +754,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "WordPress Intern",
@@ -382,7 +771,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Finance Intern",
@@ -399,7 +788,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Finance Intern",
@@ -432,7 +821,7 @@
    "city": "Delhi",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Backend Engineer, Developer & End-user Experience Platform",
@@ -440,14 +829,14 @@
    "location_raw": "Toronto Canada, San Francisco, Remote in US, Remote in Canada",
    "url": "https://stripe.com/jobs/search?gh_jid=7292520",
    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career. About the team Stripe's Developer & End-user Experience Platform (DEEP) organization empowers all of Stripe's products with a shared product platform that helps with rapidly delivering high-quality, cross-product experiences across our UI and API surfaces. It focuses on providing a consistent and scalable developer experience that any developer (both internal and external) can leverage to accelerate a merchant's ability to create value using Stripe. Team matching — exact team matching for one of the subteams will begin during final stages. Please note we may also consider you for different orgs based on your experience, location, etc. More information on our team matching process can be found here . What you’ll do We're looking for Backend Engineers who want to make an impact on managing money at a global scale with a passion for building ergonomic APIs. You'll play a key role in extending our balance management platform and in building out a new funds accessibility platform that enterprises and SMBs use. Our team collaborates with many cross-functional teams—from Infrastructure to Product—at Stripe to deliver innovative solutions that address evolving user needs. Responsibilities Scope, design, build, and maintain APIs, services, and large-scale systems that reliably and efficiently handle billions of money movement requests Debug and solve critical production issues across services and multiple levels of the stack Mentor engineers to help them grow Collaborate with stakeholders across the company to build new features at large-scale, while improving internal engineering standards, tooling, and processes Collaborate effectively in a distributed and hybrid team, maintaining open communication and strong connections with colleagues Who you are We're looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Minimum requirements 2–12+ years of industry software engineering experience (does not include internships or co-ops) Strong coding skills in any programming language (we understand new languages can be learned on the job, so our interview process is language-agnostic) Strong collaboration skills and the ability to work across workstreams within your team and contribute to your peers' success Ability to thrive with a high level of autonomy and responsibility, with an entrepreneurial minds",
-   "posted": "2026-11-03",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "cc2c8b32b659",
    "role": "Backend",
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Legal Entity Controller",
@@ -455,14 +844,14 @@
    "location_raw": "Bangalore",
    "url": "https://stripe.com/jobs/search?gh_jid=6209187",
    "description": "Legal Entity Controller (Bangalore) About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world's largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career. To further this important mission, we're building our Accounting team in Bangalore Finance and are looking for someone to help us scale for the future in a fast-paced environment. Responsibilities End-to-end controllership for assigned legal entity(ies), including financial close, statutory reporting, audit readiness, regulatory filings, and adoption with the board or local management Preparation and sign-off of statutory financial statements and coordination of statutory adoption processes with local boards and directors and external advisors Manage external auditors and local service providers, setting scope, driving timelines, resolving findings, and maintaining high-quality documentation for audits, reviews, and regulatory inspections Oversee monthly, quarterly, and year-end close, leading complex journal entries, reconciliations, technical accounting assessments, variance analysis, and executive reporting packages Lead the design, implementation, and maintenance of entity-level accounting policies and internal control frameworks, and own SOX and internal control compliance and remediation where applicable Serve as the primary business partner to Tax, Treasury, Legal, FP&A, and regional finance teams on transactions and policy changes that affect the entity's accounting, tax, and regulatory outcomes Identify, prioritize, and deliver process improvements and automation initiatives that materially increase accuracy, speed, or scalability of entity accounting (RPA, ERP configuration, reporting pipelines, templates, or tooling) Resolve technical accounting questions and apply US GAAP, IFRS, and local GAAP judgment — escalate to central technical accounting teams when needed with well-formed recommendations Provide coaching and mentorship to more junior accounting teammates, and lead cross-functional projects and working groups to improve operating models Act as a subject-matter expert for entity-level reporting requests, internal and external audits, regulatory inquiries, and management escalations Qualifications Professional accountancy qualification (CA, ACA, ACCA, CIMA, or equivalent) with 9+ years of progressive accounting experience, including significant controllership exposure Deep hands-on experience with monthly and year-end close, statutory financial statement preparation, external audits, regulatory filings, and variance analysis Strong working knowledge of US GAAP and IFRS, and experience applying lo",
-   "posted": "2026-11-03",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "bb0b104cfe50",
    "role": "Operations & HR",
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "SDC Recruiter",
@@ -470,14 +859,14 @@
    "location_raw": "Bengaluru",
    "url": "https://stripe.com/jobs/search?gh_jid=8237526",
    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone's reach while doing the most important work of your career. About the team The recruiting team seeks to build the culture of Stripe by aligning the strongest global talent to our highest impact business needs. They focus on bringing Stripe’s operating principles to life in their recruiting processes, providing the highest-quality candidate experience, and leveraging data driven storytelling to influence the business. What you’ll do To further this important mission, we are looking for a consultative and creative recruiter to grow and scale our Business & Core teams in APAC. You can expect high impact and wide-ranging responsibilities: owning full-cycle recruiting, driving hiring strategy, and delivering best-in-class candidate experience. This person must be a builder who thrives in a learning environment—unafraid to try new things, embrace new ideas, and welcome suggestions for how we can iterate on our processes. Responsibilities Fulfill junior to senior level and high volume requisitions, scaling up teams across Stripe Delivery Center in India, Bangalore Partner with multiple senior stakeholders with varying priorities to understand their hiring objectives and drive recruiting strategies to build a strong leadership team for the Operations org Partner closely with recruiting analytics to ensure accurate reporting of hiring progress back to the business Build and drive cross-functional partnerships with compensation, human resources, finance and others to scale hiring across Stripe Consistently generate a healthy pipeline of high quality candidates by driving initiatives across branding, events, and employee referral channels Provide timely reporting of key metrics and insights to drive decisions and improve processes Who you are We're looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Minimum requirements 8+ years of full-cycle recruiting experience (in-house experience strongly preferred) Strong track record in target achievements, experience managing high volume hiring in fast moving environment Experience partnering with senior executives throughout the recruiting process, acting as an effective hiring partner and trusted advisor High agency, can handle ambiguity in a fast-moving organization, and thrives on a high level of autonomy and responsibility Proven abilities to attract passive candidates and build a diverse pipelines Stro",
-   "posted": "2026-10-29",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "6cad4f0c80e4",
    "role": "Operations & HR",
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer, Intern",
@@ -485,14 +874,14 @@
    "location_raw": "Bengaluru",
    "url": "https://stripe.com/jobs/search?gh_jid=8031833",
    "description": "Who we are About Stripe Stripe is a technology company focused on improving the conditions for economic growth and prosperity. We build programmable financial infrastructure, rethinking from first principles how financial services should work, to make it easier and cheaper for any business to start and scale. More than 10 million businesses build on Stripe, spanning the economic frontier—from solo founders to established enterprises—united by a practical focus on growth. The most ambitious companies in the world use Stripe as core infrastructure to grow faster. They process trillions of dollars a year on Stripe, equivalent to around 1.6% of global GDP. While economic growth makes everyone better off, open markets also enable greater variety. When any business can easily serve a global customer base, the quality and diversity of products in the world increase, and craft and creativity are unleashed into the smallest niches. Our own growth is wholly contingent on the success of the businesses building on Stripe. We therefore invest back into our technology at an unusual rate. We make upgrades to our products every single day to deliver compounding gains to our customers. We maintain some of the most reliable APIs on the internet. We build entirely new pieces of financial infrastructure to enable new ideas. And our significant advances in risk and fraud infrastructure over many years are making the internet economy safer and more accessible. Though people at Stripe don’t tend to take themselves seriously, Stripe is a fairly serious place: our customers are depending on us for their livelihoods. We admire ambition, intensity, curiosity, humility, and rigor. The most effective people become knowledgeable about many domains besides their own. Any company is an applied exercise in understanding some aspect of society or the market. In working with so many (especially the new and innovative ones), we think that Stripe is one of the very best places to learn about how the world works. What you’ll do As an intern at Stripe you’ll work on projects across our stack that directly impact the way millions of businesses operate. You’ll own problems end to end with the support of your manager and teammates. It’s an opportunity to work alongside some of the most creative and technically rigorous engineers in the industry and learn how to ship high-quality work at scale. By contributing to Stripe’s codebase you’ll work across domains that give you insight into how the global economy works. Recent intern projects include expanding Stripe’s Payments Foundation Model capabilities to improve generalized anomaly detection, building more approachable fraud controls, creating safer payouts, and developing user-facing solutions that prevent costly pricing mistakes and make merchant checkout setup easier. Our internship program is competitive and the expectations are high. Responsibilities Operate as a real member of the team you join; engage in team discussions, decisions,",
-   "posted": "2026-10-29",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "887dc88b0afc",
    "role": "Backend",
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer, Vulnerability Management",
@@ -500,14 +889,14 @@
    "location_raw": "US - Remote",
    "url": "https://stripe.com/jobs/search?gh_jid=8089353",
    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career. About the team In this role, you would join Stripe's Vulnerability Management team, whose mission is to \"Surface vulnerabilities at scale across Stripe.\" Our vision is to create a culture of continuous excellence in managing vulnerabilities. We want to enhance customer trust by giving users context about threats and vulnerabilities affecting Stripe's systems. We aim to be a key partner in Stripe's risk management by providing visibility into vulnerabilities across Stripe's products and services. What you’ll do As a Software Engineer focused on Vulnerability Management at Stripe, you will use your software engineering expertise to find and prioritize vulnerabilities in our systems. Working closely with engineers across the company, you will drive the timely remediation of discovered vulnerabilities, playing a key role in Stripe's overall security and risk strategy. In addition, you will continuously improve Stripe's security defenses by enhancing our vulnerability management processes and selecting effective scanning tools to uncover weaknesses. Your core responsibilities as a Vulnerability Management Software Engineer will involve building data- and agent-backed systems to surface vulnerabilities across Stripe. In addition, you will coordinate fixes to prevent exploits that could impact Stripe or our users and serve as an advisor on security risks. All of this requires collaborating cross-functionally to advocate for practices that strengthen the safety of Stripe's systems and data. Who you are We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Responsibilities Identify vulnerabilities using automated tools and triage them appropriately Collaborate with other teams to drive remediation of vulnerabilities Contribute to our overall security and risk management strategy Continuously improve our security posture, processes, and tools Minimum requirements 2+ years of industry software engineering experience (does not include internships or co-ops) Software engineering experience within the security domain Empathy, strong communication skills and a deep respect for the power of collaboration Excellent problem-solving skills and attention to detail High standards for code quality and a constructive attitude to help others raise the bar Preferred qualifications An ability to think cre",
-   "posted": "2026-10-29",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "f56f302b5dbd",
    "role": "Security",
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "University Recruiter (Fixed Term)",
@@ -515,14 +904,14 @@
    "location_raw": "San Francisco, New York, Seattle, US-Remote",
    "url": "https://stripe.com/jobs/search?gh_jid=8226211",
    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career. About the team To further this important mission, we are building the foundation for a long-term talent bench at Stripe. We believe every campus hire can build products with meaningful impact at Stripe, and provide a far-reaching impact for anyone trying to grow their business online. We are looking for a University Recruiter to join our team to attract and hire the very best junior talent, while providing each candidate with an exceptional experience. This is a 12 month fixed term contract. What you’ll do We’re a small but mighty team, and are committed to big results. You will help shape the future of our early-stage programs and be responsible for all parts of the campus recruiting life cycle, including, but not limited to, organizing and leading on campus events, driving a strong and diverse candidate pipeline, branding, building relationships with internal stakeholders, and managing our global internship program. You must be a builder who thrives in a learning environment - unafraid to try new things, embrace new ideas, and welcome suggestions for how we can iterate on our processes. Responsibilities Partner closely with Stripe’s engineering organization to build the foundation of our early-stage university program Manage the full-cycle recruiting process for new graduate and intern candidates across multiple roles and offices Develop deep relationships with university groups, including faculty and student organizations, to design school-specific strategies that enhance our value proposition and brand on campus Plan and execute on campus events with a focus on early engagement, education, and strategic branding Screen candidates and ensure that our hiring process is consistent and inclusive Drive a positive candidate experience for every new graduate and intern candidate considering a career at Stripe Build and iterate on our year-round internship program alongside teammates and cross-functional stakeholders Act as a resource to interns from hire to full-time conversion Proactively share data-centric updates with internal stakeholders to maintain aligned decision making and build trusted partnerships Who you are We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement. Minimum requirements A minimum of 5+ years full-cycle university recruiting experience in a fast-paced, high-gr",
-   "posted": "2026-10-29",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "db8c2710f4cf",
    "role": "Operations & HR",
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Evergreen - AI Engineer, AI FDE",
@@ -552,7 +941,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer (L3) Email",
@@ -582,7 +971,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Insider Risk Security Engineer",
@@ -597,7 +986,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Business Analyst - NPI Operations",
@@ -627,7 +1016,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "IT System Administrator I",
@@ -642,7 +1031,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Payroll Industrial Trainee",
@@ -657,7 +1046,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Product Management Intern",
@@ -672,7 +1061,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer (CPD) - Winter Intern",
@@ -687,7 +1076,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Account Development Representative - Canada",
@@ -702,7 +1091,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Account Development Representative - Canada",
@@ -717,7 +1106,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Support Specialist, R1",
@@ -732,7 +1121,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AI Researcher Intern",
@@ -747,7 +1136,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Customer Experience Engineer, L1",
@@ -777,7 +1166,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Agent Developer Test III",
@@ -792,7 +1181,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Analyst – Strategic Alliances",
@@ -807,7 +1196,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Deal Desk Analyst",
@@ -822,7 +1211,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Forward Deployed Engineer II",
@@ -837,7 +1226,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Python SDE-III",
@@ -852,7 +1241,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Development Engineer - IV",
@@ -867,7 +1256,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer",
@@ -882,7 +1271,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Associate - Motor Insurance",
@@ -899,7 +1288,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "CST - Associate - Bill Payments CST",
@@ -916,7 +1305,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "CST - Associate - Social CST",
@@ -933,7 +1322,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Facilitator - Digital & Financial Literacy - 6 months Contractual",
@@ -950,7 +1339,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern - Talent Acquisition",
@@ -967,7 +1356,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern- HR Onboarding",
@@ -984,7 +1373,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern-Talent Acquisition",
@@ -1001,7 +1390,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Legal Contracts",
@@ -1018,7 +1407,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Lending Operations - AM - Merchant Lending",
@@ -1035,7 +1424,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -1052,7 +1441,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -1069,7 +1458,7 @@
    "city": "Vijayawada",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -1086,7 +1475,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -1103,7 +1492,7 @@
    "city": "Kochi",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Talent Acquisition Intern",
@@ -1120,7 +1509,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Talent Acquisition Intern - Bangalore",
@@ -1137,7 +1526,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Talent Acquisition Intern - IT Recruitment",
@@ -1154,7 +1543,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Talent Acquisition Specialist - Business Hiring (Non-Tech)",
@@ -1171,7 +1560,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Treasury & Capital Markets - Paytm Money",
@@ -1188,7 +1577,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer, Full Stack (People Innovation Labs)",
@@ -1203,7 +1592,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "SALES & APPLICATION ENGINEER- Fresher",
@@ -1220,7 +1609,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Innovation & Automation",
@@ -1254,7 +1643,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Intern",
@@ -1288,7 +1677,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "WordPress Intern",
@@ -1306,7 +1695,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "PPC Intern",
@@ -1324,7 +1713,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern (Bachelor's)",
@@ -1337,10 +1726,10 @@
    "category": "IT Jobs",
    "id": "c8ece13281c1",
    "role": "Other",
-   "city": "Bengaluru",
-   "by": "kw",
+   "city": "Bangalore",
+   "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee - AI/ML",
@@ -1389,7 +1778,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Remote Office Assistant",
@@ -1407,7 +1796,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Inside Sales Contractor",
@@ -1425,7 +1814,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Strategy & Operations Coach APAC",
@@ -1440,14 +1829,14 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Junior Market Analyst",
    "company": "MEYA HOLDINGS",
    "location_raw": "Remote, Worldwide",
    "url": "https://remoteOK.com/remote-jobs/remote-junior-market-analyst-meya-holdings-1137700",
-   "description": "MEYA HOLDINGS LTD is an international company specializing in digital assets, cryptocurrency markets, and financial research. We focus on developing data-driven trading approaches and optimizing market operations. Our remote team brings together professionals from different parts of the world. We are looking for a motivated Junior Market Analyst with at least 1 year of experience in cryptocurrency or financial trading. You will assist with market analysis, monitor trading performance, and contribute to improving our daily operational processes. Key Responsibilities Monitor cryptocurrency prices, trading volumes, and market developments. Analyze market data and identify potential trading opportunities. Assist with daily Spot, Futures, and Options trading activities. Monitor asset allocation across centralized and decentralized exchanges. Prepare reports on market conditions and trading performance. Identify operational or technical issues and coordinate with the relevant teams. Monitor automated trading systems and ensure compliance with risk management rules. Maintain accurate financial and operational records. Collaborate with internal departments to improve trading processes. What We Offer Fully remote position with no geographical restrictions. Flexible working hours across different time zones. Access to professional trading platforms and analytical tools. Opportunity to gain practical experience in digital asset markets. Career development opportunities within an international company. Friendly working environment with ongoing support and feedback. Requirements Basic understanding of spot, futures, and options markets. Analytical mindset and attention to detail. Ability to work under pressure and make quick decisions. Good communication skills in English (written and spoken). Team player, adaptable, and self-organized. Apply here: https://meya-ltd.com/work/remoteok Please mention the word **PEACE** and tag RMjAuNjQuMTA3LjQ5 when applying to show you read the job post completely (#RMjAuNjQuMTA3LjQ5). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+   "description": "MEYA HOLDINGS LTD is an international company specializing in digital assets, cryptocurrency markets, and financial research. We focus on developing data-driven trading approaches and optimizing market operations. Our remote team brings together professionals from different parts of the world. We are looking for a motivated Junior Market Analyst with at least 1 year of experience in cryptocurrency or financial trading. You will assist with market analysis, monitor trading performance, and contribute to improving our daily operational processes. Key Responsibilities Monitor cryptocurrency prices, trading volumes, and market developments. Analyze market data and identify potential trading opportunities. Assist with daily Spot, Futures, and Options trading activities. Monitor asset allocation across centralized and decentralized exchanges. Prepare reports on market conditions and trading performance. Identify operational or technical issues and coordinate with the relevant teams. Monitor automated trading systems and ensure compliance with risk management rules. Maintain accurate financial and operational records. Collaborate with internal departments to improve trading processes. What We Offer Fully remote position with no geographical restrictions. Flexible working hours across different time zones. Access to professional trading platforms and analytical tools. Opportunity to gain practical experience in digital asset markets. Career development opportunities within an international company. Friendly working environment with ongoing support and feedback. Requirements Basic understanding of spot, futures, and options markets. Analytical mindset and attention to detail. Ability to work under pressure and make quick decisions. Good communication skills in English (written and spoken). Team player, adaptable, and self-organized. Apply here: https://meya-ltd.com/work/remoteok Please mention the word **PEACE** and tag RMTcyLjE4NC4yMTAuMTYx when applying to show you read the job post completely (#RMTcyLjE4NC4yMTAuMTYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
    "posted": "2026-11-06",
    "source": "RemoteOK",
    "salary": "$60,000 to $80,000 a year (USD)",
@@ -1456,7 +1845,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Transport Planner",
@@ -1471,7 +1860,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AI Forward Deployed Engineer - France",
@@ -1479,13 +1868,13 @@
    "location_raw": "Paris, France",
    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8929894002",
    "description": "AI Engineer - FDE (Forward Deployed Engineer) Req ID: CSQ427R334 We welcome remote applicants located near our offices. Preferred locations: Paris, France. Remote location for candidates to be based in the France region only (not remote from any other country) Mission The AI Forward Deployed Engineering (AI FDE) team is a highly specialised customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specialisations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. Reporting to: Senior Manager - AI FDE, EMEA The impact you will have: Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems Own production rollouts of consumer and internally facing GenAI applications Serve as a trusted technical advisor to customers across a variety of domains Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally Collaborate cross-functionally with the product and engineering teams to influence priorities and shape the product roadmap What we look for: Min 4 years' experience Experience building GenAI applications, including RAG, multi-agent systems, Text2SQL, fine-tuning, etc., with tools such as HuggingFace, LangChain, and DSPy Expertise in deploying production-grade GenAI applications, including evaluation and optimisations Extensive years of hands-on industry data science experience, leveraging common machine learning and data science tools, i.e. pandas, scikit-learn, PyTorch, etc. Experience building production-grade machine learning deployments on AWS, Azure, or GCP Graduate degree in a quantitative discipline (Computer Science, Engineering, Statistics, Operations Research, etc.) or equivalent practical experience Experience communicating and/or teaching technical concepts to non-technical and technical audiences alike Passion for collaboration, life-long learning, and driving business value through AI [Preferred] Experience using the Databricks Intelligence Platform and Apache Spark™ to process large-scale distributed datasets Willing to travel once every 4-8 weeks to see customers (as needed) About Databricks Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered",
-   "posted": "2026-11-18",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "a9c98e9ca977",
    "role": "ML & AI",
    "city": "Paris",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AI Forward Deployed Engineer - Germany",
@@ -1493,13 +1882,13 @@
    "location_raw": "Munich, Germany",
    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8930374002",
    "description": "AI Engineer - FDE (Forward Deployed Engineer) Req ID: CSQ427R334 We welcome remote applicants located near our offices. Preferred locations: Munich, Berlin, Frankfurt, Germany. Remote location for candidates to be based in the Germany region only (not remote from any other country) Mission The AI Forward Deployed Engineering (AI FDE) team is a highly specialised customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specialisations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. Reporting to: Senior Manager - AI FDE, EMEA The impact you will have: Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems Own production rollouts of consumer and internally facing GenAI applications Serve as a trusted technical advisor to customers across a variety of domains Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally Collaborate cross-functionally with the product and engineering teams to influence priorities and shape the product roadmap What we look for: Min 4 years' experience Experience building GenAI applications, including RAG, multi-agent systems, Text2SQL, fine-tuning, etc., with tools such as HuggingFace, LangChain, and DSPy Expertise in deploying production-grade GenAI applications, including evaluation and optimisations Extensive years of hands-on industry data science experience, leveraging common machine learning and data science tools, i.e. pandas, scikit-learn, PyTorch, etc. Experience building production-grade machine learning deployments on AWS, Azure, or GCP Graduate degree in a quantitative discipline (Computer Science, Engineering, Statistics, Operations Research, etc.) or equivalent practical experience Experience communicating and/or teaching technical concepts to non-technical and technical audiences alike Passion for collaboration, life-long learning, and driving business value through AI [Preferred] Experience using the Databricks Intelligence Platform and Apache Spark™ to process large-scale distributed datasets Willing to travel once every 4-8 weeks to see customers (as needed) About Databricks Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and",
-   "posted": "2026-11-18",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "1e548b245911",
    "role": "ML & AI",
    "city": "Munich",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AI Forward Deployed Engineer - Netherlands",
@@ -1507,13 +1896,13 @@
    "location_raw": "Amsterdam, Netherlands",
    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8930378002",
    "description": "AI Engineer - FDE (Forward Deployed Engineer) Req ID: CSQ427R334 Location: Location: Amsterdam, Netherlands - Candidates to be based in the Netherlands region only (no remote working available from any other country) Mission The AI Forward Deployed Engineering (AI FDE) team is a highly specialised customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specialisations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. Reporting to: Senior Manager - AI FDE, EMEA The impact you will have: Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems Own production rollouts of consumer and internally facing GenAI applications Serve as a trusted technical advisor to customers across a variety of domains Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally Collaborate cross-functionally with the product and engineering teams to influence priorities and shape the product roadmap What we look for: Min 4 years' experience Experience building GenAI applications, including RAG, multi-agent systems, Text2SQL, fine-tuning, etc., with tools such as HuggingFace, LangChain, and DSPy Expertise in deploying production-grade GenAI applications, including evaluation and optimisations Extensive years of hands-on industry data science experience, leveraging common machine learning and data science tools, i.e. pandas, scikit-learn, PyTorch, etc. Experience building production-grade machine learning deployments on AWS, Azure, or GCP Graduate degree in a quantitative discipline (Computer Science, Engineering, Statistics, Operations Research, etc.) or equivalent practical experience Experience communicating and/or teaching technical concepts to non-technical and technical audiences alike Passion for collaboration, life-long learning, and driving business value through AI [Preferred] Experience using the Databricks Intelligence Platform and Apache Spark™ to process large-scale distributed datasets Willing to travel once every 4-8 weeks to see customers (as needed) About Databricks Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquartered in San Francisco with 30+ offices around th",
-   "posted": "2026-11-18",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "cf3e7bff1fd6",
    "role": "ML & AI",
    "city": "Amsterdam",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AI Forward Deployed Engineer - Sweden",
@@ -1521,13 +1910,13 @@
    "location_raw": "Stockholm, Sweden",
    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8930381002",
    "description": "AI Engineer - FDE (Forward Deployed Engineer) Req ID: CSQ427R334 We welcome remote applicants located near our offices. Preferred locations: Stockholm, Sweden. Remote location for candidates to be based in the Sweden region only (not remote from any other country) Mission The AI Forward Deployed Engineering (AI FDE) team is a highly specialised customer-facing AI team at Databricks. We deliver professional services engagements to help our customers build and productionize first-of-its-kind AI applications. We work cross-functionally to shape long-term strategic priorities and initiatives alongside engineering, product, and developer relations, as well as support internal subject matter expert (SME) teams. We view our team as an ensemble: we look for individuals with strong, unique specialisations to improve the overall strength of the team. This team is the right fit for you if you love working with customers, teammates, and fueling your curiosity for the latest trends in GenAI, LLMOps, and ML more broadly. Reporting to: Senior Manager - AI FDE, EMEA The impact you will have: Develop cutting-edge GenAI solutions, incorporating the latest techniques from Databricks AI research to solve customer problems Own production rollouts of consumer and internally facing GenAI applications Serve as a trusted technical advisor to customers across a variety of domains Present at conferences such as Data + AI Summit, recognized as a thought leader internally and externally Collaborate cross-functionally with the product and engineering teams to influence priorities and shape the product roadmap What we look for: Min 4 years' experience Experience building GenAI applications, including RAG, multi-agent systems, Text2SQL, fine-tuning, etc., with tools such as HuggingFace, LangChain, and DSPy Expertise in deploying production-grade GenAI applications, including evaluation and optimisations Extensive years of hands-on industry data science experience, leveraging common machine learning and data science tools, i.e. pandas, scikit-learn, PyTorch, etc. Experience building production-grade machine learning deployments on AWS, Azure, or GCP Graduate degree in a quantitative discipline (Computer Science, Engineering, Statistics, Operations Research, etc.) or equivalent practical experience Experience communicating and/or teaching technical concepts to non-technical and technical audiences alike Passion for collaboration, life-long learning, and driving business value through AI [Preferred] Experience using the Databricks Intelligence Platform and Apache Spark™ to process large-scale distributed datasets Willing to travel once every 4-8 weeks to see customers (as needed) About Databricks Databricks is the Data and AI company. More than 20,000 organizations worldwide — including adidas, AT&T, Bayer, Block, Mastercard, Rivian, Unilever, and 70% of the Fortune 500 — rely on the Databricks Data + AI Platform to build and scale data and AI apps, analytics and agents. Headquart",
-   "posted": "2026-11-18",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "edeccd387f19",
    "role": "ML & AI",
    "city": "Stockholm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Engineer - Platform Engineering",
@@ -1535,13 +1924,13 @@
    "location_raw": "Remote - US",
    "url": "https://job-boards.greenhouse.io/twilio/jobs/8385593",
    "description": "Who we are At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences. Our dedication to remote-first work , and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands. . Hiring and how we work We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions! Also, while we are a remote-first company, you may be asked to report in person on an ad-hoc basis for team gatherings, functional off-sites or customer meetings. . See yourself at Twilio Join the team as Twilio's next Software Development Engineer 1 - Platform Engineering. About the job This position is needed to help operate, secure, and modernize Twilio's shared Kubernetes platform substrate (OTK, Segment, and ZipWhip EKS fleets) at scale. Join our Cloud Native Container Operations team as an entry-level platform engineer. You will help manage over 1,000 Kubernetes clusters, tackling real-world multi-cloud complexity. This high-impact role offers structured mentorship from senior engineers, hands-on experience with modern automation tools, and a direct path to improving platform reliability. It is the perfect environment to launch your career in infrastructure engineering at a massive scale. Responsibilities In this role, you'll: Assist in lifecycle management of cloud hosted Kubernetes platforms serving all of Twilio. Remediate container and kernel-level CVE vulnerabilities to keep the shared substrate secure. Write automation scripts in Go and Shell to streamline day-to-day cluster operations. Collaborate with senior engineers to deploy infrastructure changes safely using Terraform and GitOps. Troubleshoot basic platform issues, applying lessons learned to continuously improve system reliability. Qualifications Twilio values diverse experiences from all kinds of industries, and we encourage everyone who meets the required qualifications to apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table! Required: Bachelor’s degree in Computer Science, Engineering, or equivalent practical training. Foundational programming skills in Go (Golang) and scripting with Shell. Basic exposure to cloud environments, specifically AWS. Familiarity with Infrastructure-as-Code concepts using Terraform and YAML. Academic or internship exposure to containerization technologies like Docker or Kubernetes. Practical underst",
-   "posted": "2026-11-18",
+   "posted": "2026-11-19",
    "source": "Greenhouse",
    "id": "cb9fb60d3d74",
    "role": "DevOps",
    "city": "Remote",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher AIML- Software Engineer",
@@ -1558,7 +1947,7 @@
    "role": "Backend",
    "city": "Other",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "IT Support Executive",
@@ -1574,7 +1963,7 @@
    "role": "Support",
    "city": "Kolkata",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "TSR",
@@ -1607,7 +1996,7 @@
    "role": "Sales & Marketing",
    "city": "Mumbai",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Hiring || Executive (Business Development)",
@@ -1623,7 +2012,7 @@
    "role": "Sales & Marketing",
    "city": "Hyderabad",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Digital Human Health Intern",
@@ -1687,7 +2076,7 @@
    "role": "Other",
    "city": "Other",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Sales Intern",
@@ -1703,14 +2092,14 @@
    "role": "Sales & Marketing",
    "city": "Pune",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "IN-Intern/Trainee",
    "company": "PricewaterhouseCoopers",
    "location_raw": "India",
-   "url": "https://www.adzuna.in/details/5970547476?utm_medium=api&utm_source=80afbcb1",
-   "description": "Line of Service Advisory Industry/Sector Not Applicable Specialism SAP Management Level Intern/Trainee Job Description & Summary At PwC, we focus on nurturing and developing individuals across our entry level careers programmes, providing them with opportunities to start their professional journey. We offer various entry-level positions and programmes for individuals to gain valuable experience and grow their skills. As an intern at PwC, you will get hands-on experience and exposure to various …",
+   "url": "https://www.adzuna.in/details/5970549105?utm_medium=api&utm_source=80afbcb1",
+   "description": "Line of Service Advisory Industry/Sector Not Applicable Specialism Data, Analytics & AI Management Level Intern/Trainee Job Description & Summary At PwC, we focus on nurturing and developing individuals across our entry level careers programmes, providing them with opportunities to start their professional journey. We offer various entry-level positions and programmes for individuals to gain valuable experience and grow their skills. As a trainee at PwC, you will enter in an entry-level positio…",
    "posted": "2026-11-18",
    "source": "Adzuna",
    "type": "full time",
@@ -1719,7 +2108,7 @@
    "role": "Other",
    "city": "Other",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Creative Intern",
@@ -1734,7 +2123,7 @@
    "role": "Other",
    "city": "Mumbai",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "SDR Intern",
@@ -1750,7 +2139,7 @@
    "role": "ML & AI",
    "city": "Bengaluru",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern (Bachelor's)",
@@ -1766,7 +2155,7 @@
    "role": "Other",
    "city": "Bengaluru",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Front End Developer",
@@ -1782,7 +2171,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "BDE (FRESHER)",
@@ -1816,7 +2205,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Recruitment Intern",
@@ -1853,7 +2242,7 @@
    "title": "Intern",
    "company": "Carrier Corporation",
    "location_raw": "Kyasaram, Hyderabad",
-   "url": "https://www.adzuna.in/details/5970561555?utm_medium=api&utm_source=80afbcb1",
+   "url": "https://www.adzuna.in/details/5970521524?utm_medium=api&utm_source=80afbcb1",
    "description": "Role: Intern Location: Hyderabad About Carrier Carrier Global Corporation, global leader in intelligent climate and energy solutions, is committed to creating innovations that bring comfort, safety and sustainability to life. Through cutting-edge advancements in climate solutions such as temperature control, air quality and transportation, we improve lives, empower critical industries and ensure safe transport of food, life-saving medicines and more. Since inventing modern air conditioning in 1…",
    "posted": "2026-11-18",
    "source": "Adzuna",
@@ -1864,7 +2253,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -1898,7 +2287,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing internship (brand & communication)",
@@ -1913,7 +2302,7 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Freshers",
@@ -1929,7 +2318,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Sales || Fresher || Experienced",
@@ -1947,7 +2336,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Chartered Accountant – Fresher",
@@ -1980,7 +2369,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Web Researcher Fresher",
@@ -1997,7 +2386,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher Software in Hyderabad",
@@ -2013,7 +2402,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Sales Executive ( Fresher )",
@@ -2029,7 +2418,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Sales Executive – Fresher",
@@ -2046,7 +2435,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher software developer",
@@ -2062,7 +2451,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "QA Engineer - Fresher",
@@ -2096,7 +2485,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher Designer EDs",
@@ -2113,7 +2502,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "ADMISSION COUNSELOR-FRESHERS",
@@ -2130,7 +2519,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Business Development Executive (Fresher)",
@@ -2148,7 +2537,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "FRESHER OPHTHALMOLOGIST / PHACO SURGEON",
@@ -2166,7 +2555,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Business Development Associate (Freshers)",
@@ -2182,7 +2571,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "BA / B.Com Freshers",
@@ -2214,15 +2603,15 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Social Media Executive (Fresher)",
    "company": "Careerbloc",
    "location_raw": "India",
-   "url": "https://www.adzuna.in/details/5969752401?utm_medium=api&utm_source=80afbcb1",
+   "url": "https://www.adzuna.in/details/5972375363?utm_medium=api&utm_source=80afbcb1",
    "description": "About the Opportunity Careerbloc is a fast-growing career enablement and talent development platform helping freshers and early-career professionals land high-impact roles across India. We blend digital marketing, content strategy, and community engagement to build powerful employer and candidate brands—powered by data, creativity, and relentless execution. Role & Responsibilities Create, schedule, and publish engaging content across Instagram, LinkedIn, Twitter, and Facebook tailored to Gen Z …",
-   "posted": "2026-11-18",
+   "posted": "2026-11-20",
    "source": "Adzuna",
    "salary": "Rs 240,000 to Rs 300,000 a year",
    "type": "full time",
@@ -2232,7 +2621,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Associate - Accounts Payable (Fresher)",
@@ -2248,7 +2637,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Social Media Executive (FRESHER)",
@@ -2299,7 +2688,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Customer Service Representative (Freshers)",
@@ -2316,7 +2705,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Software Developer Fresher Hyderabad",
@@ -2348,7 +2737,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Site Quality Engineer Fresher",
@@ -2484,7 +2873,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Media Relations & Communications Associate –Fresher",
@@ -2501,7 +2890,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher Orthopedics for Fellowship or Associates For Pathankot",
@@ -2517,7 +2906,7 @@
    "city": "Pathankot",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Java Fresher-walkin - TEST 2",
@@ -2533,7 +2922,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "German Language Expert - Fresher / Exp - Mumbai",
@@ -2551,7 +2940,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher Jobs - Field Service Engineer | Pan India",
@@ -2569,7 +2958,7 @@
    "city": "Delhi",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Sales Executive – Freshers/Experienced || Karnataka",
@@ -2586,7 +2975,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Sales Executive - Freshers/Experienced || Gurgaon",
@@ -2603,7 +2992,7 @@
    "city": "Patna",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Sales Executive – Freshers/Experienced || Maharashtra",
@@ -2621,7 +3010,7 @@
    "city": "Nashik",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Job Opening: Python & Next.js Developer (Freshers)",
@@ -2637,7 +3026,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Claims Management Processor – Insurance Process | Freshers",
@@ -2653,7 +3042,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Data Processing Specialist (Freshers Welcome) — Ahmedabad",
@@ -2671,7 +3060,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "AR Caller | Fresher | Chennai Upto 3LPA",
@@ -2687,7 +3076,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Fresher chat support assistant with good english",
@@ -2720,7 +3109,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "MBA HR Fresher 2026 (Mumbai based candidates)",
@@ -2736,7 +3125,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing & Business Development Executive – Fresher (IT Services)",
@@ -2753,7 +3142,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Recruiter Opening – Freshers & Experienced Candidates Welcome",
@@ -2769,7 +3158,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Business Development Executive (Night Shift & Fresher's Can Apply)",
@@ -2785,7 +3174,7 @@
    "city": "Indore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Process Associate - Career Restarters | Freshers - WALKIN ON 7th Nov,2026",
@@ -2819,7 +3208,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "\"Fresher Opportunity – Contract-to-Hire | Get Paid & Gain Corporate Experience\"",
@@ -2853,7 +3242,7 @@
    "city": "Chandigarh",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Urgent Hiring| Inside Sales | Fresher- 2 years| Mumbai | WFO",
@@ -2870,7 +3259,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Sales Executive – Freshers/Experienced || Jaipur (Bhiwadi, Kishangarh,Fatehpur,Chirwa)",
@@ -2887,7 +3276,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Registered Nurse Germany (GNM / B.Sc Nursing) Freshers & Experienc",
@@ -2902,7 +3291,7 @@
    "role": "Other",
    "city": "Chennai",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Content Creator",
@@ -3037,7 +3426,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Apprentice / Intern",
@@ -3054,7 +3443,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Apprentice / Intern",
@@ -3070,7 +3459,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Internships",
@@ -3086,7 +3475,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Internship",
@@ -3103,7 +3492,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -3134,7 +3523,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "IS Intern",
@@ -3151,7 +3540,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -3168,7 +3557,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -3233,7 +3622,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Apprentice",
@@ -3251,7 +3640,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -3268,7 +3657,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -3281,11 +3670,11 @@
    "type": "full time",
    "category": "Accounting & Finance Jobs",
    "id": "2abc732d422d",
-   "role": "Operations & HR",
+   "role": "Other",
    "city": "Mumbai",
-   "by": "kw",
+   "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern",
@@ -3302,7 +3691,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Accountant Intern",
@@ -3355,7 +3744,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -3389,7 +3778,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Production Intern",
@@ -3405,7 +3794,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern - Research",
@@ -3439,7 +3828,7 @@
    "city": "Kochi",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Product Intern",
@@ -3456,7 +3845,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Support Intern",
@@ -3507,7 +3896,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "PMO- Intern",
@@ -3524,7 +3913,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Copywriting Intern",
@@ -3594,7 +3983,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Copywriter Intern",
@@ -3628,7 +4017,7 @@
    "city": "Chandigarh",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Sales Intern",
@@ -3644,7 +4033,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern:Intern:Talent Aquisition:Noida",
@@ -3660,7 +4049,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "2027 Intern - Research PhD Intern",
@@ -3745,7 +4134,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "SEO Intern",
@@ -3762,7 +4151,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Internship - Sales",
@@ -3793,7 +4182,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Internship- Structures",
@@ -3810,7 +4199,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Accounts Intern",
@@ -3826,7 +4215,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "CA Internship",
@@ -3843,7 +4232,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Internship",
@@ -3893,7 +4282,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "BDE Intern",
@@ -3909,7 +4298,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Intern",
@@ -3926,7 +4315,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -3942,7 +4331,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Project - Intern",
@@ -3958,7 +4347,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "CA Internship",
@@ -3974,7 +4363,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -3991,7 +4380,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Apprentice, CA",
@@ -4022,7 +4411,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing intern",
@@ -4038,7 +4427,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "QA Intern",
@@ -4071,7 +4460,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Intern",
@@ -4089,7 +4478,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Support Intern",
@@ -4123,7 +4512,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern (Bachelor's)",
@@ -4139,7 +4528,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -4155,7 +4544,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Design Intern",
@@ -4172,7 +4561,7 @@
    "city": "Delhi",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -4188,7 +4577,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Accounting Intern",
@@ -4204,7 +4593,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Legal Intern",
@@ -4220,7 +4609,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Automation Intern",
@@ -4236,7 +4625,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -4252,7 +4641,7 @@
    "role": "Operations & HR",
    "city": "Other",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern - Harness",
@@ -4269,7 +4658,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "SEO Intern",
@@ -4285,7 +4674,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -4301,7 +4690,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -4317,7 +4706,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern - Legal",
@@ -4334,7 +4723,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -4350,7 +4739,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Administration Intern",
@@ -4367,7 +4756,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "CFO Intern",
@@ -4397,9 +4786,9 @@
    "id": "5ab63934c3fc",
    "role": "ML & AI",
    "city": "Mumbai",
-   "by": "kw",
+   "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Sales Intern",
@@ -4412,10 +4801,10 @@
    "category": "Sales Jobs",
    "id": "c7a92ad90be3",
    "role": "Sales & Marketing",
-   "city": "Bengaluru",
-   "by": "kw",
+   "city": "Bangalore",
+   "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Marketing Intern",
@@ -4428,10 +4817,10 @@
    "category": "PR, Advertising & Marketing Jobs",
    "id": "a8928bb566d6",
    "role": "Sales & Marketing",
-   "city": "Bengaluru",
-   "by": "kw",
+   "city": "Bangalore",
+   "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Legal Intern",
@@ -4443,11 +4832,11 @@
    "source": "Adzuna",
    "category": "IT Jobs",
    "id": "0a0ec47b2bc4",
-   "role": "Other",
-   "city": "Bengaluru",
-   "by": "kw",
+   "role": "Operations & HR",
+   "city": "Bangalore",
+   "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-18"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "TA- Intern",
@@ -4669,7 +5058,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer – HR",
@@ -4686,7 +5075,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineering Trainee",
@@ -4734,7 +5123,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -4751,7 +5140,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -4768,7 +5157,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer trainee- Purchase",
@@ -4785,7 +5174,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee - Design",
@@ -4802,7 +5191,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee – Warehouse",
@@ -4819,7 +5208,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee (Operations & Support)",
@@ -4836,7 +5225,7 @@
    "city": "Indore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Mechancial Engineer_Graduate Engineering Trainee",
@@ -4853,7 +5242,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee (GET) - Mechanical",
@@ -4869,7 +5258,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee - R&D PTM",
@@ -4886,7 +5275,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Electrical Engineer",
@@ -4903,7 +5292,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Mechanical Engineer",
@@ -4920,7 +5309,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Detailing Engineer - Hyderabad",
@@ -4936,7 +5325,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Trainee Engineer – Cooling (Mechnical)",
@@ -4953,7 +5342,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Trainee Engineer – Sales (Shroff)",
@@ -4970,7 +5359,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Machine Learning Engineering Graduate - August 2026 - Bangalore",
@@ -4986,7 +5375,7 @@
    "role": "ML & AI",
    "city": "Bengaluru",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "TPM Coordinator- Mechanical",
@@ -5003,7 +5392,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Trainee Design Engineer - Civil Land Survey",
@@ -5019,7 +5408,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Associate Deployment Engineer - Galaxy Graduate Program",
@@ -5052,7 +5441,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Engineer III",
@@ -5069,7 +5458,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Junior Proposals Specialist",
@@ -5150,7 +5539,7 @@
    "role": "DevOps",
    "city": "Other",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "TL BOCAD Draftsman | Power Transmission | Tardeo, Mumbai",
@@ -5167,7 +5556,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Printer Engineer",
@@ -5184,7 +5573,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Custom Software Engineer",
@@ -5200,7 +5589,7 @@
    "role": "Backend",
    "city": "Other",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Section Head - Cement Mill, Mechanical, Jagiroad",
@@ -5250,7 +5639,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Engineer Quality Outsource",
@@ -5267,7 +5656,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Should Cost Engineer",
@@ -5284,7 +5673,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Inside Sales Representative",
@@ -5301,7 +5690,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Engineer Quality LMTG",
@@ -5318,7 +5707,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "TENDER EXECUTIVE",
@@ -5335,7 +5724,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "ML Intern",
@@ -5417,7 +5806,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Junior Python/Django Developer – DevOps",
@@ -5433,7 +5822,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "DevOps Engineer",
@@ -5467,7 +5856,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "GTM & Strategy, Model API",
@@ -5482,7 +5871,7 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "EbizON || Fresher Content Writer II Dehradun",
@@ -5499,7 +5888,7 @@
    "city": "Dehradun",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern:Intern:Talent Aquisition:bengaluru",
@@ -5515,7 +5904,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "QuickBooks Intern",
@@ -5533,7 +5922,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "HR Intern",
@@ -5549,7 +5938,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "CRM Intern",
@@ -5566,7 +5955,7 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Cybersecurity Intern",
@@ -5583,7 +5972,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Intern-SDE",
@@ -5599,7 +5988,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -5616,7 +6005,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -5633,7 +6022,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Graduate - Subsurface – Petroleum Engineering (PE) - Pune",
@@ -5650,7 +6039,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Field Engineer",
@@ -5663,10 +6052,11 @@
    "type": "full time",
    "category": "Energy, Oil & Gas Jobs",
    "id": "b3ec07a46c59",
-   "role": "Backend",
+   "role": "Operations & HR",
    "city": "Other",
+   "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-17"
+   "last_seen": "2026-11-20"
   },
   {
    "title": "Planner/Scheduler II",
@@ -5700,7 +6090,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19"
+   "last_seen": "2026-11-20"
   }
  ]
 }
