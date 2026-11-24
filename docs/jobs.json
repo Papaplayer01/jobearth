@@ -1,7 +1,138 @@
 {
- "updated": "2026-11-23T07:57+00:00",
- "count": 414,
+ "updated": "2026-11-24T10:12+00:00",
+ "count": 422,
  "jobs": [
+  {
+   "title": "Junior Talent Operations Specialist",
+   "company": "gitlab",
+   "location_raw": "Remote, United States",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8950794002",
+   "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500® is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab. An overview of this role As a Talent Acquisition Operations Analyst at GitLab, you’ll be the recruiting team’s first point of contact when someone needs system access, an approval isn’t routing, or a report is due before a meeting. You’ll own incoming requests, resolve what you can, and give the right person enough context to pick up the rest. You’ll also handle recurring work across systems, reporting, and process support, giving you a firsthand look at where recruiting workflows break down and what it takes to keep them moving. What You’ll Do Triage incoming requests about approval workflows, recruiting stages, templates, access, and standard reports. Resolve what you can and escalate system-level issues with clear context. Provision recruiting team members, review access, reconcile licenses, and handle candidate privacy requests. Update the applicant tracking system and test changes in a sandbox. Run scheduled reports and check recruiting data for errors and inconsistencies. Keep recruiting playbooks and documentation up to date and coordinate logistics for training and enablement. Troubleshoot issues with hire integrations and follow the escalation process when problems persist or point to a wider issue. Partner with Security to support candidate identity verification and screening for potential fraud. What You’ll Bring Experience in recruiting operations, people operations, or a comparable role. We welcome transferable experience from other operations teams. Hands-on experience with an applicant tracking system. Greenhouse experience is strongly preferred, not required. Ability to manage a high volume of reque",
+   "posted": "2026-11-23",
+   "source": "Greenhouse",
+   "id": "eaafe3c32f9b",
+   "role": "Operations & HR",
+   "city": "Remote",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "Learning Experience Design Intern",
+   "company": "paytm",
+   "location_raw": "Noida, Uttar Pradesh",
+   "url": "https://jobs.lever.co/paytm/c8886602-f1b7-4c08-b181-f4d36b2d0e80",
+   "description": "",
+   "posted": "2026-11-24",
+   "source": "Lever",
+   "type": "Intern",
+   "category": "Learning & Development",
+   "id": "2d3997f0844a",
+   "role": "Design",
+   "city": "Noida",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "Deployment Strategist I (DS-1)",
+   "company": "sarvam",
+   "location_raw": "Delhi",
+   "url": "https://jobs.ashbyhq.com/sarvam/9d8a0c6b-c391-46bf-960d-1b733f999863",
+   "description": "ABOUT SARVAM Sarvam is building the bedrock of sovereign AI for India. We are developing India's full-stack AI platform across research, models, infrastructure and applications, with a singular focus on making AI genuinely work for India: in Indian languages, on Indian data and at Indian scale. Sarvam works with leading enterprises and public institutions, including Tata Capital, SBI Life, CRED, IDFC and LIC, alongside central and state governments. Sarvam is backed by Lightspeed, Peak XV and Khosla Ventures. ABOUT THE ROLE AI is moving quickly from demos to real-world applications, and making that transition work is no small task. As a Deployment Strategist I at Sarvam, you'll work at the intersection of business, technology and AI. From understanding how a bank operates to figuring out how an AI agent can improve its customer experience, you'll be involved in solving problems that don't always come with ready-made answers. You'll work closely with clients and our Engineering and Product teams to identify opportunities, build prototypes and take solutions towards production. Expect a mix of business conversations, problem-solving, data, technology and plenty of hands-on execution. What You'll Do - Work with enterprise and government clients to understand their workflows, challenges and identify where AI can create value. - Break down business problems into clear requirements, use cases and actionable solutions. - Build prototypes and proof-of-concepts using Python, APIs and LLM-based tools to test ideas and demonstrate what's possible. - Work closely with Engineering and Product teams to take solutions from initial concepts to production. - Analyse data, track adoption and measure how deployed solutions are performing. - Own individual workstreams, coordinate with stakeholders and keep deployments moving. - Bring client feedback and learnings back to the team to improve our products and deployment approaches. What We're Looking For - 2–4 years of experience in consulting, product, engineering, business strategy or customer-facing technology roles. - Strong analytical and problem-solving skills, with the ability to bring structure to ambiguous problems. - Good understanding of business processes and an interest in applying AI to solve practical problems. - Strong communication skills and the ability to work across business and technical teams. - A bias for action, curiosity and a strong sense of ownership. Good to Have - Exposure to LLMs, AI agents or GenAI applications. - Experience working with enterprise clients, particularly in BFSI, manufacturing or government. - Proficiency in Hindi or other Indian regional languages. - MBA or postgraduate qualification from a reputed institution. Hiring across locations: Mumbai - for BFSI, industrials, manufacturing | Delhi - industrials, manufacturing, government | Bangalore - Digital natives Why Sarvam? Sarvam is a fast-moving, high talent-density team building full-stack AI for India, working on problem",
+   "posted": "2026-11-24",
+   "source": "Ashby",
+   "id": "4d0ecc5dfc1e",
+   "role": "ML & AI",
+   "city": "Delhi",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "Deployment Strategist II (DS-2)",
+   "company": "sarvam",
+   "location_raw": "Mumbai",
+   "url": "https://jobs.ashbyhq.com/sarvam/0e02db36-768a-4d16-9a54-a8eee10eb2c1",
+   "description": "ABOUT SARVAM Sarvam is building the bedrock of sovereign AI for India. We are developing India's full-stack AI platform across research, models, infrastructure and applications, with a singular focus on making AI genuinely work for India: in Indian languages, on Indian data and at Indian scale. Sarvam works with leading enterprises and public institutions, including Tata Capital, SBI Life, CRED, IDFC and LIC, alongside central and state governments. Sarvam is backed by Lightspeed, Peak XV and Khosla Ventures. ABOUT THE ROLE As a Deployment Strategist II, you'll work with some of India's largest organisations to identify meaningful AI opportunities and take them from problem discovery to production. You'll own client engagements end to end, work closely with senior stakeholders and partner with Sarvam's Engineering, Product and Research teams to turn business problems into working AI solutions. This role calls for someone who can think strategically, get into the technical details when needed and take complete ownership of outcomes. What You'll Do - Own enterprise AI engagements from discovery and solution design to deployment and adoption. - Work with senior client stakeholders to identify business problems and shape AI-led solutions. - Translate business requirements into deployment roadmaps, success metrics and business cases. - Partner with Engineering, Product and Research teams to take solutions from prototypes to production. - Drive execution across multiple stakeholders, ensuring timely delivery and measurable business outcomes. - Identify opportunities to deepen client relationships and expand Sarvam's deployments. - Mentor junior team members and contribute to improving deployment playbooks. What We're Looking For - 5+ years of experience, with at least 3 years in consulting, FDE, product, strategy or enterprise technology roles. - Experience independently owning complex client engagements and working with senior stakeholders. - Strong problem-solving, communication and stakeholder management skills. - Good understanding of APIs, integrations, LLMs and AI applications. - Strong business acumen and the ability to connect technology solutions to business outcomes. - Comfortable switching between strategic discussions and hands-on problem-solving. Good to Have - Experience deploying AI agents or LLM-based applications in production. - Experience in BFSI, manufacturing, digital businesses or government. - MBA from a leading business school. - Proficiency in Hindi or other Indian regional languages. Hiring across locations: Mumbai - for BFSI, industrials, manufacturing | Delhi - industrials, manufacturing, government | Bangalore - Digital natives Why Sarvam? Sarvam is a fast-moving, high talent-density team building full-stack AI for India, working on problems that push the frontiers of AI with real population-scale impact. - Work alongside researchers, engineers, builders, and business leaders who move fast and hold each other to a very high",
+   "posted": "2026-11-24",
+   "source": "Ashby",
+   "id": "980f2910ccc8",
+   "role": "ML & AI",
+   "city": "Mumbai",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "Associate Fraud & Claims Operations Representative-Only freshers",
+   "company": "Wells Fargo",
+   "location_raw": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5976865056?utm_medium=api&utm_source=80afbcb1",
+   "description": "About this role: At Wells Fargo, an Associate Fraud & Claims Operations Representative plays an important front-line role in protecting customers and the company from fraud while delivering a trusted customer experience. Working in a high-volume contact center environment, you will support customers through potential fraud situations by reviewing account activity, investigating concerns, applying appropriate authentication and fraud-prevention practices, and helping resolve issues accurately an…",
+   "posted": "2026-11-24",
+   "source": "Adzuna",
+   "category": "Customer Services Jobs",
+   "id": "bfed8e8abbfd",
+   "role": "Operations & HR",
+   "city": "Bangalore",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "Copy Interns",
+   "company": "BC Web Wise Pvt Ltd",
+   "location_raw": "Mumbai, Maharashtra",
+   "url": "https://www.adzuna.in/details/5976703904?utm_medium=api&utm_source=80afbcb1",
+   "description": "Internship Opportunities Ready to kickstart your career and gain hands-on experience in a fast-paced, creative, and innovative environment? This is your chance! BC Web Wise is excited to open up internship opportunities across multiple departments—and right now, we’re especially on the lookout for Copywriting Interns who are brimming with fresh ideas and a passion for storytelling. Responsibilities Collaborate with the marketing team to develop compelling copy for various channels (social media…",
+   "posted": "2026-11-24",
+   "source": "Adzuna",
+   "salary": "Rs 120,000 a year",
+   "type": "part time",
+   "category": "PR, Advertising & Marketing Jobs",
+   "id": "ddea9671508b",
+   "role": "Sales & Marketing",
+   "city": "Mumbai",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "HR Intern",
+   "company": "Rezo.ai",
+   "location_raw": "Noida, Ghaziabad",
+   "url": "https://www.adzuna.in/details/5976572315?utm_medium=api&utm_source=80afbcb1",
+   "description": "We are looking for a proactive and enthusiastic HR Intern to support our recruitment and talent acquisition process . This internship offers hands-on experience in end-to-end hiring, candidate engagement in a fast-paced environment. Key Responsibilities Assist in sourcing candidates through job portals, social media, and internal databases Screen resumes and shortlist candidates based on job requirements Coordinate and schedule interviews with candidates and hiring managers Maintain and update …",
+   "posted": "2026-11-24",
+   "source": "Adzuna",
+   "type": "full time",
+   "category": "HR & Recruitment Jobs",
+   "id": "b710b5609e65",
+   "role": "Operations & HR",
+   "city": "Noida",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "title": "SEO Intern",
+   "company": "Bynry",
+   "location_raw": "Pune, Maharashtra",
+   "url": "https://www.adzuna.in/details/5976703997?utm_medium=api&utm_source=80afbcb1",
+   "description": "SEO Intern Location: Pune Work Mode: Hybrid ⏳ Duration: 6 Months | Full-Time Internship About Us Bynry Inc. is a company dedicated to Delivering Value to Utilities: Where Efficiency Meets Affordability. We are a new-age Software-as-a-Service (SaaS) product company offering SMART360 Next, a Smart Utility Platform tailored for small and mid-sized Water, Electric, Gas & Sub-Metering utilities. Our Vision: By 2030, we aim to equip 1,000 SMB utilities, impacting 10 million households, with cutt…",
+   "posted": "2026-11-24",
+   "source": "Adzuna",
+   "salary": "Rs 120,000 to Rs 144,000 a year",
+   "type": "part time",
+   "category": "PR, Advertising & Marketing Jobs",
+   "id": "da7913c26c73",
+   "role": "Sales & Marketing",
+   "city": "Pune",
+   "by": "llm",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
   {
    "title": "EbizON || Digital Marketing || Fresher || Noida",
    "company": "Ebizon",
@@ -17,7 +148,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Chemical Sales & Marketing Executive",
@@ -35,7 +166,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Talent Acquisition Intern (Internship  PPO)",
@@ -52,7 +183,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Junior Technical Applications Engineer",
@@ -69,7 +200,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "1099 Bilingual NP/PA - Virtual Urgent Care",
@@ -101,7 +232,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Robotics Engineer Freshers",
@@ -117,7 +248,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Developer Hyderabad Freshers",
@@ -133,7 +264,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Accounts Executive – Freshers – Accounts Department",
@@ -151,7 +282,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Customer Support Executive (Freshers & Experienced)_F2F Interviews",
@@ -167,7 +298,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Executive – Freshers– US Healthcare Voice Process",
@@ -184,7 +315,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Executive – Freshers – Customer Support Intern – Voice Process",
@@ -202,7 +333,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -219,7 +350,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -236,7 +367,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Sales Intern",
@@ -253,7 +384,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Founder's Office Intern (Internship  PPO)",
@@ -270,7 +401,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Product Success Intern (Internship  PPO)",
@@ -287,7 +418,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Intern",
@@ -304,7 +435,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Apprentice, Technology",
@@ -320,7 +451,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Project Control Specialist I",
@@ -337,7 +468,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-22"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Infrastructure Engineer",
@@ -353,7 +484,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "FRESHER MBBS DOCTOR (DMO)",
@@ -371,7 +502,7 @@
    "city": "Tiruppur",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Sales Executive – Freshers/Experienced || Chhattisgarh",
@@ -388,7 +519,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Accounts Executive – Freshers – Accounts Department",
@@ -405,7 +536,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "AR Caller - International Voice (Fresher only)",
@@ -422,7 +553,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Executive - CA Freshers - Direct Tax - Pune",
@@ -439,7 +570,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Executive – Freshers– US Healthcare Voice Process",
@@ -455,7 +586,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Executive – Freshers – Customer Support Intern – Voice Process",
@@ -472,7 +603,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Apprentice",
@@ -488,7 +619,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -522,7 +653,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "EYP Intern",
@@ -540,7 +671,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Design Intern",
@@ -558,7 +689,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Intern",
@@ -576,7 +707,7 @@
    "city": "Indore",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "QA Intern",
@@ -594,7 +725,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Intern",
@@ -610,7 +741,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Technical Internship",
@@ -627,7 +758,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Finance Intern",
@@ -643,7 +774,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -659,7 +790,7 @@
    "city": "Kolhapur",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee (GET) – Cybersecurity GRC",
@@ -691,7 +822,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Engineer Software Defined Vehicle Simulation and Development",
@@ -768,7 +899,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Product User Research, Intern",
@@ -783,7 +914,7 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher General Ophthalmologist",
@@ -801,7 +932,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher Radiation Oncologist",
@@ -819,7 +950,7 @@
    "city": "Amethi",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SAP - ABAP Fresher",
@@ -855,7 +986,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Customer Support Freshers - Malayalam",
@@ -872,7 +1003,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Customer Sales Executive – Travel Sales (Ahmedabad) | Freshers Welcome",
@@ -890,7 +1021,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Hindi Customer Support",
@@ -956,7 +1087,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -989,7 +1120,7 @@
    "city": "Haryana",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "In_Intern",
@@ -1006,7 +1137,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "EIC Intern",
@@ -1023,7 +1154,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern, Analytics",
@@ -1057,7 +1188,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu",
@@ -1074,7 +1205,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "IT Intern",
@@ -1091,7 +1222,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "IT Intern",
@@ -1107,7 +1238,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Sales Engineer",
@@ -1125,7 +1256,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Executive (Fresher)",
@@ -1142,7 +1273,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "AR Caller - International Voice (Fresher only)",
@@ -1158,7 +1289,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "International Voice Process",
@@ -1455,7 +1586,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Intern",
@@ -1472,7 +1603,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -1490,7 +1621,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "WordPress Intern",
@@ -1507,7 +1638,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Finance Intern",
@@ -1524,7 +1655,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Finance Intern",
@@ -1557,7 +1688,7 @@
    "city": "Delhi",
    "by": "llm",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Backend Engineer, Developer & End-user Experience Platform",
@@ -1572,7 +1703,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Legal Entity Controller",
@@ -1587,7 +1718,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SDC Recruiter",
@@ -1602,7 +1733,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer, Intern",
@@ -1617,7 +1748,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer, Vulnerability Management",
@@ -1632,7 +1763,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "University Recruiter (Fixed Term)",
@@ -1670,14 +1801,14 @@
    "location_raw": "Gurugram",
    "url": "https://www.mongodb.com/careers/job/?gh_jid=8328316",
    "description": "Join MongoDB’s Early Talent team and help build our pipeline of interns and graduate hires in India. You’ll lead full-cycle recruiting across multiple business units, develop relationships with universities and student communities, and partner with hiring managers to bring strong early career talent to MongoDB. This role is a chance to shape how we engage and hire students in India while working within the global Early Talent team. You’ll balance regional campus needs with shared recruiting practices and use candidate and pipeline insights to continually improve the hiring experience. We are looking to speak to candidates who are based in Gurugram for our hybrid working model. What you’ll do Lead full-cycle recruiting for interns and new graduates across multiple business units, from sourcing and resume review through interviews, offers, and candidate close Build and execute campus recruiting strategies in India, including relationships with university placement teams, student organizations, and other relevant campus partners Represent MongoDB at university events and recruiting activities, helping students understand our opportunities and strengthening our presence on campus Partner with hiring managers to define role requirements, agree on recruiting plans, assess candidates, share pipeline updates, and make timely hiring decisions Deliver a clear, thoughtful candidate experience through timely communication and consistent support from first outreach through offer Partner with the Program Coordination team on candidate experience, recruiting operations, and intern and new graduate onboarding and programming Coordinate closely on event and interview logistics Use recruiting data and market feedback to monitor pipeline health, identify bottlenecks, and improve recruiting strategies and processes Contribute to the growth of MongoDB’s early talent programs in India, sharing regional insights and partnering with global teammates to improve how we attract and hire early career talent What you’ll bring 4+ years of full-cycle recruiting experience, including at least 2 years in early talent, university, or campus recruiting, or a closely related function Experience recruiting in a fast paced, high volume environment and managing multiple roles or hiring priorities at once Strong relationship building skills and experience partnering with hiring managers, candidates, and external stakeholders A data informed approach to recruiting, with the ability to use pipeline insights to guide decisions and improve outcomes Excellent organization, prioritization, and time management skills Strong written and verbal communication skills Comfort working collaboratively with a global, cross functional team Familiarity with an applicant tracking system; Greenhouse experience is a plus Familiarity with Google Workspace is a plus Flexibility to travel and work nonstandard hours as needed for campus recruiting activities and global collaboration About MongoDB MongoDB is b",
-   "posted": "2026-11-16",
+   "posted": "2026-11-23",
    "source": "Greenhouse",
    "id": "1f0503f2e933",
    "role": "Operations & HR",
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer (L3) Email",
@@ -1707,7 +1838,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Insider Risk Security Engineer",
@@ -1722,7 +1853,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Business Analyst - NPI Operations",
@@ -1752,7 +1883,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "IT System Administrator I",
@@ -1767,7 +1898,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Payroll Industrial Trainee",
@@ -1782,7 +1913,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Product Management Intern",
@@ -1797,7 +1928,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer (CPD) - Winter Intern",
@@ -1812,7 +1943,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Account Development Representative - Canada",
@@ -1827,7 +1958,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Account Development Representative - Canada",
@@ -1842,7 +1973,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Support Specialist, R1",
@@ -1872,7 +2003,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Customer Experience Engineer, L1",
@@ -1902,7 +2033,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Agent Developer Test III",
@@ -1917,7 +2048,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Analyst – Strategic Alliances",
@@ -1932,7 +2063,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Deal Desk Analyst",
@@ -1947,7 +2078,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Forward Deployed Engineer II",
@@ -1962,7 +2093,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Python SDE-III",
@@ -1977,7 +2108,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Development Engineer - IV",
@@ -1992,7 +2123,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer",
@@ -2007,7 +2138,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Associate - Motor Insurance",
@@ -2024,7 +2155,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "CST - Associate - Bill Payments CST",
@@ -2041,7 +2172,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "CST - Associate - Social CST",
@@ -2058,7 +2189,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Facilitator - Digital & Financial Literacy - 6 months Contractual",
@@ -2075,7 +2206,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern - Talent Acquisition",
@@ -2092,7 +2223,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern- HR Onboarding",
@@ -2109,7 +2240,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern-Talent Acquisition",
@@ -2126,7 +2257,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Legal Contracts",
@@ -2143,7 +2274,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Lending Operations - AM - Merchant Lending",
@@ -2160,7 +2291,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -2177,7 +2308,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -2194,7 +2325,7 @@
    "city": "Vijayawada",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -2211,7 +2342,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Process Trainer - TL - Lending",
@@ -2228,7 +2359,7 @@
    "city": "Kochi",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Talent Acquisition Intern",
@@ -2245,7 +2376,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Talent Acquisition Intern - Bangalore",
@@ -2262,7 +2393,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Talent Acquisition Intern - IT Recruitment",
@@ -2279,7 +2410,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Talent Acquisition Specialist - Business Hiring (Non-Tech)",
@@ -2296,7 +2427,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Treasury & Capital Markets - Paytm Money",
@@ -2313,7 +2444,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer, Full Stack (People Innovation Labs)",
@@ -2328,7 +2459,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SALES & APPLICATION ENGINEER- Fresher",
@@ -2345,7 +2476,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Innovation & Automation",
@@ -2397,7 +2528,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Program Intern",
@@ -2413,7 +2544,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "WordPress Intern",
@@ -2431,7 +2562,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "PPC Intern",
@@ -2455,9 +2586,9 @@
    "title": "Intern (Bachelor's)",
    "company": "Honeywell Technologies",
    "location_raw": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5969968586?utm_medium=api&utm_source=80afbcb1",
-   "description": "As an Intern here at Honeywell, you will have the opportunity to gain hands-on experience and contribute to real-world projects. You will work closely with experienced professionals, learning and applying your knowledge in a dynamic and innovative environment. This internship will provide you with valuable insights and skills that will help you in your future career. In this role, you will impact various projects and initiatives, gaining practical experience and contributing to the success of t…",
-   "posted": "2026-11-18",
+   "url": "https://www.adzuna.in/details/5974799491?utm_medium=api&utm_source=80afbcb1",
+   "description": "As an Intern here at Honeywell, you will have the opportunity to gain hands-on experience and contribute to real-world projects. You will work alongside experienced professionals, gaining valuable insights and skills that will help you in your future career. This internship will provide you with a comprehensive understanding of our business and the chance to make a meaningful impact. In this role, you will impact our projects by bringing fresh perspectives and innovative ideas. You will be invo…",
+   "posted": "2026-11-22",
    "source": "Adzuna",
    "category": "IT Jobs",
    "id": "c8ece13281c1",
@@ -2465,7 +2596,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee - AI/ML",
@@ -2532,7 +2663,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Inside Sales Contractor",
@@ -2550,7 +2681,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Strategy & Operations Coach APAC",
@@ -2610,7 +2741,7 @@
    "role": "ML & AI",
    "city": "Paris",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "AI Forward Deployed Engineer - Germany",
@@ -2624,7 +2755,7 @@
    "role": "ML & AI",
    "city": "Munich",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "AI Forward Deployed Engineer - Netherlands",
@@ -2638,7 +2769,7 @@
    "role": "ML & AI",
    "city": "Amsterdam",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "AI Forward Deployed Engineer - Sweden",
@@ -2652,7 +2783,7 @@
    "role": "ML & AI",
    "city": "Stockholm",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Engineer - Platform Engineering",
@@ -2666,7 +2797,7 @@
    "role": "DevOps",
    "city": "Remote",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher AIML- Software Engineer",
@@ -2683,7 +2814,7 @@
    "role": "Backend",
    "city": "Other",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "IT Support Executive",
@@ -2699,7 +2830,7 @@
    "role": "Support",
    "city": "Kolkata",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "TSR",
@@ -2716,7 +2847,7 @@
    "role": "Other",
    "city": "Delhi NCR",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Sales Executive",
@@ -2732,7 +2863,7 @@
    "role": "Sales & Marketing",
    "city": "Mumbai",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Hiring || Executive (Business Development)",
@@ -2748,7 +2879,7 @@
    "role": "Sales & Marketing",
    "city": "Hyderabad",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Digital Human Health Intern",
@@ -2828,7 +2959,7 @@
    "role": "Sales & Marketing",
    "city": "Pune",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "IN-Intern/Trainee",
@@ -2844,7 +2975,7 @@
    "role": "Other",
    "city": "Other",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Creative Intern",
@@ -2859,7 +2990,7 @@
    "role": "Other",
    "city": "Mumbai",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SDR Intern",
@@ -2875,7 +3006,7 @@
    "role": "ML & AI",
    "city": "Bengaluru",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern (Bachelor's)",
@@ -2891,7 +3022,7 @@
    "role": "Other",
    "city": "Bengaluru",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Front End Developer",
@@ -2941,7 +3072,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Recruitment Intern",
@@ -3023,7 +3154,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing internship (brand & communication)",
@@ -3038,7 +3169,7 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Freshers",
@@ -3072,7 +3203,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Chartered Accountant – Fresher",
@@ -3154,7 +3285,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Sales Executive – Fresher",
@@ -3171,7 +3302,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher software developer",
@@ -3187,7 +3318,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "QA Engineer - Fresher",
@@ -3221,7 +3352,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher Designer EDs",
@@ -3238,7 +3369,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "ADMISSION COUNSELOR-FRESHERS",
@@ -3255,7 +3386,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Business Development Executive (Fresher)",
@@ -3273,7 +3404,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "FRESHER OPHTHALMOLOGIST / PHACO SURGEON",
@@ -3291,7 +3422,7 @@
    "city": "Kolkata",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Business Development Associate (Freshers)",
@@ -3307,7 +3438,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "BA / B.Com Freshers",
@@ -3339,7 +3470,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Social Media Executive (Fresher)",
@@ -3424,7 +3555,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Customer Service Representative (Freshers)",
@@ -3441,7 +3572,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Software Developer Fresher Hyderabad",
@@ -3473,7 +3604,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Site Quality Engineer Fresher",
@@ -3489,7 +3620,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Media Relations & Communications Associate –Fresher",
@@ -3505,7 +3636,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Robotic Operator (G-Gaiter) – Fresher",
@@ -3523,7 +3654,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher / Experience fem le Optometrist",
@@ -3576,7 +3707,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Customer Support Freshers - Bangalore - Tamil",
@@ -3593,7 +3724,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Python & Next.js Developer (Freshers)",
@@ -3626,7 +3757,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher Orthopedics for Fellowship or Associates For Pathankot",
@@ -3642,7 +3773,7 @@
    "city": "Pathankot",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Java Fresher-walkin - TEST 2",
@@ -3676,7 +3807,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher Jobs - Field Service Engineer | Pan India",
@@ -3711,7 +3842,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Sales Executive - Freshers/Experienced || Gurgaon",
@@ -3728,7 +3859,7 @@
    "city": "Patna",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Sales Executive – Freshers/Experienced || Maharashtra",
@@ -3746,7 +3877,7 @@
    "city": "Nashik",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Job Opening: Python & Next.js Developer (Freshers)",
@@ -3778,7 +3909,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Data Processing Specialist (Freshers Welcome) — Ahmedabad",
@@ -3812,7 +3943,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Fresher chat support assistant with good english",
@@ -3845,7 +3976,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "MBA HR Fresher 2026 (Mumbai based candidates)",
@@ -3861,7 +3992,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing & Business Development Executive – Fresher (IT Services)",
@@ -3894,7 +4025,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Business Development Executive (Night Shift & Fresher's Can Apply)",
@@ -3910,7 +4041,7 @@
    "city": "Indore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Process Associate - Career Restarters | Freshers - WALKIN ON 7th Nov,2026",
@@ -3928,7 +4059,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Medical Coding for Freshers in any Allied Health Science Graduation",
@@ -3944,7 +4075,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "\"Fresher Opportunity – Contract-to-Hire | Get Paid & Gain Corporate Experience\"",
@@ -3962,7 +4093,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Walk In Drive l Legal Freshers - Data Breach Project l Mohali",
@@ -3995,7 +4126,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Sales Executive – Freshers/Experienced || Jaipur (Bhiwadi, Kishangarh,Fatehpur,Chirwa)",
@@ -4012,7 +4143,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Registered Nurse Germany (GNM / B.Sc Nursing) Freshers & Experienc",
@@ -4027,7 +4158,7 @@
    "role": "Other",
    "city": "Chennai",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Content Creator",
@@ -4061,7 +4192,7 @@
    "role": "Sales & Marketing",
    "city": "Mumbai",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Compliance Intern (KYC)",
@@ -4162,7 +4293,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Apprentice / Intern",
@@ -4179,7 +4310,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Apprentice / Intern",
@@ -4195,7 +4326,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Internships",
@@ -4211,7 +4342,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Internship",
@@ -4228,7 +4359,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -4259,7 +4390,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "IS Intern",
@@ -4276,7 +4407,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -4293,7 +4424,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -4358,7 +4489,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Apprentice",
@@ -4393,7 +4524,7 @@
    "city": "Gurgaon",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -4410,7 +4541,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern",
@@ -4445,7 +4576,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Internship",
@@ -4463,7 +4594,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-21"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SDET Internship",
@@ -4530,7 +4661,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern - Research",
@@ -4564,7 +4695,7 @@
    "city": "Kochi",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Product Intern",
@@ -4581,7 +4712,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Support Intern",
@@ -4599,7 +4730,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -4649,7 +4780,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Copywriting Intern",
@@ -4667,7 +4798,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SEO Intern",
@@ -4685,7 +4816,7 @@
    "city": "Jaipur",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR INTERN",
@@ -4703,7 +4834,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Copywriter (Intern)",
@@ -4737,7 +4868,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Technical Intern",
@@ -4753,7 +4884,7 @@
    "city": "Chandigarh",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Sales Intern",
@@ -4769,7 +4900,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern:Intern:Talent Aquisition:Noida",
@@ -4870,7 +5001,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "SEO Intern",
@@ -4887,7 +5018,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Internship - Sales",
@@ -4918,7 +5049,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Internship- Structures",
@@ -4935,7 +5066,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Accounts Intern",
@@ -4968,7 +5099,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Internship",
@@ -5018,7 +5149,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "BDE Intern",
@@ -5051,7 +5182,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -5083,7 +5214,7 @@
    "city": "Noida",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "CA Internship",
@@ -5099,7 +5230,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -5116,7 +5247,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Apprentice, CA",
@@ -5147,7 +5278,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing intern",
@@ -5163,7 +5294,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "QA Intern",
@@ -5196,7 +5327,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Marketing Intern",
@@ -5248,7 +5379,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern (Bachelor's)",
@@ -5280,7 +5411,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Design Intern",
@@ -5297,7 +5428,7 @@
    "city": "Delhi",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -5361,7 +5492,7 @@
    "city": "Gurugram",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -5377,7 +5508,7 @@
    "role": "Operations & HR",
    "city": "Other",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern - Harness",
@@ -5426,7 +5557,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -5442,7 +5573,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern - Legal",
@@ -5475,7 +5606,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Administration Intern",
@@ -5794,7 +5925,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer – HR",
@@ -5811,7 +5942,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineering Trainee",
@@ -5859,7 +5990,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -5876,7 +6007,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -5893,7 +6024,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer trainee- Purchase",
@@ -5927,7 +6058,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee – Warehouse",
@@ -5944,7 +6075,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee (Operations & Support)",
@@ -5961,7 +6092,7 @@
    "city": "Indore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Mechancial Engineer_Graduate Engineering Trainee",
@@ -5978,7 +6109,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee (GET) - Mechanical",
@@ -6011,7 +6142,7 @@
    "city": "Chennai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Electrical Engineer",
@@ -6028,7 +6159,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Mechanical Engineer",
@@ -6045,7 +6176,7 @@
    "city": "Navi Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Detailing Engineer - Hyderabad",
@@ -6061,7 +6192,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Trainee Engineer – Cooling (Mechnical)",
@@ -6078,7 +6209,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Trainee Engineer – Sales (Shroff)",
@@ -6095,7 +6226,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Machine Learning Engineering Graduate - August 2026 - Bangalore",
@@ -6111,7 +6242,7 @@
    "role": "ML & AI",
    "city": "Bengaluru",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "TPM Coordinator- Mechanical",
@@ -6128,7 +6259,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Trainee Design Engineer - Civil Land Survey",
@@ -6144,7 +6275,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Associate Deployment Engineer - Galaxy Graduate Program",
@@ -6177,7 +6308,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Engineer III",
@@ -6275,7 +6406,7 @@
    "role": "DevOps",
    "city": "Other",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "TL BOCAD Draftsman | Power Transmission | Tardeo, Mumbai",
@@ -6292,7 +6423,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Printer Engineer",
@@ -6325,7 +6456,7 @@
    "role": "Backend",
    "city": "Other",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Section Head - Cement Mill, Mechanical, Jagiroad",
@@ -6392,7 +6523,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Should Cost Engineer",
@@ -6426,7 +6557,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Engineer Quality LMTG",
@@ -6443,7 +6574,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "TENDER EXECUTIVE",
@@ -6460,7 +6591,7 @@
    "city": "Ahmedabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "ML Intern",
@@ -6477,7 +6608,7 @@
    "city": "Bangalore",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern-INC",
@@ -6494,7 +6625,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-22"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "(IND) Software Engineer II",
@@ -6558,7 +6689,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "DevOps Engineer",
@@ -6592,7 +6723,7 @@
    "city": "Hyderabad",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "GTM & Strategy, Model API",
@@ -6607,15 +6738,15 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "EbizON || Fresher Content Writer II Dehradun",
    "company": "Ebizon",
    "location_raw": "India",
-   "url": "https://www.adzuna.in/details/5940639951?utm_medium=api&utm_source=80afbcb1",
+   "url": "https://www.adzuna.in/details/5976254758?utm_medium=api&utm_source=80afbcb1",
    "description": "EbizON is looking for Fresher Content Writers who are English Graduates, Mass communication graduates with excellent written skills to join our team in Dehradun office. The ideal person for this position has to create well-researched, grammatically and factually correct content for publication online around topics related to F&B, marketing, technology, home and decor, fashion, travel, Bioscience, etc. Responsibilities: The candidate should be able to understand the topic well and write informat…",
-   "posted": "2026-10-24",
+   "posted": "2026-11-23",
    "source": "Adzuna",
    "type": "full time",
    "category": "PR, Advertising & Marketing Jobs",
@@ -6624,7 +6755,7 @@
    "city": "Dehradun",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern:Intern:Talent Aquisition:bengaluru",
@@ -6658,7 +6789,7 @@
    "city": "Remote",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "HR Intern",
@@ -6674,7 +6805,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "CRM Intern",
@@ -6691,7 +6822,7 @@
    "city": "Bengaluru",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Cybersecurity Intern",
@@ -6708,7 +6839,7 @@
    "city": "Mumbai",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-20"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Intern-SDE",
@@ -6741,7 +6872,7 @@
    "city": "Goa",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Graduate Engineer Trainee",
@@ -6775,7 +6906,7 @@
    "city": "Pune",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Field Engineer",
@@ -6809,7 +6940,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "title": "Advait Lok - EHS Engineer",
@@ -6827,7 +6958,7 @@
    "city": "Other",
    "by": "llm",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   }
  ]
 }
